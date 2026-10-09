@@ -6,7 +6,7 @@
     "notes": [
       "Everything is now seen from inside, as the visitor always is. A 3-minute storm (drizzle, rain, downpour) with a gusty 2 m/s wind, on limestone walls, a slightly porous concrete box top and earth around it.",
       "The traces are painted into the stone itself: the surface around each shot is subdivided to about 3 mm and every recorded path and impact wets it with a soft falloff. No more ribbons floating on or sinking into the surface. Gloss only where water is running now; dark stain where it has been.",
-      "An adversarial review found nine real bugs, fixed and verified: a 36 m2 phantom plate at floor height, drops floating off the rock, drips falling on a timer at a third of real size, a speed cap most drops sat on, film that never flowed, among others. Detail is now spent where it can be seen from inside, from crawling to standing height."
+      "Before these renders, an independent review of the simulation checked it against the physics literature; its corrections are in: drips now let go at their real size, drops slide at speeds that depend on their size, and water flows from surface to surface instead of piling up. Detail is spent where a visitor inside can see it, from crawling to standing height."
     ],
     "media": [
       {
