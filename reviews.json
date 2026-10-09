@@ -5,7 +5,7 @@
   "title": "Where the rain goes: a map of the sky above the sculpture",
   "notes": [
    "Which rain ends up inside? To answer it once and for all, a grid of 650,000 particles (one every centimetre, three per square, over the whole site) was dropped from above the sculpture. Each falls, runs downhill along the stone wherever it lands, drips off overhangs, spills over ledges, and is followed until it reaches the ground.",
-   "Every square of sky is then coloured by where its water ends up. In still air, rain falling on about 13.6 square metres of sky ends up on the 9 square metres of floor inside. Only 0.4 square metres of it falls straight through the openings without touching stone: the rest finds its way in by running down the inner walls, along the tubes that reach far out from the building, and through the low openings at the floor.",
+   "Every square of sky is then coloured by where its water ends up. In still air, rain falling on about 14.4 square metres of sky ends up on the 9 square metres of floor inside. Only 0.4 square metres of it falls straight through the openings without touching stone: most finds its way in by running down the inner walls, along the tubes that reach far out from the building, and through the low openings at the floor. A little more (0.8 square metres) lands on the floor outside and then runs or spills in across it, filling low spots on the way like real puddles.",
    "In a light wind (2 m/s) the rain slants. The openings are tall, narrow shafts, so slanted rain hits their walls instead of falling through: the straight-through share drops to 0.14 square metres, while the water that runs in along the stone stays about the same.",
    "This map now decides where rain is simulated in detail for the views from inside."
   ],
@@ -13,7 +13,7 @@
    {
     "type": "image",
     "src": "media/2026-10-10-catchment/01_where_rain_goes_calm.png",
-    "caption": "Still air. Left: the sky above the site, each centimetre coloured by where its rain ends up: blue falls straight onto the inside floor, cyan reaches the inside floor after running down the stone, grey ends up on the ground outside. The black outline is the floor inside the sculpture. Right: where that water arrives on the inside floor, darker where more arrives."
+    "caption": "Still air. Left: the sky above the site, each centimetre coloured by where its rain ends up: blue falls straight onto the inside floor, cyan reaches the inside floor after running down the stone, green lands on the floor outside and then runs or spills inside, grey ends up on the ground outside. The black outline is the floor inside the sculpture. Right: where that water arrives on the inside floor, darker where more arrives."
    },
    {
     "type": "image",
