@@ -10,6 +10,11 @@
     ],
     "media": [
       {
+        "type": "video",
+        "src": "media/2026-10-10-rain-inside/00_storm_timelapse_inside.mp4",
+        "caption": "A 3-minute storm on an interior wall as a 15-second time-lapse: dry stone, the first drops, then channels forming down the folds of the sculpture and braiding through the downpour."
+      },
+      {
         "type": "image",
         "src": "media/2026-10-10-rain-inside/01_inside_tube.png",
         "caption": "Inside the tube: water braids down the interior wall following the folds of the sculpture."
