@@ -1,5 +1,32 @@
 [
   {
+    "id": "2026-10-10-rain-long",
+    "date": "2026-10-10",
+    "title": "An eight-minute storm: the stone fills, runs, and pools at its feet",
+    "notes": [
+      "Limestone drinks. In a short storm it soaks up most of the rain and only darkens; it has to fill before it sheds. So this storm runs eight minutes: one of drizzle, two of rain, five of downpour, with a gusty wind.",
+      "By the end the walls are saturated and running, water braids down the folds of the sculpture, and at the foot of a wall it has collected into a puddle on the concrete floor. Some of it has drained out past the edge of the floor onto the ground outside.",
+      "The physics behind it: drop sizes and fall speeds from rain measurements, drops that bead, creep, slide and merge, splash spray that shakes resting drops loose, stone that takes water up and dries the way porous stone does, and a floor that collects, soaks and drains."
+    ],
+    "media": [
+      {
+        "type": "image",
+        "src": "media/2026-10-10-rain-long/01_inside_tube.png",
+        "caption": "Inside the tube after eight minutes: the wall saturated, glossy channels braiding through the wet stone."
+      },
+      {
+        "type": "image",
+        "src": "media/2026-10-10-rain-long/02_floor_junction_puddle.png",
+        "caption": "The floor junction: water has run down the stone and pooled at the foot of the wall on the concrete."
+      },
+      {
+        "type": "image",
+        "src": "media/2026-10-10-rain-long/03_looking_out.png",
+        "caption": "Looking out through the low openings: the exterior wall streaming with run-off."
+      }
+    ]
+  },
+  {
     "id": "2026-10-10-rain-inside",
     "date": "2026-10-10",
     "title": "Rain seen from inside: stains in the stone, the floor junction, looking out",
