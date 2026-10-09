@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gloam Review</title>
+<style>
+  :root {
+    --bg: #f4f2ee; --fg: #1d1c1a; --muted: #6d6a64; --card: #ffffff; --line: #dedad3; --accent: #2f5fa8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --fg: #e9e6e0; --muted: #9a958c; --card: #1c1c1b; --line: #2e2d2b; --accent: #7fa8e6; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header, main { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+  header { padding-top: 40px; padding-bottom: 8px; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: 0.01em; }
+  header p { color: var(--muted); margin: 0; }
+  .review { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; margin: 24px 0; }
+  .review h2 { margin: 0; font-size: 21px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 2px 0 12px; }
+  .notes { margin: 0 0 16px; }
+  .notes p { margin: 0 0 10px; }
+  .media { display: grid; gap: 16px; }
+  figure { margin: 0; }
+  figure img, figure video { width: 100%; height: auto; display: block; border-radius: 6px; background: #000; }
+  figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
+  a { color: var(--accent); }
+  .empty { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Gloam Review</h1>
+  <p>Work in progress on Gloam VR, newest first. Renders are review renders: clay mode shows shape only, without depth of field.</p>
+</header>
+<main id="reviews"><p class="empty">Loading...</p></main>
+<script>
+  // reviews.json: [{id, date, title, notes: [paragraphs], media: [{type: "image"|"video", src, caption}]}]
+  fetch("reviews.json", { cache: "no-store" })
+    .then(r => r.json())
+    .then(list => {
+      const root = document.getElementById("reviews");
+      root.innerHTML = "";
+      list.sort((a, b) => (a.date < b.date ? 1 : -1));
+      for (const rv of list) {
+        const sec = document.createElement("section");
+        sec.className = "review"; sec.id = rv.id;
+        const h = document.createElement("h2"); h.textContent = rv.title; sec.appendChild(h);
+        const m = document.createElement("div"); m.className = "meta"; m.textContent = rv.date; sec.appendChild(m);
+        const notes = document.createElement("div"); notes.className = "notes";
+        for (const para of rv.notes || []) { const p = document.createElement("p"); p.textContent = para; notes.appendChild(p); }
+        sec.appendChild(notes);
+        const grid = document.createElement("div"); grid.className = "media";
+        for (const it of rv.media || []) {
+          const fig = document.createElement("figure");
+          let el;
+          if (it.type === "video") {
+            el = document.createElement("video");
+            el.src = it.src; el.controls = true; el.loop = true; el.muted = true; el.playsInline = true; el.preload = "metadata";
+          } else {
+            el = document.createElement("img"); el.src = it.src; el.loading = "lazy"; el.alt = it.caption || "";
+          }
+          fig.appendChild(el);
+          if (it.caption) { const c = document.createElement("figcaption"); c.textContent = it.caption; fig.appendChild(c); }
+          grid.appendChild(fig);
+        }
+        sec.appendChild(grid);
+        root.appendChild(sec);
+      }
+    })
+    .catch(() => { document.getElementById("reviews").innerHTML = '<p class="empty">Could not load reviews.json.</p>'; });
+</script>
+</body>
+</html>
