@@ -11,9 +11,26 @@
       "Next: limestone as the stone (porosity and soak rate), a three-minute weather run from dry rock (drizzle, rain, downpour), the floor as a real destination for the water, and proper water shading."
     ],
     "media": [
-      { "type": "image", "src": "media/2026-10-09-rain/03_trace_on_rock.png", "caption": "Wall close-up after 24 s of heavy rain on pre-wetted rock. Running tracks, impact spots at their real spread, beads. Traces wrapped onto the stone." },
-      { "type": "image", "src": "media/2026-10-09-rain/02_trace_channels.png", "caption": "Upper surfaces: tracks branch and converge into channels, drops following earlier paths." },
-      { "type": "image", "src": "media/2026-10-09-rain/01_first_wetmap.png", "caption": "First look at the wet map, before the exact traces: blotchy, rightly criticised as a rough approximation of where water went." }
+      {
+        "type": "video",
+        "src": "media/2026-10-09-rain/00_close_6s.mp4",
+        "caption": "Six seconds of the same wall (the last 6 s of a 24 s bake on pre-wetted rock). New tracks appear as drops run down existing ones. Subtle by design of this bake; the three-minute run from dry rock is next."
+      },
+      {
+        "type": "image",
+        "src": "media/2026-10-09-rain/03_trace_on_rock.png",
+        "caption": "Wall close-up after 24 s of heavy rain on pre-wetted rock. Running tracks, impact spots at their real spread, beads. Traces wrapped onto the stone."
+      },
+      {
+        "type": "image",
+        "src": "media/2026-10-09-rain/02_trace_channels.png",
+        "caption": "Upper surfaces: tracks branch and converge into channels, drops following earlier paths."
+      },
+      {
+        "type": "image",
+        "src": "media/2026-10-09-rain/01_first_wetmap.png",
+        "caption": "First look at the wet map, before the exact traces: blotchy, rightly criticised as a rough approximation of where water went."
+      }
     ]
   }
 ]
