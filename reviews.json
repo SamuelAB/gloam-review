@@ -10,6 +10,11 @@
     ],
     "media": [
       {
+        "type": "video",
+        "src": "media/2026-10-10-rain-long/00_inside_tube_realtime.mp4",
+        "caption": "Ten seconds in real time, near the end of the downpour, inside the tube: drops slide down the channels and fresh water glints where it is running."
+      },
+      {
         "type": "image",
         "src": "media/2026-10-10-rain-long/01_inside_tube.png",
         "caption": "Inside the tube after eight minutes: the wall saturated, glossy channels braiding through the wet stone."
