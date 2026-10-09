@@ -1,5 +1,32 @@
 [
   {
+    "id": "2026-10-10-rain-inside",
+    "date": "2026-10-10",
+    "title": "Rain seen from inside: stains in the stone, the floor junction, looking out",
+    "notes": [
+      "Everything is now seen from inside, as the visitor always is. A 3-minute storm (drizzle, rain, downpour) with a gusty 2 m/s wind, on limestone walls, a slightly porous concrete box top and earth around it.",
+      "The traces are painted into the stone itself: the surface around each shot is subdivided to about 3 mm and every recorded path and impact wets it with a soft falloff. No more ribbons floating on or sinking into the surface. Gloss only where water is running now; dark stain where it has been.",
+      "An adversarial review found nine real bugs, fixed and verified: a 36 m2 phantom plate at floor height, drops floating off the rock, drips falling on a timer at a third of real size, a speed cap most drops sat on, film that never flowed, among others. Detail is now spent where it can be seen from inside, from crawling to standing height."
+    ],
+    "media": [
+      {
+        "type": "image",
+        "src": "media/2026-10-10-rain-inside/01_inside_tube.png",
+        "caption": "Inside the tube: water braids down the interior wall following the folds of the sculpture."
+      },
+      {
+        "type": "image",
+        "src": "media/2026-10-10-rain-inside/02_floor_junction.png",
+        "caption": "The floor junction: a stain runs down the column into the concrete box top, which reads as wet concrete."
+      },
+      {
+        "type": "image",
+        "src": "media/2026-10-10-rain-inside/03_looking_out.png",
+        "caption": "Looking out through the low openings: the exterior wall at lower left carries the run-off."
+      }
+    ]
+  },
+  {
     "id": "2026-10-09-rain",
     "date": "2026-10-09",
     "title": "Rain on limestone: a 3-minute storm, wet traces, films and channels",
