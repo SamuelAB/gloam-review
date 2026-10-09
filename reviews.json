@@ -2,15 +2,25 @@
   {
     "id": "2026-10-09-rain",
     "date": "2026-10-09",
-    "title": "Rain on the rock: wet traces, films and channels",
+    "title": "Rain on limestone: a 3-minute storm, wet traces, films and channels",
     "notes": [
       "Our own GPU rain solver, rendered in clay: grey stone, blue water. The drops started as spheres (ping pong balls), became teardrops, and are now sessile drops that have wet the stone: flat base on the rock, edge feathering into it, full downhill and thin uphill, in the rounded, corner and cusp shapes running drops take.",
       "The rock now remembers water. A sliding drop leaves a film behind; later drops grip less on wet stone, run faster, and steer toward wetter rock beside them, so they get captured by earlier paths. On the upper surfaces the tracks branch and converge into channels on their own.",
       "On wet rock, water joins a film instead of beading. Excess film is held until there is enough to let go as a new drop (the bathtub micro-dam), which is also where drips under overhangs now come from.",
       "What you see as a trace is drawn from the exact recorded path of every drop, snapped onto the stone, not from the coarse per-face map the physics uses.",
-      "Next: limestone as the stone (porosity and soak rate), a three-minute weather run from dry rock (drizzle, rain, downpour), the floor as a real destination for the water, and proper water shading."
+      "The stone is limestone (~8% porosity). A storm from dry rock: a minute of drizzle, a minute of rain, a minute of downpour. On limestone a fresh trail is glossy for about a second, then soaks in and stays as a dark stain for hours: the stain is the trace of where water has been. Drops spread on soaked stone instead of beading. Next: the floor as a real destination for the water, and proper water shading."
     ],
     "media": [
+      {
+        "type": "video",
+        "src": "media/2026-10-09-rain/00_storm_timelapse.mp4",
+        "caption": "Time-lapse of the whole 3-minute storm on an interior wall, one frame per second. Drizzle never reaches inside; stains only appear once the outer stone is soaked enough to shed water, then multiply through the downpour, following the folds."
+      },
+      {
+        "type": "image",
+        "src": "media/2026-10-09-rain/04_storm_end_interior.png",
+        "caption": "The same wall at the end of the storm."
+      },
       {
         "type": "video",
         "src": "media/2026-10-09-rain/00_close_6s.mp4",
