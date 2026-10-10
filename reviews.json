@@ -1,7 +1,7 @@
 [
   {
     "id": "2026-10-10-catchment",
-    "date": "2026-10-10",
+    "date": "2026-10-09",
     "title": "Where the rain goes: a map of the sky above the sculpture",
     "notes": [
       "Which rain ends up inside? To answer it once and for all, a grid of 650,000 particles (one every centimetre, three per square, over the whole site) was dropped from above the sculpture. Each falls, runs downhill along the stone wherever it lands, drips off overhangs, spills over ledges, and is followed until it reaches the ground.",
@@ -25,6 +25,7 @@
         "src": "media/2026-10-10-catchment/03_where_rain_goes_wind.png",
         "caption": "The same map in a 2 m/s wind: almost nothing falls straight through the openings any more; the water comes in along the stone instead."
       }
-    ]
+    ],
+    "posted": "2026-10-09T13:51-04:00"
   }
 ]

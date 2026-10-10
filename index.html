@@ -85,18 +85,23 @@
   document.addEventListener("click", e => { if (e.target.matches("figure img")) openFrom(e.target); });
 </script>
 <script>
-  // reviews.json: [{id, date, title, notes: [paragraphs], media: [{type: "image"|"video", src, caption}]}]
+  // reviews.json: [{id, date, posted (ISO time with offset), title, notes: [paragraphs], media: [{type: "image"|"video", src, caption}]}]
   fetch("reviews.json", { cache: "no-store" })
     .then(r => r.json())
     .then(list => {
       const root = document.getElementById("reviews");
       root.innerHTML = "";
-      list.sort((a, b) => (a.date < b.date ? 1 : -1));
+      // posted: ISO time with offset (e.g. 2026-10-09T13:51-04:00); older entries fall back to date
+      const when = (rv) => new Date(rv.posted || (rv.date + "T00:00:00-04:00")).getTime();
+      list.sort((a, b) => when(b) - when(a));
       for (const rv of list) {
         const sec = document.createElement("section");
         sec.className = "review"; sec.id = rv.id;
         const h = document.createElement("h2"); h.textContent = rv.title; sec.appendChild(h);
-        const m = document.createElement("div"); m.className = "meta"; m.textContent = rv.date; sec.appendChild(m);
+        const m = document.createElement("div"); m.className = "meta"; m.textContent = rv.posted
+          ? new Date(rv.posted).toLocaleString("en-CA", {timeZone: "America/Toronto", dateStyle: "medium", timeStyle: "short"}) + " (Montreal time)"
+          : rv.date;
+        sec.appendChild(m);
         const notes = document.createElement("div"); notes.className = "notes";
         for (const para of rv.notes || []) { const p = document.createElement("p"); p.textContent = para; notes.appendChild(p); }
         sec.appendChild(notes);
