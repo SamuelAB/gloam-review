@@ -1,138 +1,30 @@
 [
- {
-  "id": "2026-10-10-catchment",
-  "date": "2026-10-10",
-  "title": "Where the rain goes: a map of the sky above the sculpture",
-  "notes": [
-   "Which rain ends up inside? To answer it once and for all, a grid of 650,000 particles (one every centimetre, three per square, over the whole site) was dropped from above the sculpture. Each falls, runs downhill along the stone wherever it lands, drips off overhangs, spills over ledges, and is followed until it reaches the ground.",
-   "Every square of sky is then coloured by where its water ends up. In still air, rain falling on about 14.4 square metres of sky ends up on the 9 square metres of floor inside. Only 0.4 square metres of it falls straight through the openings without touching stone: most finds its way in by running down the inner walls, along the tubes that reach far out from the building, and through the low openings at the floor. A little more (0.8 square metres) lands on the floor outside and then runs or spills in across it, filling low spots on the way like real puddles.",
-   "In a light wind (2 m/s) the rain slants. The openings are tall, narrow shafts, so slanted rain hits their walls instead of falling through: the straight-through share drops to 0.14 square metres, while the water that runs in along the stone stays about the same.",
-   "This map now decides where rain is simulated in detail for the views from inside."
-  ],
-  "media": [
-   {
-    "type": "image",
-    "src": "media/2026-10-10-catchment/01_where_rain_goes_calm.png",
-    "caption": "Still air. Left: the sky above the site, each centimetre coloured by where its rain ends up: blue falls straight onto the inside floor, cyan reaches the inside floor after running down the stone, green lands on the floor outside and then runs or spills inside, grey ends up on the ground outside. The black outline is the floor inside the sculpture. Right: where that water arrives on the inside floor, darker where more arrives."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-10-catchment/02_routes.png",
-    "caption": "The routes of forty sampled particles that end up inside. Black dots are where they start above the sculpture, red crosses where they reach the floor. Some start well outside the floor area and run in along the tubes. Right: their height along the way."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-10-catchment/03_where_rain_goes_wind.png",
-    "caption": "The same map in a 2 m/s wind: almost nothing falls straight through the openings any more; the water comes in along the stone instead."
-   }
-  ]
- },
- {
-  "id": "2026-10-10-rain-long",
-  "date": "2026-10-10",
-  "title": "An eight-minute storm: the stone fills, runs, and pools at its feet",
-  "notes": [
-   "Limestone drinks. In a short storm it soaks up most of the rain and only darkens; it has to fill before it sheds. So this storm runs eight minutes: one of drizzle, two of rain, five of downpour, with a gusty wind.",
-   "By the end the walls are saturated and running, water braids down the folds of the sculpture, and at the foot of a wall it has collected into a puddle on the concrete floor. Some of it has drained out past the edge of the floor onto the ground outside.",
-   "The physics behind it: drop sizes and fall speeds from rain measurements, drops that bead, creep, slide and merge, splash spray that shakes resting drops loose, stone that takes water up and dries the way porous stone does, and a floor that collects, soaks and drains."
-  ],
-  "media": [
-   {
-    "type": "video",
-    "src": "media/2026-10-10-rain-long/00_inside_tube_realtime.mp4",
-    "caption": "Ten seconds in real time, near the end of the downpour, inside the tube: drops slide down the channels and fresh water glints where it is running."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-10-rain-long/01_inside_tube.png",
-    "caption": "Inside the tube after eight minutes: the wall saturated, glossy channels braiding through the wet stone."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-10-rain-long/02_floor_junction_puddle.png",
-    "caption": "The floor junction: water has run down the stone and pooled at the foot of the wall on the concrete."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-10-rain-long/03_looking_out.png",
-    "caption": "Looking out through the low openings: the exterior wall streaming with run-off."
-   }
-  ]
- },
- {
-  "id": "2026-10-10-rain-inside",
-  "date": "2026-10-10",
-  "title": "Rain seen from inside: stains in the stone, the floor junction, looking out",
-  "notes": [
-   "Everything is now seen from inside, as the visitor always is. A 3-minute storm (drizzle, rain, downpour) with a gusty 2 m/s wind, on limestone walls, a slightly porous concrete box top and earth around it.",
-   "The traces are painted into the stone itself: the surface around each shot is subdivided to about 3 mm and every recorded path and impact wets it with a soft falloff. No more ribbons floating on or sinking into the surface. Gloss only where water is running now; dark stain where it has been.",
-   "Before these renders, an independent review of the simulation checked it against the physics literature; its corrections are in: drips now let go at their real size, drops slide at speeds that depend on their size, and water flows from surface to surface instead of piling up. Detail is spent where a visitor inside can see it, from crawling to standing height."
-  ],
-  "media": [
-   {
-    "type": "video",
-    "src": "media/2026-10-10-rain-inside/00_storm_timelapse_inside.mp4",
-    "caption": "A 3-minute storm on an interior wall as a 15-second time-lapse: dry stone, the first drops, then channels forming down the folds of the sculpture and braiding through the downpour."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-10-rain-inside/01_inside_tube.png",
-    "caption": "Inside the tube: water braids down the interior wall following the folds of the sculpture."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-10-rain-inside/02_floor_junction.png",
-    "caption": "The floor junction: a stain runs down the column into the concrete box top, which reads as wet concrete."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-10-rain-inside/03_looking_out.png",
-    "caption": "Looking out through the low openings: the exterior wall at lower left carries the run-off."
-   }
-  ]
- },
- {
-  "id": "2026-10-09-rain",
-  "date": "2026-10-09",
-  "title": "Rain on limestone: a 3-minute storm, wet traces, films and channels",
-  "notes": [
-   "Our own GPU rain solver, rendered in clay: grey stone, blue water. The drops started as spheres (ping pong balls), became teardrops, and are now sessile drops that have wet the stone: flat base on the rock, edge feathering into it, full downhill and thin uphill, in the rounded, corner and cusp shapes running drops take.",
-   "The rock now remembers water. A sliding drop leaves a film behind; later drops grip less on wet stone, run faster, and steer toward wetter rock beside them, so they get captured by earlier paths. On the upper surfaces the tracks branch and converge into channels on their own.",
-   "On wet rock, water joins a film instead of beading. Excess film is held until there is enough to let go as a new drop (the bathtub micro-dam), which is also where drips under overhangs now come from.",
-   "What you see as a trace is drawn from the exact recorded path of every drop, snapped onto the stone, not from the coarse per-face map the physics uses.",
-   "The stone is limestone (~8% porosity). A storm from dry rock: a minute of drizzle, a minute of rain, a minute of downpour. On limestone a fresh trail is glossy for about a second, then soaks in and stays as a dark stain for hours: the stain is the trace of where water has been. Drops spread on soaked stone instead of beading. Next: the floor as a real destination for the water, and proper water shading."
-  ],
-  "media": [
-   {
-    "type": "video",
-    "src": "media/2026-10-09-rain/00_storm_timelapse.mp4",
-    "caption": "Time-lapse of the whole 3-minute storm on an interior wall, one frame per second. Drizzle never reaches inside; stains only appear once the outer stone is soaked enough to shed water, then multiply through the downpour, following the folds."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-09-rain/04_storm_end_interior.png",
-    "caption": "The same wall at the end of the storm."
-   },
-   {
-    "type": "video",
-    "src": "media/2026-10-09-rain/00_close_6s.mp4",
-    "caption": "Six seconds of the same wall (the last 6 s of a 24 s bake on pre-wetted rock). New tracks appear as drops run down existing ones. Subtle by design of this bake; the three-minute run from dry rock is next."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-09-rain/03_trace_on_rock.png",
-    "caption": "Wall close-up after 24 s of heavy rain on pre-wetted rock. Running tracks, impact spots at their real spread, beads. Traces wrapped onto the stone."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-09-rain/02_trace_channels.png",
-    "caption": "Upper surfaces: tracks branch and converge into channels, drops following earlier paths."
-   },
-   {
-    "type": "image",
-    "src": "media/2026-10-09-rain/01_first_wetmap.png",
-    "caption": "First look at the wet map, before the exact traces: blotchy, rightly criticised as a rough approximation of where water went."
-   }
-  ]
- }
+  {
+    "id": "2026-10-10-catchment",
+    "date": "2026-10-10",
+    "title": "Where the rain goes: a map of the sky above the sculpture",
+    "notes": [
+      "Which rain ends up inside? To answer it once and for all, a grid of 650,000 particles (one every centimetre, three per square, over the whole site) was dropped from above the sculpture. Each falls, runs downhill along the stone wherever it lands, drips off overhangs, spills over ledges, and is followed until it reaches the ground.",
+      "Every square of sky is then coloured by where its water ends up. In still air, rain falling on about 14.4 square metres of sky ends up on the 9 square metres of floor inside. Only 0.4 square metres of it falls straight through the openings without touching stone: most finds its way in by running down the inner walls, along the tubes that reach far out from the building, and through the low openings at the floor. A little more (0.8 square metres) lands on the floor outside and then runs or spills in across it, filling low spots on the way like real puddles.",
+      "In a light wind (2 m/s) the rain slants. The openings are tall, narrow shafts, so slanted rain hits their walls instead of falling through: the straight-through share drops to 0.14 square metres, while the water that runs in along the stone stays about the same.",
+      "This map now decides where rain is simulated in detail for the views from inside."
+    ],
+    "media": [
+      {
+        "type": "image",
+        "src": "media/2026-10-10-catchment/01_where_rain_goes_calm.png",
+        "caption": "Still air. Left: the sky above the site, each centimetre coloured by where its rain ends up: blue falls straight onto the inside floor, cyan reaches the inside floor after running down the stone, green lands on the floor outside and then runs or spills inside, grey ends up on the ground outside. The black outline is the floor inside the sculpture. Right: where that water arrives on the inside floor, darker where more arrives."
+      },
+      {
+        "type": "image",
+        "src": "media/2026-10-10-catchment/02_routes.png",
+        "caption": "The routes of forty sampled particles that end up inside. Black dots are where they start above the sculpture, red crosses where they reach the floor. Some start well outside the floor area and run in along the tubes. Right: their height along the way."
+      },
+      {
+        "type": "image",
+        "src": "media/2026-10-10-catchment/03_where_rain_goes_wind.png",
+        "caption": "The same map in a 2 m/s wind: almost nothing falls straight through the openings any more; the water comes in along the stone instead."
+      }
+    ]
+  }
 ]
