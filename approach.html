@@ -14,187 +14,110 @@
 </nav>
 <header>
   <h1>Gloam VR: approach</h1>
-  <p class="lede">The technology we use, the method we hold it to, what we have retired along the way and why, and
-    what comes next. Written in October 2026; dates below are from the project's commit history.</p>
+  <p class="lede">How the work is being made, the method it is held to, what was tried and set aside along the way, and
+    what comes next. Written in plain language, October 2026.</p>
 </header>
 <main class="prose">
 
 <h2>What we are building, and why</h2>
-<p>Gloam VR is a walkable virtual-reality sculpture: a pierced limestone dome that the visitor explores on foot,
-  crouching and sitting inside it. We are turning it into a living place: weather (starting with rain that behaves
-  like real water on real stone, then wind and dust), a ground shaped by that weather over years, and a custom player
-  that can show all of it at 90 frames per second. The visitor is always inside the sculpture, so the work is judged from inside: water running down the inner
-  walls, coming in through the openings, and collecting on the floor.</p>
-<p>The aim is rain whose behaviour comes from physics rather than from effects tuned by eye. Drops fall at the speed
-  their size dictates; the porous stone drinks water, darkens, and only sheds water once it is full; puddles hold edges
-  set by surface tension; splashes and ripples follow published measurements. A stain on the stone is a record of where
-  water actually went.</p>
-<p>No existing tool does this at the scale of the sculpture. Its wet surface is about 190 square metres, and a raindrop
-  is 0.5 to 4 mm across. A full 3D fluid simulation fine enough to resolve drops and films over that area would need
-  on the order of 10<sup>11</sup> cells. So we use reduced models (drops as particles, thin water layers on the
-  surfaces, absorption into the stone) and keep the full 3D solvers as references to check them against.</p>
+<p>Gloam is a vast cave, hand-sculpted in virtual reality over four years, that the visitor walks through in a headset
+  with nothing to hold and nothing to press. A complete cycle of natural light moves through it. We are now turning it
+  into a living place: weather (rain that behaves like real water on real stone, wind, dust), a ground under the
+  sculpture shaped by years of that weather, and a custom player that can show all of it.</p>
+<p>The visitor is always inside, so the work is judged from inside: water running down the inner walls, coming in
+  through the openings and gathering on the floor; dust settling in the light; the ground carrying the history of the
+  place.</p>
+<p>The aim is behaviour that comes from nature rather than from effects adjusted by eye. Drops fall at the speed their
+  size gives them; porous stone drinks water and darkens before it sheds any; puddles hold their edges the way surface
+  tension holds real ones; splashes follow measurements of real drops. A stain on the stone is a record of where water
+  actually went.</p>
 
-<h2>Technology</h2>
+<h2>What we use</h2>
 <dl>
-  <dt>Our own GPU rain solver, written with NVIDIA Warp</dt>
-  <dd>Warp is a Python framework for writing GPU code. On it we built the parts no off-the-shelf engine provides:
-    <ul>
-      <li><b>Falling rain:</b> drop sizes from the Marshall-Palmer distribution, fall speeds from Gunn and Kinzer's
-        measurements, and the flattened (not teardrop) shape of real falling drops.</li>
-      <li><b>Floor water:</b> a finite-volume shallow-water solver on 4 mm cells (a standard scheme from
-        hydraulics: MUSCL reconstruction, Audusse hydrostatic reconstruction for wet and dry ground, HLL fluxes,
-        friction, Heun time stepping). On top of it, contact-line physics: a puddle edge only advances when the water
-        stands high enough to overcome surface tension (about 2 to 3.5 mm, set by the contact angle), edges are
-        smoothed by curvature, they move at speeds from the Cox-Voinov law, and thin films on non-absorbent floors
-        break up into holes and beads. A spreading edge can only advance as fast as water reaches it through the sheet
-        behind it: a test now checks the edge against that supply law (it ran 1.5 times too fast until October 11).</li>
-      <li><b>Stone:</b> absorption by sorptivity (the square-root-of-time law for porous materials, with a published
-        limestone value) and sideways wicking through the pores.</li>
-      <li><b>Splash and ripples:</b> secondary droplets from published drop-impact studies, rebuilt on October 11: the
-        splash threshold uses only the speed into the surface and the surface's roughness (Bai and Gosman's model,
-        reconstructed from the open-source OpenFOAM code and an open thesis), droplet counts and sizes from Stow and
-        Stainer's raindrop measurements, so rough stone throws far more water than smooth steel (about 23 %, 7 % and
-        0.3 % for the same drop on stone, brushed and polished steel), a slanted drop sprays downstream, and small drops
-        bounce off water. Rings on standing water from a damped wave model.</li>
-      <li><b>Falling water:</b> a module that turns a source (a thrown bucket, or a falling stream) into water that
-        flies with air drag and lands with its momentum.</li>
-      <li><b>Catchment map:</b> 650,000 particles dropped over the whole site to find which rain actually ends up
-        inside, so detail is spent where a visitor can see it. It also maps where water reaches the floor: the inside
-        floor receives the rain of about 13.6 m2 of sky on its 9 m2, almost all of it as drips and run-off off the
-        stone, concentrated in sharp drip lines.</li>
-    </ul></dd>
-  <dt>Basilisk, an independent reference</dt>
-  <dd>An open-source research fluid solver (two-phase, with surface tension and contact angle). We run the same case in
-    Basilisk and in our solver and compare them side by side.</dd>
-  <dt>Blender for review renders</dt>
-  <dd>Clay renders (grey stone, blue water) in EEVEE, so shape and behaviour can be judged without lighting getting in
-    the way. No motion blur and no depth of field: drops are drawn at their true size, as the headset shows them.</dd>
-  <dt>Unity for the headset, and Gloam's own real-time player</dt>
-  <dd>The sculpture runs in Unity at 90 frames per second on an RTX 3090. Gloam now also has its own real-time player
-    alongside the Unity build: a custom engine written in Rust on Vulkan, with OpenXR for the headset, so it works with
-    any PC VR headset rather than one vendor's software. It replaces Unity's lightmap streaming (which stalled every
-    frame it touched), and is the foundation for live light: hardware ray tracing on the graphics card computes
-    sunlight, shadows, dust and the bake tests directly against the full sculpture. It is meant to retire, over time,
-    the year-long offline bake and the terabyte of lightmaps that comes with it.</dd>
-  <dd>For water, the same ray tracing means a falling drop can land exactly where it would on the real sculpture, and
-    a puddle can reflect the actual cave. All water physics is kept engine-neutral, so it runs in either. The plan:
-    the fast layers (wetness, films, ripples, dust and patina) as GPU computation on one shared record of the stone's
-    surface, falling rain and splashes as GPU particles, and only slow fields such as the catchment map precomputed.</dd>
+  <dt>Our own water simulation, running on the graphics card</dt>
+  <dd>No existing tool can simulate rain at the scale of the sculpture (about 190 square metres of wet surface, drops a
+    few millimetres across), so we write our own, focused on what matters at this scale: falling drops, splashes,
+    water films and beads on the stone, absorption into its pores, drying, and the water that gathers on the floor.</dd>
+  <dt>Independent reference simulations</dt>
+  <dd>A research-grade fluid simulator, run on small cases, to check our own results against.</dd>
+  <dt>Gloam's own real-time player</dt>
+  <dd>The sculpture runs today in Unity. Gloam now also has its own real-time player, built for it, which removes the
+    stutter Unity has when it loads each new step of the light, works with any PC headset, and can trace light directly
+    against the full sculpture on the graphics card. That last part matters for weather: a drop can land exactly where it
+    would on the real stone, and a puddle can reflect the actual cave.</dd>
+  <dt>Study renders</dt>
+  <dd>Simple grey-stone, blue-water renders, so behaviour can be judged without lighting getting in the way. No motion
+    blur and no depth of field: drops are shown at their true size, as a headset shows them.</dd>
 </dl>
 
 <h2>Method</h2>
-<p>This is a research project, not trial and error. Every change follows the same steps, recorded in a living research
-  plan:</p>
+<p>This is a research project, not trial and error. Every change follows the same steps:</p>
 <ol>
-  <li><b>Research first.</b> Find the governing physics and its constants in the literature, with sources and the range
-    in which they hold.</li>
-  <li><b>Compare approaches.</b> At least two candidate algorithms, including how established codes solve the same
-    problem, and a written reason for the choice.</li>
-  <li><b>Physical parameters only.</b> Any number without a source is listed as a model choice, a debt to be
-    justified by a measurement or replaced.</li>
-  <li><b>Validate up a ladder</b> before anything is rendered for review:
-    <ul>
-      <li>L0: automated tests against exact solutions (absorption over time, puddle edge height, the dam-break
-        solution, terminal speeds, wave damping);</li>
-      <li>L1: published experiments (how far drops spread, splash counts and angles);</li>
-      <li>L2: the same case in a reference solver (Basilisk);</li>
-      <li>L3: photographs and video of the real thing, including published footage;</li>
-      <li>L4: the artist's review, in the headset or on this site.</li>
-    </ul></li>
-  <li><b>Record what failed</b> as well as what worked.</li>
+  <li><b>Research first:</b> find what the scientific literature says about the phenomenon, with sources.</li>
+  <li><b>Compare approaches,</b> including how established tools handle the same problem, and write down the reason
+    for the choice.</li>
+  <li><b>Physical values only:</b> any number without a source is listed as a debt, to be measured or replaced.</li>
+  <li><b>Check before showing:</b> automatic tests against exact answers, then published experiments, then the
+    reference simulations, then photographs and film of the real thing, and finally the artist's review.</li>
+  <li><b>Record what failed</b> as well as what worked (below).</li>
 </ol>
-<p>A picture that looks wrong is never fixed by turning a knob: the question is which physics is missing or which
-  constant is wrong. On top of the tests, the code is audited adversarially: independent AI reviewers are asked to
-  find what is broken, each finding is checked, and a fix only counts once a test exists that would have caught the
-  bug. Audits ran on October 9, 10 and 11, 2026.</p>
+<p>A picture that looks wrong is never fixed by turning a knob: the question is which piece of nature is missing.
+  Independent AI reviewers are also asked to find what is broken; each finding is checked, and a fix only counts once a
+  test exists that would have caught the problem.</p>
 
-<h2>Retired, and why</h2>
+<h2>Set aside, and why</h2>
 <dl>
-  <dt>Blender's FLIP fluid for whole-sculpture rain<span class="when">turned off Oct 9</span></dt>
-  <dd>A general 3D fluid solver cannot reach millimetre scale over the whole sculpture, and the runs were too heavy.
-    Full 3D solvers are now used only as references on small cases.</dd>
-  <dt>Traces drawn as ribbons over the stone<span class="when">Oct 9</span></dt>
-  <dd>Ribbons floated above the surface or sank into it. Water traces are now painted into the stone itself, as stains.
-    See the <a href="archive.html">progress archive</a>.</dd>
+  <dt>A general-purpose fluid simulator for the whole sculpture<span class="when">Oct 9</span></dt>
+  <dd>It could not reach millimetre detail over the whole cave, and runs were far too heavy. Such tools are now used
+    only as references on small cases.</dd>
+  <dt>Water traces drawn as ribbons over the stone<span class="when">Oct 9</span></dt>
+  <dd>They floated above the surface or sank into it. Traces are now painted into the stone itself, as stains.</dd>
   <dt>Motion blur in review renders<span class="when">Oct 9</span></dt>
-  <dd>A headset shows each instant sharp, so the renders now do too, with drops at their true size.</dd>
-  <dt>"Thin film means dry ground" and a hand-set edge tension<span class="when">Oct 10</span></dt>
-  <dd>A floor cell whose water fell below a threshold was treated as dry, which froze spreading water and left a
-    falsely dry middle with specks. Research showed such a film is still wet until a hole actually opens; cells now
-    remember being wet. A free edge-tension setting was replaced by the curvature term from capillary physics, which
-    has no knob.</dd>
-  <dt>The virtual-pipe floor solver<span class="when">Oct 10</span></dt>
-  <dd>The first floor model moved water between cells through "virtual pipes", a common graphics technique. A
-    comparison with Basilisk exposed one error in it, and then the exact dam-break test (Ritter's solution) showed its
-    front running at about 40 % of the correct speed: it has no momentum advection, fine for slow films but wrong for
-    spills, runoff and water landing hard. It was replaced by a finite-volume shallow-water solver, the approach used
-    by established codes, which matches Ritter's front (0.354 m against 0.352 m exact).</dd>
-  <dt>Forward-Euler time stepping<span class="when">Oct 10</span></dt>
-  <dd>A disturbed puddle on a flat floor gained energy instead of losing it: the time stepping itself was adding energy.
-    Replaced by Heun's method (a two-stage scheme used by the reference codes). The leftover unevenness of a settled
-    basin dropped from 3.56 mm to 0.13 mm, and a new test checks that waves always lose energy.</dd>
-  <dt>A level-set contact line<span class="when">built and set aside Oct 10</span></dt>
-  <dd>To make spreading puddles rounder on the square grid, we built a sub-cell front (the remedy used in
-    solidification and wildfire modelling). On its own it was the roundest, but the geometric front and the actual water
-    came apart, leaving a ragged skirt of empty cells ahead of the puddle. It is kept, switched off, and a narrower
-    grid rule was adopted. A small four-fold imprint (2 to 3 %, target 1.5 %) remains, recorded as open.</dd>
-  <dt>The 10-second "bucket"<span class="when">Oct 11</span></dt>
-  <dd>The spill test released a bucket over 10 seconds at a fixed impact speed; a real throw is over in well under a
-    second. Fixing it also revealed that thrown water lost all its forward momentum on dry floor, so every "throw" so far
-    had landed as if dropped. A physical throw model (release, flight with drag, landing with momentum) replaced it.</dd>
-  <dt>Joining a cell to a puddle at 90 % of its threshold<span class="when">Oct 11</span></dt>
-  <dd>A new test compared the speed of a creeping edge with the rate water can reach it through the sheet behind it
-    (a lubrication law with no free parameter). Edges ran 1.5 times too fast: cells joined the puddle before holding the
-    depth the edge leaves behind, and the momentum pushing on the edge was measured in the wrong frame. Both corrected;
-    the edge now matches the law, and spreading puddles are rounder (grid imprint 1.0 %).</dd>
-  <dt>Three experiments that did not make it<span class="when">Oct 11</span></dt>
-  <dd>A boundary-layer model for wave damping was built and fitted to the exact theory, but the solver's own numerical
-    damping already supplies about the right amount for a clean surface, so adding it would count damping twice; it is
-    kept for contaminated (dusty) puddles. A sharper slope limiter made ripples last longer but made spreading puddles
-    squarer. A rule to make edges advance equally at every angle to the grid helped one test and broke four others.
-    And one wrong diagnosis: we believed thrown water stayed blotchy because some cells were disconnected; measured, the
-    water surface was flat and the blotches were the floor's own 1 mm bumps showing through in a depth-coloured view.</dd>
+  <dd>A headset shows each instant sharp, so the renders now do too.</dd>
+  <dt>The first floor-water model<span class="when">Oct 10</span></dt>
+  <dd>A common graphics technique, but checked against an exact answer it moved spreading water at about 40 % of the
+    right speed. Replaced by a standard approach from hydraulics engineering, which matches the exact answer.</dd>
+  <dt>Edges that ran ahead of their water<span class="when">Oct 11</span></dt>
+  <dd>A new test checks that a spreading puddle's edge moves only as fast as water can reach it. It was moving 1.5
+    times too fast; corrected, and puddles came out rounder too.</dd>
+  <dt>Experiments that did not make it<span class="when">Oct 10 and 11</span></dt>
+  <dd>Several ideas were built, measured and set aside because they made other things worse: a sharper way of drawing
+    puddle edges, an extra model of ripple damping that turned out to count damping twice, and a rule meant to make edges
+    spread equally in every direction that broke four other checks. One wrong diagnosis is recorded too: we believed
+    thrown water stayed blotchy; measured, the water was flat, and the blotches were the floor's own small bumps showing
+    through a depth-coloured view.</dd>
   <dt>The first wall model, set aside for now</dt>
-  <dd>Beads, films, trails and stains on the sculpture walls were built before this method was adopted (see the
-    <a href="archive.html">archive</a>). Work moved to the floor first; the walls come back under the same method
-    later.</dd>
+  <dd>Beads, films, trails and stains on the walls were built before this method was adopted (see the
+    <a href="archive.html">archive</a>). They will come back under the same method.</dd>
 </dl>
 
-<h2>Trying next</h2>
+<h2>Next</h2>
 <ol>
-  <li><b>Water in the custom player:</b> a renderer for the floor studies (water surface reflecting and refracting
-    the stone, wet darkening from the stone's moisture, true-size drops and splash droplets), checked against the
-    Blender renders, then rain landing on the real sculpture by ray tracing.</li>
-  <li><b>Wet materials from the literature:</b> why stone darkens when wet (light trapped under the water film, and
-    water filling the pores), how gloss grows with the film, and how falling drops really look against the cave.</li>
-  <li><b>A living ground:</b> the floor under the sculpture shaped by where water has fallen for years (the arrival
-    map above), and the water simulated on that real ground instead of a flat test slab.</li>
-  <li><b>Dust and water together:</b> the space starts with its own patina; rain washes dust realistically (partly, by a
-    measured wash-off law), drying puddles leave tide lines, and dust on a puddle changes how its ripples die out.</li>
-  <li><b>Compare against published experiments:</b> a water jet on a dry plate filmed from first contact (Mallik et
-    al., 2026), and the classic collapse of a water column.</li>
-  <li><b>Slopes and rivulets:</b> the same solver on an incline, checked against the measured finger spacing of
-    water running down a slope.</li>
-  <li><b>Splash reference:</b> single drops in Basilisk, and a published crown-splash benchmark, against our splash
-    model.</li>
-  <li><b>Walls and drips:</b> bring the sculpture walls up to this method (a thin-film model on the mesh; drip size
-    from Tate's law).</li>
-  <li><b>Drying and appearance,</b> then back to the sculpture and into the headset.</li>
+  <li><b>Water in Gloam's own player:</b> water surfaces that reflect and show the stone beneath, stone that darkens as
+    it gets wet, true-size drops and splashes; then rain landing on the real sculpture.</li>
+  <li><b>How wet things look:</b> why stone darkens when wet, how it starts to shine as water builds up, and how falling
+    drops really appear against a dark cave, all from published research.</li>
+  <li><b>A living ground:</b> the floor shaped by where water has fallen for years, and water simulated on that ground.</li>
+  <li><b>Dust and water together:</b> the space starts with its own patina; rain cleans dust realistically, partly and
+    never completely; drying puddles leave faint rings; wind brings dust back in.</li>
 </ol>
-<p>Measurements we would like: a soak test on a tile of the sculpture's stone (its absorption rate is currently a
-  published limestone value, not measured), and filmed spills of known volume with a ruler in frame.</p>
-
+<p>Measurements we would like: a soak test on a tile of real stone, and filmed spills of known size with a ruler in
+  frame.</p>
 
 <h2>Known limits today</h2>
 <ul>
-  <li>No evaporation yet: in the current floor bench, damp stone never dries.</li>
-  <li>The stone has no colour texture in review renders; they show shape and behaviour, not final look.</li>
-  <li>Straight puddle edges at 45 degrees to the grid advance about 9 % slower than edges along it (round puddles are
-    round to 1 %); the fix needs a sub-cell model of the edge and is parked.</li>
-  <li>How thin water breaks into puddles on non-absorbent floors (steel) is a placeholder until rebuilt.</li>
+  <li>Straight puddle edges spread about 9 % slower in some directions than others; round puddles are round to 1 %.</li>
+  <li>How thin water breaks into small puddles on a non-absorbing floor is still a placeholder.</li>
+  <li>Study renders show shape and behaviour, not final colour or light.</li>
 </ul>
-<p class="small">Sources: the project's research plan and research notes on floor spreading, front isotropy, falling
-  water, reference footage and rain technology, the October 11 audit, and the commit history.</p>
+
+<h2>Sources</h2>
+<p class="small">Raindrops and splashes: Gunn and Kinzer 1949; Marshall and Palmer 1948; Stow and Stainer 1977; Stow and
+  Hadfield 1980; Mundo, Sommerfeld and Tropea 1995; Cossali, Coghe and Marengo 1997; Bai, Rusche and Gosman 2002; Okawa,
+  Shiraishi and Mori 2006; Brown, Jepsen and Yoon 2008. Water on surfaces: Cox 1986; Voinov 1976; Snoeijer and Eggers
+  2010; Herminghaus and Brochard-Wyart 2006; Redon, Brochard-Wyart and Rondelez 1991; Fu, Li and Fan 2024 (stainless
+  steel). Stone and absorption: Hall and Hoff, Water Transport in Brick, Stone and Concrete. Waves: Lamb, Hydrodynamics
+  1932; Liu and Orfila 2004. Floor water: Ritter 1892 (the exact dam-break answer used as a test).</p>
 </main>
 </body>
 </html>
