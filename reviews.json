@@ -241,5 +241,100 @@
   "status": "archived",
   "superseded_by": "2026-10-10-rain-inside",
   "superseded_note": "In these first studies the traces were drawn as thin ribbons laid over the stone, which sometimes floated above the surface or sank into it. A physics review against the literature followed: drips now let go at their real size, sliding speed depends on drop size, and water passes from one surface to the next instead of piling up. The next study showed everything from inside, where a visitor always is, and painted the traces into the stone itself."
+ },
+ {
+  "id": "2026-10-11-custom-player",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T13:40-04:00",
+  "title": "A custom real-time player for Gloam",
+  "notes": [
+   "Gloam's day of light is about 16,000 baked 8K lightmaps that must stream into the headset while the visitor walks. In the Unity build, every lightmap swap freezes the main thread for 80 to 95 ms, which is the source of the stutter, the pace limit and the loading spinner. To remove that limit at its root, we started a custom real-time player for Gloam, written from scratch.",
+   "First measurements, rendering the full sculpture (5.9 million triangles) in stereo at Quest 3 eye resolution at 90 frames per second: about 4 ms of GPU time per frame. Lightmap uploads now happen alongside rendering without stalling the frame. No frame went over the 11.1 ms budget, even while streaming lightmaps back to back at more than ten times Unity's maximum rate.",
+   "The player also runs as a desktop walk-through without a headset, and has a gallery mode built for unattended exhibitions: it waits for the headset, reconnects by itself after a drop, keeps the computer awake, and fits the work to each venue's room (position, orientation, scale) with a subtle boundary that only appears near the visitor's head and hands.",
+   "Known limits: these numbers are measured on the workstation without a headset; the in-headset run (with the compositor and the link to the headset) is scheduled for mid-October."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-custom-player/player-frame640.png",
+    "caption": "Frame 640 of the day, rendered by the new player from where the visitor starts."
+   }
+  ],
+  "status": "current"
+ },
+ {
+  "id": "2026-10-11-rebake-vs-octane",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T13:41-04:00",
+  "title": "Re-baking the light: a first test against Octane",
+  "notes": [
+   "The original lightmaps took about a year of overnight rendering in Octane (around 3 minutes per 8K map at the end). We tested whether modern GPU ray tracing can produce the same light much faster. Reading the original Octane project revealed that the sculpture's material is a plain grey: all of Gloam's purple comes from the light itself, a blue sky and blue ground mixing with a red sunset.",
+   "A first test bake of the main interior piece, using the same material and sky colours, took 4.6 seconds at 2K resolution (about 75 seconds at the full 8K, before any denoising) and places the light where Octane did (0.92 correlation). Colours are not yet a match: the upper wall reads redder than Octane's blue-violet, because Octane's sky model is not public and is approximated here.",
+   "We also measured how the bounced light changes as the sun moves: smoothly enough that a handful of snapshots per hour of the day, blended, reproduce the in-between moments within 1.5 %. That points to a live version of Gloam's light: sharp sunlight and shadows computed in real time, soft bounced light precomputed, so clouds, weather and passing birds can change the light as you watch.",
+   "Known limits: one piece of the sculpture, one moment of the day, noisy, and the sky colours are still approximate."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-rebake-vs-octane/bake-vs-octane.png",
+    "caption": "Left, the original Octane lightmaps. Right, the same view with the main interior piece re-baked on the GPU in seconds."
+   }
+  ],
+  "status": "current"
+ },
+ {
+  "id": "2026-10-11-dust-gpu",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T13:42-04:00",
+  "title": "Dust in the light, on the GPU",
+  "notes": [
+   "The dust motes that carry the sun's shafts were moved from Unity's particle system into the new player, keeping the settled art direction (tiny grains, most of them resting on the rock, some sticky, some lifted by gusts). Two things improved: grains now land on the true surface of the sculpture instead of an approximation a few centimetres above it, and each grain's sunlight is computed against the real sculpture on every frame of the day, not just at one baked moment.",
+   "Up to 300,000 grains cost about 0.4 ms per frame. The image shows the check that the light is right: grains in sunlight (red) sit exactly in the sun patch on the floor, grains in shade are blue.",
+   "Known limits: at the current art-directed values the motes are very sparse in still images; they need to be judged in motion, in the headset."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-dust-gpu/dust-sunlit-check.png",
+    "caption": "Check view: red grains are in direct sun, blue ones in shade; the red cluster matches the floor's sun patch."
+   }
+  ],
+  "status": "current"
+ },
+ {
+  "id": "2026-10-11-visibility-census",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T13:43-04:00",
+  "title": "What a visitor can actually see",
+  "notes": [
+   "We simulated about 950 visitor head positions inside the cave, from lying on the floor to standing tall, looking in every direction. Only 41 % of the sculpture's surface is ever visible from inside; the rest (tube interiors, folds, the exterior) never is. Meanwhile, 44 square metres can be seen from closer than 25 cm, by visitors who crouch or lie down and press their faces to the rock.",
+   "This explains why pixels can show in the current build: uniform 8K maps spend most of their detail on surfaces nobody sees and too little on the ones people press close to. The new lighting direction puts detail only where it can be seen, at the density each surface needs."
+  ],
+  "media": [],
+  "status": "current"
+ },
+ {
+  "id": "2026-10-11-living-ground",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T13:44-04:00",
+  "title": "A living ground",
+  "notes": [
+   "Until now the floor under the sculpture was flat and dead. We are giving it a history: what this ground would look like if the space had stood for years under real rain, wind and time. The shaping is grounded in the sculpture itself: how much rain reaches each part of the floor (mostly dripping and running off the stone, from the rain research's catchment map, second image), how much sky and sun each spot gets over the day, and where the rock meets the floor.",
+   "A first simulated history gives about 15 cm of relief: hollows and channels under the drip lines, mud where water lingers, sand and dust in dry corners, stones laid bare where water ran. The ground never drops where the sculpture meets it, so no new openings appear at its base. Next: building it in 3D with grass, moss, stones and a few strange flowers where life would take hold, and possibly a scent for each part of the ground.",
+   "Known limits: a first pass, shown from above; the plant growth rules still need work."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-living-ground/living-ground-first-pass.png",
+    "caption": "First simulated history of the floor, from above: materials (left), relief (middle, blue = hollows), where water flows (right)."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-11-floor-arrival/00_arrival_map.png",
+    "caption": "The input: where rain reaches the floor, per unit of rain (1 = open sky), from the catchment map."
+   }
+  ],
+  "status": "current"
  }
 ]

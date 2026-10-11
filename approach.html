@@ -69,14 +69,17 @@
   <dt>Blender for review renders</dt>
   <dd>Clay renders (grey stone, blue water) in EEVEE, so shape and behaviour can be judged without lighting getting in
     the way. No motion blur and no depth of field: drops are drawn at their true size, as the headset shows them.</dd>
-  <dt>Unity for the headset, and a custom player under evaluation</dt>
-  <dd>The sculpture runs in Unity at 90 frames per second on an RTX 3090. In parallel, a custom player is being
-    prototyped (Rust, Vulkan and OpenXR) to remove the stall Unity has when it uploads each 8K lightmap, and to give the
-    water direct access to hardware ray tracing: a falling drop can trace its path against the real mesh to land exactly
-    where it would, and a puddle can reflect the actual lightmapped cave. All water physics is kept engine-neutral (our
-    own GPU compute), so it can run in either. The plan for rain in the headset: the fast layers (wetness, films,
-    ripples, dust and patina) as GPU compute on one shared surface record, falling rain and splashes as GPU particles,
-    and only slow fields such as the catchment map baked.</dd>
+  <dt>Unity for the headset, and Gloam's own real-time player</dt>
+  <dd>The sculpture runs in Unity at 90 frames per second on an RTX 3090. Gloam now also has its own real-time player
+    alongside the Unity build: a custom engine written in Rust on Vulkan, with OpenXR for the headset, so it works with
+    any PC VR headset rather than one vendor's software. It replaces Unity's lightmap streaming (which stalled every
+    frame it touched), and is the foundation for live light: hardware ray tracing on the graphics card computes
+    sunlight, shadows, dust and the bake tests directly against the full sculpture. It is meant to retire, over time,
+    the year-long offline bake and the terabyte of lightmaps that comes with it.</dd>
+  <dd>For water, the same ray tracing means a falling drop can land exactly where it would on the real sculpture, and
+    a puddle can reflect the actual cave. All water physics is kept engine-neutral, so it runs in either. The plan:
+    the fast layers (wetness, films, ripples, dust and patina) as GPU computation on one shared record of the stone's
+    surface, falling rain and splashes as GPU particles, and only slow fields such as the catchment map precomputed.</dd>
 </dl>
 
 <h2>Method</h2>
