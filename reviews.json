@@ -336,5 +336,20 @@
    }
   ],
   "status": "current"
+ },
+ {
+  "id": "2026-10-11-how-wet-things-look",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T10:53-04:00",
+  "title": "How wet stone and rain really look: what the research says",
+  "notes": [
+   "Before drawing any water in Gloam's own player, we read what science has measured about how wet things look, and it corrected several of our own assumptions.",
+   "Stone darkens when wet for two reasons: light gets trapped under the thin film of water and has more chances to be absorbed, and water filling the pores makes the stone scatter less light. A surprise: pale stone darkens LESS than dark stone, in proportion. Pale carbonate sand darkens by only about a tenth. So a pale cave will not turn dramatically dark in rain; a photograph of the real stone, dry and wet, will set the exact amount.",
+   "A falling raindrop is a tiny lens: it gathers light from a wide cone of the scene behind it, so it usually looks brighter than its background, whatever that background is. In a headset there is no motion blur, and a drop drawn once per frame at 90 frames per second would appear as a string of separate dots about 10 cm apart. What the eye sees in reality is closer to a faint streak; a test in the headset will decide how to show it truthfully. Drips inside the cave fall more slowly than rain from the sky (4 to 8 m/s instead of about 9).",
+   "Over the life of an exhibition, the visible record of the weather will come from dust, the channels rain washes through it, faint rings where puddles dry, and drying stains. Rain cleans dust realistically: partly, more where drops strike, never completely. Mineral growth on the stone itself is far too slow to see (microns per week).",
+   "Sources: Lekner and Dorf 1988 (why things are darker when wet); Twomey, Bohren and Mergenthaler 1986 (pore filling); Jensen, Legakis and Dorsey 1999 (rendering wet materials); Zhang and Voss 2006 (wet carbonate sand); Garg and Nayar 2003 and 2006 (appearance of raindrops and rain streaks); Sartor and Boyd 1972 (street dust wash-off); Righetti and Lucarelli 2007 (detachment by drop impact); Deegan et al. 1997, Hu and Larson 2002, Popov 2005 (rings left by drying drops); Lienhard (heat and mass transfer, drying); Dreybrodt 1999 and Baker 1998 (calcite growth rates)."
+  ],
+  "media": [],
+  "status": "current"
  }
 ]
