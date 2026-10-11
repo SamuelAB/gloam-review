@@ -61,3 +61,7 @@ figure img { cursor: zoom-in; }
 .prose dt .when { font-weight: 400; color: var(--muted); font-size: 14px; margin-left: 6px; }
 .prose dd { margin: 4px 0 0; }
 .prose .small { color: var(--muted); font-size: 14px; }
+
+/* index: illustrated introduction above the work feed */
+.intro { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 16px 0 18px; }
+@media (min-width: 760px) { .intro { grid-template-columns: 2fr 1fr; } .intro figure:first-child { grid-row: span 2; } }
