@@ -419,5 +419,29 @@
    }
   ],
   "status": "current"
+ },
+ {
+  "id": "2026-10-11-dust-god-rays",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T11:31-04:00",
+  "title": "Sunbeams made of dust",
+  "notes": [
+   "A sunbeam in a dusty room is millions of grains, each too small to see, catching the light together. Gloam's player now shows that: beams of glowing dust cross the cave from the openings to the patches of sun on the rock and floor. The beams are not painted. They are dust drifting in the cave's wind, and they glow only where the sun really reaches through the sculpture, so their edges are the edges of the openings and they move as the day moves.",
+   "The dust also takes its colour from Gloam's own light. In the beams it has the tint of the sunlit patches; in the shade, grains catch the purple and blue glow of the cave around them, so dust is faintly there everywhere, not only in the sun.",
+   "Limits: a first pass, judged on a monitor. Dust is about movement and depth; the real test is in the headset."
+  ],
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-11-dust-god-rays/dust-god-rays.mp4",
+    "caption": "Eight seconds in the cave as the sun moves; the beams shift with it."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-11-dust-god-rays/dust-god-rays.jpg",
+    "caption": "A still from the same place."
+   }
+  ],
+  "status": "current"
  }
 ]
