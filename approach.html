@@ -45,15 +45,22 @@
         friction, Heun time stepping). On top of it, contact-line physics: a puddle edge only advances when the water
         stands high enough to overcome surface tension (about 2 to 3.5 mm, set by the contact angle), edges are
         smoothed by curvature, they move at speeds from the Cox-Voinov law, and thin films on non-absorbent floors
-        break up into holes and beads.</li>
+        break up into holes and beads. A spreading edge can only advance as fast as water reaches it through the sheet
+        behind it: a test now checks the edge against that supply law (it ran 1.5 times too fast until October 11).</li>
       <li><b>Stone:</b> absorption by sorptivity (the square-root-of-time law for porous materials, with a published
         limestone value) and sideways wicking through the pores.</li>
-      <li><b>Splash and ripples:</b> secondary droplets whose counts, sizes, speeds and angles come from published
-        drop-impact studies; rings on standing water from a damped wave model.</li>
+      <li><b>Splash and ripples:</b> secondary droplets from published drop-impact studies, rebuilt on October 11: the
+        splash threshold uses only the speed into the surface and the surface's roughness (Bai and Gosman's model,
+        reconstructed from the open-source OpenFOAM code and an open thesis), droplet counts and sizes from Stow and
+        Stainer's raindrop measurements, so rough stone throws far more water than smooth steel (about 23 %, 7 % and
+        0.3 % for the same drop on stone, brushed and polished steel), a slanted drop sprays downstream, and small drops
+        bounce off water. Rings on standing water from a damped wave model.</li>
       <li><b>Falling water:</b> a module that turns a source (a thrown bucket, or a falling stream) into water that
         flies with air drag and lands with its momentum.</li>
       <li><b>Catchment map:</b> 650,000 particles dropped over the whole site to find which rain actually ends up
-        inside, so detail is spent where a visitor can see it.</li>
+        inside, so detail is spent where a visitor can see it. It also maps where water reaches the floor: the inside
+        floor receives the rain of about 13.6 m2 of sky on its 9 m2, almost all of it as drips and run-off off the
+        stone, concentrated in sharp drip lines.</li>
     </ul></dd>
   <dt>Basilisk, an independent reference</dt>
   <dd>An open-source research fluid solver (two-phase, with surface tension and contact angle). We run the same case in
@@ -61,10 +68,14 @@
   <dt>Blender for review renders</dt>
   <dd>Clay renders (grey stone, blue water) in EEVEE, so shape and behaviour can be judged without lighting getting in
     the way. No motion blur and no depth of field: drops are drawn at their true size, as the headset shows them.</dd>
-  <dt>Unity for the headset</dt>
-  <dd>The sculpture runs in Unity at 90 frames per second on an RTX 3090. The plan for rain there is to run the fast
-    layers (wetness, films, ripples) as GPU compute on the visible surfaces, draw falling rain and splashes as GPU
-    particles, and bake only slow fields such as the catchment map.</dd>
+  <dt>Unity for the headset, and a custom player under evaluation</dt>
+  <dd>The sculpture runs in Unity at 90 frames per second on an RTX 3090. In parallel, a custom player is being
+    prototyped (Rust, Vulkan and OpenXR) to remove the stall Unity has when it uploads each 8K lightmap, and to give the
+    water direct access to hardware ray tracing: a falling drop can trace its path against the real mesh to land exactly
+    where it would, and a puddle can reflect the actual lightmapped cave. All water physics is kept engine-neutral (our
+    own GPU compute), so it can run in either. The plan for rain in the headset: the fast layers (wetness, films,
+    ripples, dust and patina) as GPU compute on one shared surface record, falling rain and splashes as GPU particles,
+    and only slow fields such as the catchment map baked.</dd>
 </dl>
 
 <h2>Method</h2>
@@ -127,6 +138,18 @@
   <dd>The spill test released a bucket over 10 seconds at a fixed impact speed; a real throw is over in well under a
     second. Fixing it also revealed that thrown water lost all its forward momentum on dry floor, so every "throw" so far
     had landed as if dropped. A physical throw model (release, flight with drag, landing with momentum) replaced it.</dd>
+  <dt>Joining a cell to a puddle at 90 % of its threshold<span class="when">Oct 11</span></dt>
+  <dd>A new test compared the speed of a creeping edge with the rate water can reach it through the sheet behind it
+    (a lubrication law with no free parameter). Edges ran 1.5 times too fast: cells joined the puddle before holding the
+    depth the edge leaves behind, and the momentum pushing on the edge was measured in the wrong frame. Both corrected;
+    the edge now matches the law, and spreading puddles are rounder (grid imprint 1.0 %).</dd>
+  <dt>Three experiments that did not make it<span class="when">Oct 11</span></dt>
+  <dd>A boundary-layer model for wave damping was built and fitted to the exact theory, but the solver's own numerical
+    damping already supplies about the right amount for a clean surface, so adding it would count damping twice; it is
+    kept for contaminated (dusty) puddles. A sharper slope limiter made ripples last longer but made spreading puddles
+    squarer. A rule to make edges advance equally at every angle to the grid helped one test and broke four others.
+    And one wrong diagnosis: we believed thrown water stayed blotchy because some cells were disconnected; measured, the
+    water surface was flat and the blotches were the floor's own 1 mm bumps showing through in a depth-coloured view.</dd>
   <dt>The first wall model, set aside for now</dt>
   <dd>Beads, films, trails and stains on the sculpture walls were built before this method was adopted (see the
     <a href="archive.html">archive</a>). Work moved to the floor first; the walls come back under the same method
@@ -135,11 +158,17 @@
 
 <h2>Trying next</h2>
 <ol>
-  <li><b>Close the October 11 audit.</b> Its open findings include momentum lost in partly filled cells, very light
-    rain on deep water vanishing to rounding error, walls wrongly counted as dry floor at puddle edges, and GPU results
-    that differ slightly between identical runs. Deterministic sums come first, so the test suite is reproducible.</li>
-  <li><b>Finish floor spreading,</b> then compare against published experiments: a water jet on a dry plate filmed
-    from first contact (Mallik et al., 2026), and the classic collapse of a water column.</li>
+  <li><b>Water in the custom player:</b> a renderer for the floor studies (water surface reflecting and refracting
+    the stone, wet darkening from the stone's moisture, true-size drops and splash droplets), checked against the
+    Blender renders, then rain landing on the real sculpture by ray tracing.</li>
+  <li><b>Wet materials from the literature:</b> why stone darkens when wet (light trapped under the water film, and
+    water filling the pores), how gloss grows with the film, and how falling drops really look against the cave.</li>
+  <li><b>A living ground:</b> the floor under the sculpture shaped by where water has fallen for years (the arrival
+    map above), and the water simulated on that real ground instead of a flat test slab.</li>
+  <li><b>Dust and water together:</b> the space starts with its own patina; rain washes dust realistically (partly, by a
+    measured wash-off law), drying puddles leave tide lines, and dust on a puddle changes how its ripples die out.</li>
+  <li><b>Compare against published experiments:</b> a water jet on a dry plate filmed from first contact (Mallik et
+    al., 2026), and the classic collapse of a water column.</li>
   <li><b>Slopes and rivulets:</b> the same solver on an incline, checked against the measured finger spacing of
     water running down a slope.</li>
   <li><b>Splash reference:</b> single drops in Basilisk, and a published crown-splash benchmark, against our splash
@@ -156,7 +185,9 @@
 <ul>
   <li>No evaporation yet: in the current floor bench, damp stone never dries.</li>
   <li>The stone has no colour texture in review renders; they show shape and behaviour, not final look.</li>
-  <li>Puddles on a perfectly uniform floor still carry the small four-fold imprint described above.</li>
+  <li>Straight puddle edges at 45 degrees to the grid advance about 9 % slower than edges along it (round puddles are
+    round to 1 %); the fix needs a sub-cell model of the edge and is parked.</li>
+  <li>How thin water breaks into puddles on non-absorbent floors (steel) is a placeholder until rebuilt.</li>
 </ul>
 <p class="small">Sources: the project's research plan and research notes on floor spreading, front isotropy, falling
   water, reference footage and rain technology, the October 11 audit, and the commit history.</p>

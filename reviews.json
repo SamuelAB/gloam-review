@@ -1,5 +1,25 @@
 [
  {
+  "id": "2026-10-11-floor-arrival",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T10:31-04:00",
+  "title": "Where rain reaches the floor, and edges that obey their water supply",
+  "notes": [
+   "A map of where rain actually reaches the ground under and around the sculpture, seen from above. Particles fall from a 1 cm grid over the whole site, run down the stone, drip off overhangs and edges, and land. The colour is how much water each spot receives compared with open sky: outside it is 1 (purple); under the stone most of the floor gets almost nothing (black), and the water arrives in bright rings and drip lines along the edges above, tens of times open-sky rain.",
+   "The inside floor (9 square metres, blue outline) receives the rain of about 13.6 square metres of sky, but almost all of it (13.2) after running on the stone; only 0.4 comes straight through the openings in the roof. This map is now the input for a living ground: the floor under the sculpture shaped by where water has fallen for years.",
+   "Floor water physics, same day: a new test compares how fast a creeping puddle edge advances with how fast water can reach it through the sheet behind it (a lubrication law with no free parameter). Edges were running 1.5 times too fast; two corrections (cells join the puddle only once they hold the depth the edge leaves behind, and the push on the edge is measured relative to the moving edge) bring it onto the law, and spreading puddles came out rounder too.",
+   "Known limits: the map ignores splash redistribution and soaking, and drips fall straight down (still air near the stone). Straight puddle edges at 45 degrees to the simulation grid still advance about 9 % slower than edges along it; round puddles are round to 1 %."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-floor-arrival/00_arrival_map.png",
+    "caption": "Water reaching the floor per unit of rain, top view, still air (log colour scale; 1 = open sky). Blue: the inside floor."
+   }
+  ],
+  "status": "current"
+ },
+ {
   "id": "2026-10-11-water-settles",
   "date": "2026-10-11",
   "posted": "2026-10-11T07:32-04:00",
