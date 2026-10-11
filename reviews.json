@@ -392,5 +392,32 @@
   ],
   "media": [],
   "status": "current"
+ },
+ {
+  "id": "2026-10-11-bench-in-player",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T11:26-04:00",
+  "title": "The rain study moves into Gloam's own player",
+  "notes": [
+   "Until now, every picture of the rain studies was made in Blender, on a plain grey floor under a generic sky. Today the same simulation, a square foot of rain falling on stone, was drawn for the first time by Gloam's own player, inside the cave, on the cave floor, in the cave's own light.",
+   "These are offline renders, made one frame at a time from a fixed viewpoint, so they can be compared picture by picture with the earlier ones. They are a check, not the artwork, and not yet something you can walk through.",
+   "The comparison passes where it matters. The wet square sits in exactly the same place, and the scattered stains of the first seconds of rain appear in the same pattern at the same moment. So the player reads the simulation faithfully.",
+   "The wet stone is much less dark than in Blender, on purpose. The Blender version used a hand-chosen dark colour. The player follows the physics of why things look darker when wet, and a pale stone like Gloam's floor darkens only a little. The real amount will be set from a photograph of the actual stone, dry and wet.",
+   "Next: the water's own reflections of the cave, then the falling drops and splashes.",
+   "Sources: Lekner and Dorf 1988 (why some things are darker when wet)."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-bench-in-player/bench-60.jpg",
+    "caption": "2.5 seconds into the rain. Left, the earlier Blender render on a grey floor. Right, the same moment drawn by Gloam's player on the cave floor. The stains match."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-11-bench-in-player/bench-636.jpg",
+    "caption": "26 seconds in. The wet square is in the same place; in the player it darkens only as much as the physics of pale stone allows."
+   }
+  ],
+  "status": "current"
  }
 ]
