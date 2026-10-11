@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gloam Progress Archive</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav class="site" aria-label="Site">
+  <a href="index.html">Current work</a>
+  <a href="archive.html" aria-current="page">Progress archive</a>
+  <a href="approach.html">Approach</a>
+</nav>
+<header>
+  <h1>Gloam VR: progress archive</h1>
+  <p class="lede">Every rain study posted for review, newest first, including the ones that later work replaced. Each
+    entry keeps its original date, text, images and videos as they were posted. Entries marked superseded carry a short
+    note, added afterwards, on what replaced them and what we learned.</p>
+  <p class="lede">The reasoning behind these changes (the tools, the method, and what has been retired and why) is on
+    the <a href="approach.html">approach</a> page.</p>
+  <div class="legend">
+    <span><i class="sw stone"></i>stone</span>
+    <span><i class="sw water"></i>water: drops, wet stone, stains</span>
+    <span class="note">Clay renders show shape only, not final lighting. Click any image to see it full screen.
+      Times are Montreal time.</span>
+  </div>
+</header>
+<main id="reviews"><p class="empty">Loading...</p></main>
+<div id="lightbox" role="dialog" aria-label="Full screen image"><img alt=""><div class="cap"></div><button aria-label="Close">&times;</button></div>
+<script src="site.js"></script>
+<script>renderReviews("archive");</script>
+</body>
+</html>

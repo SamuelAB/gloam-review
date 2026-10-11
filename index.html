@@ -4,47 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gloam Rain Studies</title>
-<style>
-  :root {
-    --bg: #f4f2ee; --fg: #1d1c1a; --muted: #6d6a64; --card: #ffffff; --line: #dedad3; --accent: #2f5fa8;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #121212; --fg: #e9e6e0; --muted: #9a958c; --card: #1c1c1b; --line: #2e2d2b; --accent: #7fa8e6; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
-  header, main { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
-  header { padding-top: 48px; padding-bottom: 8px; }
-  h1 { font: 600 34px/1.15 Georgia, "Times New Roman", serif; margin: 0 0 14px; letter-spacing: 0.005em; }
-  .lede { max-width: 760px; margin: 0 0 12px; font-size: 17px; }
-  .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; margin: 18px 0 4px; font-size: 14px; color: var(--muted); }
-  .legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
-  .legend .stone { background: #8f8d89; } .legend .water { background: #2f5fbf; }
-  .legend .note { flex-basis: 100%; }
-  .review { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 22px; margin: 28px 0; }
-  .review h2 { margin: 0; font: 600 23px/1.25 Georgia, "Times New Roman", serif; }
-  .notes { max-width: 760px; }
-  .meta { color: var(--muted); font-size: 14px; margin: 2px 0 12px; }
-  .notes { margin: 0 0 16px; }
-  .notes p { margin: 0 0 10px; }
-  .media { display: grid; gap: 16px; }
-  figure { margin: 0; }
-  figure img, figure video { width: 100%; height: auto; display: block; border-radius: 6px; background: #000; }
-  figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
-  a { color: var(--accent); }
-  .empty { color: var(--muted); }
-  figure img { cursor: zoom-in; }
-  #lightbox { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.94); display: none; z-index: 10;
-              align-items: center; justify-content: center; cursor: zoom-out; }
-  #lightbox.open { display: flex; }
-  #lightbox img { max-width: 100vw; max-height: 100vh; object-fit: contain; }
-  #lightbox .cap { position: fixed; left: 0; right: 0; bottom: 0; padding: 10px 16px; color: #ddd; font-size: 14px;
-                   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); text-align: center; }
-  #lightbox button { position: fixed; top: 10px; right: 12px; background: none; border: 0; color: #eee;
-                     font-size: 34px; line-height: 1; cursor: pointer; padding: 6px 10px; }
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
+<nav class="site" aria-label="Site">
+  <a href="index.html" aria-current="page">Current work</a>
+  <a href="archive.html">Progress archive</a>
+  <a href="approach.html">Approach</a>
+</nav>
 <header>
   <h1>Gloam VR: rain studies</h1>
   <p class="lede">Gloam VR is a walkable virtual-reality sculpture by Samuel Arsenault-Brassard: a pierced stone dome you
@@ -58,72 +25,13 @@
     <span><i class="sw stone"></i>stone</span>
     <span><i class="sw water"></i>water: drops, wet stone, stains</span>
     <span class="note">Clay renders show shape only, not final lighting. Click any image to see it full screen.
-      Newest work first.</span>
+      Newest work first. This page shows current work only; earlier studies are in the
+      <a href="archive.html">progress archive</a>, and the methods are on the <a href="approach.html">approach</a> page.</span>
   </div>
 </header>
 <main id="reviews"><p class="empty">Loading...</p></main>
 <div id="lightbox" role="dialog" aria-label="Full screen image"><img alt=""><div class="cap"></div><button aria-label="Close">&times;</button></div>
-<script>
-  // full screen viewer: click an image; Esc, click or the x closes; arrows step through that review's images
-  const lb = document.getElementById("lightbox"), lbImg = lb.querySelector("img"), lbCap = lb.querySelector(".cap");
-  let group = [], at = 0;
-  function show(i) { at = (i + group.length) % group.length; lbImg.src = group[at].src; lbCap.textContent = group[at].alt || ""; }
-  function openFrom(img) {
-    group = Array.from(img.closest(".review").querySelectorAll("figure img"));
-    show(group.indexOf(img)); lb.classList.add("open");
-    if (lb.requestFullscreen) lb.requestFullscreen().catch(() => {});
-  }
-  function close() { lb.classList.remove("open"); if (document.fullscreenElement) document.exitFullscreen().catch(() => {}); }
-  lb.addEventListener("click", close);
-  document.addEventListener("fullscreenchange", () => { if (!document.fullscreenElement) lb.classList.remove("open"); });
-  document.addEventListener("keydown", e => {
-    if (!lb.classList.contains("open")) return;
-    if (e.key === "Escape") close();
-    else if (e.key === "ArrowRight") show(at + 1);
-    else if (e.key === "ArrowLeft") show(at - 1);
-  });
-  document.addEventListener("click", e => { if (e.target.matches("figure img")) openFrom(e.target); });
-</script>
-<script>
-  // reviews.json: [{id, date, posted (ISO time with offset), title, notes: [paragraphs], media: [{type: "image"|"video", src, caption}]}]
-  fetch("reviews.json", { cache: "no-store" })
-    .then(r => r.json())
-    .then(list => {
-      const root = document.getElementById("reviews");
-      root.innerHTML = "";
-      // posted: ISO time with offset (e.g. 2026-10-09T13:51-04:00); older entries fall back to date
-      const when = (rv) => new Date(rv.posted || (rv.date + "T00:00:00-04:00")).getTime();
-      list.sort((a, b) => when(b) - when(a));
-      for (const rv of list) {
-        const sec = document.createElement("section");
-        sec.className = "review"; sec.id = rv.id;
-        const h = document.createElement("h2"); h.textContent = rv.title; sec.appendChild(h);
-        const m = document.createElement("div"); m.className = "meta"; m.textContent = rv.posted
-          ? new Date(rv.posted).toLocaleString("en-CA", {timeZone: "America/Toronto", dateStyle: "medium", timeStyle: "short"}) + " (Montreal time)"
-          : rv.date;
-        sec.appendChild(m);
-        const notes = document.createElement("div"); notes.className = "notes";
-        for (const para of rv.notes || []) { const p = document.createElement("p"); p.textContent = para; notes.appendChild(p); }
-        sec.appendChild(notes);
-        const grid = document.createElement("div"); grid.className = "media";
-        for (const it of rv.media || []) {
-          const fig = document.createElement("figure");
-          let el;
-          if (it.type === "video") {
-            el = document.createElement("video");
-            el.src = it.src; el.controls = true; el.loop = true; el.muted = true; el.playsInline = true; el.preload = "metadata";
-          } else {
-            el = document.createElement("img"); el.src = it.src; el.loading = "lazy"; el.alt = it.caption || "";
-          }
-          fig.appendChild(el);
-          if (it.caption) { const c = document.createElement("figcaption"); c.textContent = it.caption; fig.appendChild(c); }
-          grid.appendChild(fig);
-        }
-        sec.appendChild(grid);
-        root.appendChild(sec);
-      }
-    })
-    .catch(() => { document.getElementById("reviews").innerHTML = '<p class="empty">Could not load reviews.json.</p>'; });
-</script>
+<script src="site.js"></script>
+<script>renderReviews("current");</script>
 </body>
 </html>
