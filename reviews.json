@@ -280,6 +280,27 @@
     "caption": "Left, the original Octane lightmaps. Right, the same view with the main interior piece re-baked on the GPU in seconds."
    }
   ],
+  "status": "archived"
+ },
+ {
+  "id": "2026-10-11-light-not-yet-colour",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T11:14-04:00",
+  "title": "Can the light be made faster? Not yet in colour",
+  "notes": [
+   "The question. All of Gloam's colour is light. The sculpture itself is plain grey; the purples, blues and reds come from a simulated sky that changes from dawn to dusk. Octane needed about a year of overnight rendering to capture that day as 16,000 lightmaps. We tested whether a modern graphics card could compute the same light in seconds, and one day perhaps live.",
+   "What works. A first test computed the light on the main interior piece in a few seconds instead of minutes. The light lands in the right places: the bright patches, the dark folds and the glow around the openings match Octane's.",
+   "What does not work yet: the colour. Octane's sky is more than a blue dome with a sun. Through the day it shifts between deep blue, violet and the red of the low sun, and those tints mix differently in every fold of the sculpture. Our test sky is a simple approximation, so it gives one flat mood: next to Octane, the walls look too warm and too uniform, and the subtle blue-to-violet gradients are missing. Matching that sky, at every hour of the day, is the main open problem. Until it is solved, the player keeps Octane's original lightmaps.",
+   "Why it is still worth pursuing. We also measured how the soft, bounced light changes as the sun moves. It changes slowly and smoothly, so a few snapshots per hour of the day can be blended to recreate any moment in between. If the sky colour can be matched, only the sharp sunlight would need to be computed live. Weather, clouds and the shadows of passing birds could then change the light as you watch.",
+   "Limits: one piece of the sculpture, one moment of the day, a simplified sky."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-rebake-vs-octane/bake-vs-octane.png",
+    "caption": "Left, Octane's original light. Right, our fast test on the main interior piece. The light falls in the same places, but the colour is flatter and warmer than Octane's sky."
+   }
+  ],
   "status": "current"
  },
  {
@@ -297,6 +318,26 @@
     "type": "image",
     "src": "media/2026-10-11-dust-gpu/dust-sunlit-check.png",
     "caption": "Check view: red grains are in direct sun, blue ones in shade; the red cluster matches the floor's sun patch."
+   }
+  ],
+  "status": "archived"
+ },
+ {
+  "id": "2026-10-11-dust-in-sunbeams",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T11:14-04:00",
+  "title": "The dust in the sunbeams",
+  "notes": [
+   "What you see. In Gloam, tiny specks of dust drift through the air. Most of the time they are almost invisible. When they cross a ray of sun coming through an opening, they light up, and that is what makes the sunbeams visible. Some settle on the rock and floor, and gusts of wind lift them again.",
+   "What changed. The dust now runs inside the new player instead of Unity. It keeps the look that was already settled. Two things are better: the grains settle on the real surface of the sculpture, not slightly above it; and each grain knows at every moment whether the sun can reach it, so the beams move correctly through the whole day, not only at one baked moment. It is light enough to run alongside everything else: hundreds of thousands of grains at a small cost per frame.",
+   "How we checked it. The image is a test view, not the artwork. Grains that the sun reaches are painted red, grains in shadow blue. The red ones gather exactly where the sun patch falls on the floor, so the beams are in the right place.",
+   "Limits: dust is about movement and is very sparse in a still image. It has to be judged in motion and in the headset."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-dust-gpu/dust-sunlit-check.png",
+    "caption": "Test view: red = dust in direct sun, blue = dust in shadow. The red cluster sits on the floor's sun patch, so the sunbeams are where they should be."
    }
   ],
   "status": "current"
