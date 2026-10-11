@@ -1,5 +1,26 @@
 [
  {
+  "id": "2026-10-11-water-settles",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T07:32-04:00",
+  "title": "Thrown water settles: the same bucket, with the water surface lit, and a rebuilt splash model",
+  "notes": [
+   "The same 10 L bucket thrown along the floor, but drawn as light catching the water surface instead of colours for depth. Ripples show as light and shade; level water shows as even blue. Left: clean polished stainless steel. Right: limestone-like stone. Real time, 6 m floor, top view.",
+   "Why the change: the last video looked as if the water never finished settling. Measured, it does: inside the sheets the surface is flat to 0.02 mm at the 10 cm scale by 12 s, and a new test checks that a sheet levels at the rate the physics of a thin layer gives (within about 1 % of the exact solution). The blotches in the depth map were the floor's own 1 mm unevenness showing through level water.",
+   "Steel: measured contact angles on stainless steel range from 6 to 70 degrees depending on how clean and smooth it is, so the steel is now named by its surface. This one is clean and polished (measured: 84 degrees advancing, 49.5 receding). Thin film left behind on it now pulls back into the puddle or breaks up instead of staying stuck.",
+   "Splash: rebuilt from published measurements. Only the speed into the surface counts, rough stone throws far more water than smooth steel (about 23 %, 7 % brushed, 0.3 % polished for the same raindrop), droplets keep part of a slanted drop's sideways speed, small drops bounce off water, and thrown lumps now splash a little (about 0.5 % of their water).",
+   "Known limits: how a thin film on steel breaks into puddles (the lace on the left) comes from a simplified rule that measures 0.4 to 0.9 times the right retreat speed; it will be rebuilt so the shape of the break-up is physical. Which steel the piece uses (clean or everyday) is still an open choice."
+  ],
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-11-water-settles/00_surface_steel_vs_stone.mp4",
+    "caption": "10 L thrown along +x, top view, real time, water surface lit from the lower left: clean polished steel (left), limestone-like stone (right)."
+   }
+  ],
+  "status": "current"
+ },
+ {
   "id": "2026-10-11-thrown-bucket",
   "date": "2026-10-11",
   "posted": "2026-10-11T03:18-04:00",
@@ -17,7 +38,9 @@
     "caption": "10 L thrown along +x, top view, real time: steel (left), limestone-like stone (right)."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-11-water-settles",
+  "superseded_note": "This video coloured water by depth, which made level water over a slightly uneven floor look blotchy, as if it never settled. The next study lit the water surface instead, showed that the sheets do level within seconds, gave the steel a measured surface, freed thin film that was stuck on steel, and rebuilt the splash model from published measurements."
  },
  {
   "id": "2026-10-10-puddle-bench",
