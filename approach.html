@@ -23,7 +23,8 @@
 <p>Gloam is a vast cave, hand-sculpted in virtual reality over four years, that the visitor walks through in a headset
   with nothing to hold and nothing to press. A complete cycle of natural light moves through it. We are now turning it
   into a living place: weather (rain that behaves like real water on real stone, wind, dust), a ground under the
-  sculpture shaped by years of that weather, and a custom player that can show all of it.</p>
+  sculpture shaped by years of that weather, and a custom player built for it. The weather is studied today as offline
+  renders, made frame by frame.</p>
 <p>The visitor is always inside, so the work is judged from inside: water running down the inner walls, coming in
   through the openings and gathering on the floor; dust settling in the light; the ground carrying the history of the
   place.</p>
@@ -35,19 +36,19 @@
 <h2>What we use</h2>
 <dl>
   <dt>Our own water simulation, running on the graphics card</dt>
-  <dd>No existing tool can simulate rain at the scale of the sculpture (about 190 square metres of wet surface, drops a
-    few millimetres across), so we write our own, focused on what matters at this scale: falling drops, splashes,
+  <dd>No existing tool can simulate rain at the scale of the sculpture (about 380 square metres of stone, drops a few millimetres
+    across), so we write our own, focused on what matters at this scale: falling drops, splashes,
     water films and beads on the stone, absorption into its pores, drying, and the water that gathers on the floor.</dd>
   <dt>Independent reference simulations</dt>
   <dd>A research-grade fluid simulator, run on small cases, to check our own results against.</dd>
   <dt>Gloam's own real-time player</dt>
   <dd>The sculpture runs today in Unity. Gloam now also has its own real-time player, built for it, which removes the
-    stutter Unity has when it loads each new step of the light, works with any PC headset, and can trace light directly
-    against the full sculpture on the graphics card. That last part matters for weather: a drop can land exactly where it
-    would on the real stone, and a puddle can reflect the actual cave.</dd>
+    stutter Unity has when it loads each new step of the light and can trace light directly against the full sculpture on
+    the graphics card. For the weather studies it makes offline renders, frame by frame, in which a puddle reflects the
+    actual cave.</dd>
   <dt>Study renders</dt>
   <dd>Simple grey-stone, blue-water renders, so behaviour can be judged without lighting getting in the way. No motion
-    blur and no depth of field: drops are shown at their true size, as a headset shows them.</dd>
+    blur and no depth of field: drops are shown at their true size, as a VR display shows them.</dd>
 </dl>
 
 <h2>Method</h2>
@@ -93,11 +94,10 @@
 
 <h2>Next</h2>
 <ol>
-  <li><b>Water in Gloam's own player:</b> water surfaces that reflect and show the stone beneath, stone that darkens as
-    it gets wet, true-size drops and splashes; then rain landing on the real sculpture.</li>
-  <li><b>How wet things look:</b> why stone darkens when wet, how it starts to shine as water builds up, and how falling
-    drops really appear against a dark cave, all from published research.</li>
-  <li><b>A living ground:</b> the floor shaped by where water has fallen for years, and water simulated on that ground.</li>
+  <li><b>The floor and the sculpture in the same storm:</b> the rain on the stone and the water on the floor, from one
+    simulation, seen together.</li>
+  <li><b>The sound of the rain:</b> each drop's sound from its size, speed and what it lands on, carried through the
+    cave.</li>
   <li><b>Dust and water together:</b> the space starts with its own patina; rain cleans dust realistically, partly and
     never completely; drying puddles leave faint rings; wind brings dust back in.</li>
 </ol>
@@ -117,7 +117,9 @@
   Shiraishi and Mori 2006; Brown, Jepsen and Yoon 2008. Water on surfaces: Cox 1986; Voinov 1976; Snoeijer and Eggers
   2010; Herminghaus and Brochard-Wyart 2006; Redon, Brochard-Wyart and Rondelez 1991; Fu, Li and Fan 2024 (stainless
   steel). Stone and absorption: Hall and Hoff, Water Transport in Brick, Stone and Concrete. Waves: Lamb, Hydrodynamics
-  1932; Liu and Orfila 2004. Floor water: Ritter 1892 (the exact dam-break answer used as a test).</p>
+  1932; Liu and Orfila 2004. Floor water: Ritter 1892 (the exact dam-break answer used as a test); Barnes, Lehman and
+  Mulla 2014 (how water fills low spots). How wet things and raindrops look: Lekner and Dorf 1988; Twomey, Bohren and
+  Mergenthaler 1986; Zhang and Voss 2006; Garg and Nayar 2003 and 2006; Tokay and Beard 1996. Light: Kajiya 1986.</p>
 </main>
 </body>
 </html>

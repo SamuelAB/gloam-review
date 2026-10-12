@@ -1,6 +1,6 @@
 // Shared by index.html (current work) and archive.html (every entry, a progress log).
 // reviews.json: [{id, date, posted (ISO time with offset), title, notes: [paragraphs],
-//   media: [{type: "image"|"video", src, caption}],
+//   media: [{type: "image"|"video", src, caption, poster (videos: a still shown before play)}],
 //   status: "current" | "archived" (missing = current),
 //   superseded_by: id of the entry that replaced it, superseded_note: what came next and what we learned}]
 
@@ -10,7 +10,7 @@
   let group = [], at = 0;
   function show(i) { at = (i + group.length) % group.length; lbImg.src = group[at].src; lbCap.textContent = group[at].alt || ""; }
   function openFrom(img) {
-    group = Array.from(img.closest(".review").querySelectorAll("figure img"));
+    group = Array.from((img.closest(".review, .intro") || document).querySelectorAll("figure img"));
     show(group.indexOf(img)); lb.classList.add("open");
     if (lb.requestFullscreen) lb.requestFullscreen().catch(() => {});
   }
@@ -76,6 +76,7 @@ function renderReviews(mode) {
           if (it.type === "video") {
             el = document.createElement("video");
             el.src = it.src; el.controls = true; el.loop = true; el.muted = true; el.playsInline = true; el.preload = "metadata";
+            if (it.poster) el.poster = it.poster;
           } else {
             el = document.createElement("img"); el.src = it.src; el.loading = "lazy"; el.alt = it.caption || "";
           }
