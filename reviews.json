@@ -54,7 +54,7 @@
    "For now a plant's hits are drawn at the rate of drops landing around it, not from the drops' actual paths. Next: each falling drop is traced against the petals, stems and leaves, and the plant is pushed by that drop's own momentum, after which the drop stops there.",
    "Breathing architecture: the strand crests sway in a slow current, the tallest lobes move like anemones, and a breath travels across the walls. Shown at two strengths: subtle (crests a few millimetres, tall lobes about a centimetre) and twice that, to read the motion clearly.",
    "A walk over the living ground: broken stone, moss and grass in the cracks, before the vegetation pass.",
-   "All offline renders, not something you can walk through. The heightened storm clips in the 11 October cave rain entry were re-encoded smaller at the same full resolution, to load faster on a remote connection."
+   "All offline renders, not something you can walk through."
   ],
   "media": [
    {
