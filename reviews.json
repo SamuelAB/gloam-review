@@ -1,5 +1,50 @@
 [
  {
+  "id": "2026-10-12-drop-shape",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T03:35-04:00",
+  "title": "Falling drops: old flat strips against water spheres (for review; the new version is not right yet)",
+  "notes": [
+   "Samuel found the falling drops looked like flat rectangular ribbons. Each drop is drawn as what the eye collects from it during one headset frame (1/90 s): it moves several centimetres in that time, so it leaves a short streak. The old version drew that streak as a flat strip of one colour.",
+   "The new version draws the true trace of a moving sphere: thickest through its middle, tapering at both ends. Drops wider than a pixel are drawn as tiny lenses: each point shows the cave reflected off the water surface and seen through it upside down.",
+   "Review note: close drops now come out as two thin bright rails with broken dashes between them. That is the bright rim of the sphere, thinner than a pixel, drawn without enough samples. It reads worse than the old strips, and it is the next fix. The far drops are unchanged in look. Same frames, same storm, offline renders, not something you can walk through.",
+   "Sources: Garg and Nayar 2003 and 2007, the appearance of rain drops and rain streaks (a drop sees a 165 degree field of view); Fresnel reflection of water (refractive index 1.333)."
+  ],
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/zoom-g10.mp4",
+    "caption": "Zoomed side by side, heightened rain (x10, not physical): old (left), new (right). Watch the close drops near the middle."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/zoom-g1.mp4",
+    "caption": "Zoomed side by side, physical rain: old (left), new (right)."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/before-g10.mp4",
+    "caption": "Old drops, heightened rain, full frame."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/after-g10.mp4",
+    "caption": "New drops, heightened rain, full frame."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/before-g1.mp4",
+    "caption": "Old drops, physical rain, full frame."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/after-g1.mp4",
+    "caption": "New drops, physical rain, full frame."
+   }
+  ],
+  "status": "current"
+ },
+ {
   "id": "2026-10-11-floor-arrival",
   "date": "2026-10-11",
   "posted": "2026-10-11T10:31-04:00",
