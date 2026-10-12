@@ -456,6 +456,7 @@
    "Seen from inside, in Gloam's own player, the stone darkens where it is wet, by the measured amount for pale stone, and the puddles reflect the lit cave around them. These are offline renders, made frame by frame, not yet something you can walk through.",
    "An honest finding about rain itself: in a dim cave, real raindrops are almost invisible. Each drop is a tiny lens that crosses any point in a few thousandths of a second. We render the physical version first, and separately a clearly labelled heightened version, so the choice of how visible the rain should be is an artistic one, made with eyes open.",
    "Making the physics hold took a finer grid than the ground itself: the water is simulated on 4 mm cells, because coarser cells failed our own checks (water sheeting down a slope came out half as deep as it should).",
+   "Work in progress: these first clips still look more like a video game than like rain. The next steps are the ripples drops leave on the puddles, softer water edges and smoother image quality.",
    "Sources: Marshall and Palmer 1948 (raindrop sizes); Gunn and Kinzer 1949 (falling speeds); Stow and Hadfield 1981, Mundo et al. 1995 (splash); Lekner and Dorf 1988 (why things look darker when wet); Garg and Nayar 2003 (how a raindrop gathers light)."
   ],
   "media": [
@@ -468,6 +469,16 @@
     "type": "image",
     "src": "media/2026-10-11-cave-rain/dry-vs-wet.jpg",
     "caption": "Inside the cave, in Gloam's player: the same view dry, and after two and a half minutes of rain. The stone darkens only a little, as pale stone does."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-11-cave-rain/storm-crouch-physical.mp4",
+    "caption": "Thirty seconds of the downpour, seen from crouching height beside the largest puddle: physical rain. In a dim cave, real drops are faint streaks. Offline render, first pass."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-11-cave-rain/storm-crouch-heightened.mp4",
+    "caption": "The same moment with the rain made ten times more visible than physics allows, labelled as such: a test of how visible the rain should be, not a final look."
    }
   ],
   "status": "current"
