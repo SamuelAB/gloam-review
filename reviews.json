@@ -3,14 +3,35 @@
   "id": "2026-10-12-drop-shape",
   "date": "2026-10-12",
   "posted": "2026-10-12T03:35-04:00",
-  "title": "Falling drops: old flat strips against water spheres (for review; the new version is not right yet)",
+  "title": "Falling drops: old flat strips, water spheres, and a revised version (for review)",
   "notes": [
    "Samuel found the falling drops looked like flat rectangular ribbons. Each drop is drawn as what the eye collects from it during one headset frame (1/90 s): it moves several centimetres in that time, so it leaves a short streak. The old version drew that streak as a flat strip of one colour.",
    "The new version draws the true trace of a moving sphere: thickest through its middle, tapering at both ends. Drops wider than a pixel are drawn as tiny lenses: each point shows the cave reflected off the water surface and seen through it upside down.",
    "Review note: close drops now come out as two thin bright rails with broken dashes between them. That is the bright rim of the sphere, thinner than a pixel, drawn without enough samples. It reads worse than the old strips, and it is the next fix. The far drops are unchanged in look. Same frames, same storm, offline renders, not something you can walk through.",
-   "Sources: Garg and Nayar 2003 and 2007, the appearance of rain drops and rain streaks (a drop sees a 165 degree field of view); Fresnel reflection of water (refractive index 1.333)."
+   "Revised version (third set of clips): two fixes. Each pixel now averages the drop over its own width, and points off the edge of the drop no longer count as its bright rim (a sampling mistake). A drop passing within 12 cm of the eyes is no longer drawn: in the headset it would land on the visitor's face. Close drops still show two thin bright lines. That is what the optics give: a water sphere in a dark cave with a few bright openings shows a thin bright ring, and a falling drop sweeps that ring into two lines. Real drops also wobble as they fall (from about 1 mm across), which would smear the ring; that is not modelled yet, until measured wobble sizes are found in the literature.",
+   "Sources: Garg and Nayar 2003 and 2007, the appearance of rain drops and rain streaks (a drop sees a 165 degree field of view); Fresnel reflection of water (refractive index 1.333); Tokay and Beard, field studies of raindrop oscillations (oscillations start at about 1 mm diameter)."
   ],
   "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/zoom-revised-g10.mp4",
+    "caption": "Zoomed side by side, heightened rain (x10, not physical): old (left), revised (right)."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/zoom-revised-g1.mp4",
+    "caption": "Zoomed side by side, physical rain: old (left), revised (right)."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/revised-g10.mp4",
+    "caption": "Revised drops, heightened rain, full frame."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/revised-g1.mp4",
+    "caption": "Revised drops, physical rain, full frame."
+   },
    {
     "type": "video",
     "src": "media/2026-10-12-drop-shape/zoom-g10.mp4",
