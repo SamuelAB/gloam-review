@@ -1,5 +1,40 @@
 [
  {
+  "id": "2026-10-12-pool-water",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T06:40-04:00",
+  "title": "The pool keeps its water, plants only where there is soil",
+  "notes": [
+   "Samuel's review of the first pass: the empty pool looked wrong, grass and flowers still grew on dry stone, and the small dark ovals painted on the floor read as lenses, not pebbles.",
+   "The pool now always holds water. Over years, fine silt carried in by muddy run-off clogs the pores of a rock pool's floor, so it stops leaking and stays full between storms, drawn down only by evaporation. It rests half a centimetre below the point where it would spill over, and covers about 0.37 square metres, up to 12 cm deep (about 21 litres). The still surface mirrors the cave: the bright openings in the rock above show in it, and the stone at its bottom looks wet. The rain simulation now starts with the pool full and its floor sealed, so storms raise it toward the rim rather than filling an empty hollow.",
+   "Plants need soil. On a floor of slabs like this, soil only collects in the cracks between them, as on limestone pavement, where the cracks hold the plants and the slab tops stay bare or crusted. The flowers and the grass around them now root only in cracks, never under the drips (the soil is washed out there) or in the pool. Where a flower had no crack near its spot, it is gone: 11 flowers remain and 4 were removed.",
+   "The painted pebbles are gone. Pebbles will come back as real stones with their own shape, lit like everything else, never painted onto the ground.",
+   "The zone map now has a legend. The black shapes are the sculpture's pillars and walls standing in the room, where there is no floor.",
+   "Cost: crouched right over the pool, with the water filling the view, drawing it adds about 0.3 milliseconds per frame (3.6 instead of 3.3 on that view, on the workstation).",
+   "Not yet: the water bends the view of the bottom (refraction), muddy water after rain that clears as it settles, a high-water line, and soil deep enough for each kind of plant.",
+   "Offline renders, made frame by frame; not something you can walk through.",
+   "Sources: colmation (pores clogged by fine sediment) in the SedNet studies and column experiments; Natural England and JNCC accounts of limestone pavement; studies of crack-dwelling plants (Schimper; Davis 1982); Lekner and Dorf 1988 on why wet surfaces look darker; our own simulation of the pool's level."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-12-pool-water/pool-before-after.jpg",
+    "caption": "The pool before (left, empty) and after (right): still water mirroring the openings above."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-pool-water/pool-close.jpg",
+    "caption": "Crouched over the pool: the bright openings in the rock reflected in the water."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-pool-water/zones-legend.png",
+    "caption": "The zone map with its legend. Black: the sculpture's pillars and walls, where there is no floor (P1 to P10)."
+   }
+  ],
+  "status": "current"
+ },
+ {
   "id": "2026-10-12-lived-ground",
   "date": "2026-10-12",
   "posted": "2026-10-12T05:55-04:00",
@@ -41,7 +76,9 @@
     "caption": "The usual crouching view: before (left) and after (right). Fewer tufts on the open stone; moss patches where water runs."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-12-pool-water",
+  "superseded_note": "Samuel found the empty pool wrong, flowers and grass still on dry stone, and the painted pebbles reading as lenses. The pool now always holds water, plants root only in the cracks where soil collects, and the painted pebbles were removed."
  },
  {
   "id": "2026-10-12-drop-shape",
