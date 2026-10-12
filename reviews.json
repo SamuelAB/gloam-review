@@ -348,7 +348,7 @@
   "posted": "2026-10-11T13:43-04:00",
   "title": "What a visitor can actually see",
   "notes": [
-   "We simulated a curious visitor's head everywhere it can go inside the cave: standing, crouching, lying on the floor looking up, leaning in and putting their head into the tubes, looking in every direction. About 81 % of the sculpture's surface is seen from somewhere inside; the remaining fifth (hidden folds, the exterior) never is. Much of it can be seen from very close, by visitors who crouch, lie down and press their faces to the rock.",
+   "We simulated about 50,000 positions a curious visitor's head can reach inside the cave, most of them only by leaning in: standing, crouching, lying on the floor looking up, putting their head into the tubes, looking in every direction. About 81 % of the sculpture's surface is seen from somewhere inside; the remaining fifth (hidden folds, the exterior) never is. And 182 square metres can be seen from closer than 25 cm, by visitors who crouch, lie down and press their faces to the rock.",
    "This explains why pixels can show in the current build: uniform 8K maps spend most of their detail on surfaces nobody sees and too little on the ones people press close to. The new lighting direction puts detail only where it can be seen, at the density each surface needs.",
    "Correction: an earlier version of this entry said 59 % of the surface was never seen. It placed visitors' heads only on a grid over the open floor and missed everything a visitor sees by leaning into the tubes or lying under an overhang (Samuel caught it). The corrected figure is about 20 %."
   ],
