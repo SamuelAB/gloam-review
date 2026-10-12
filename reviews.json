@@ -10,6 +10,7 @@
    "Under the drips: where heavy drops hammer the floor, nothing rooted survives. Those lines are now bare, washed stone with small pebbles, and plants are thinned within a few centimetres of them.",
    "Moss and grass by zone: moss now spreads as a carpet over the stone itself in the wet shade along the walls, and in patches in the half-light and at the pool's edge. Grass and the pale flowers grow where it is both wet and lit, and only in the cracks between the stones, no longer on top of them; the dry areas keep only a few tufts. In Gloam's violet light the moss reads dark olive rather than bright green.",
    "A first pass, for review: the pool is shown empty, and the light on the floor around it was still the one computed for the old, flat floor when these were rendered. Next: the pool filling in the rain, muddy water that clears as it settles, and the small life of a floor like this (snails, woodlice, springtails, toads at the pool).",
+   "The new floor costs no extra drawing time: measured on the same views with and without it, the difference is within the run-to-run variation (slightly faster, with fewer blades of grass).",
    "Offline renders, made frame by frame; not something you can walk through.",
    "Sources: our own analysis of the light, sky and water maps measured on the sculpture; no published ecological model."
   ],
