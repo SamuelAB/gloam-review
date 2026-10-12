@@ -3,9 +3,9 @@
   "id": "2026-10-12-ruin-floor",
   "date": "2026-10-12",
   "posted": "2026-10-12T07:40-04:00",
-  "title": "Awaiting Samuel's approval: the floor as an old ruin",
+  "title": "Rejected, being reworked: the floor as an old ruin (first attempt)",
   "notes": [
-   "Awaiting Samuel's approval: a proposal, not yet the floor in use.",
+   "Rejected by Samuel and being reworked: he found it \"a mush of stuff. Not the floor of an old ruin\". Kept here as a record of the first attempt.",
    "Samuel asked for a floor that looks like a really old ruin, broken over ages: \"it's not paving anymore, it's a ruin\". Each stone has split into several pieces. About half of the pieces came loose and settled on their own, tilted, raised or sunk by up to about 2 cm, so the edges no longer meet, and some pieces are gone, with soil where they were. The gaps have widened to 1 to 3 cm and filled with soil and grit, and the edges are worn round. Some stones have lost a flake off one side.",
    "Where water stands on a flat stone, shallow solution pans form; under the drips the stone has dissolved into cups about 2 cm deep. Limestone wears down by roughly 0.035 to 0.4 mm a year depending on exposure, so cups of a few centimetres fit a couple of thousand years under a drip.",
    "Soil also lies under about a third of the stones, more where it is damp and sheltered. Plants root in the gaps, where pieces are missing, and along the edges of stones with soil under them, never on bare stone tops. Dark lichen crusts grow on the shaded stone.",
@@ -31,7 +31,8 @@
     "caption": "The pool, before (left) and on the ruin floor (right). The pool keeps its place and its still water."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_note": "Samuel found it a mush of soft lumps, not an old ruin. The rework gives each stone a flat, worn top with its own tilt, crisp edges, dark soil-filled joints with the plants in them, pale stone against dark soil, and stones cracked, lifted or missing."
  },
  {
   "id": "2026-10-12-soil-depth",
