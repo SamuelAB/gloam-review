@@ -1,5 +1,55 @@
 [
  {
+  "id": "2026-10-12-shadows-cache",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T18:05-04:00",
+  "status": "current",
+  "title": "Live sun shadows, and a network that learns the light (work in progress, not passed)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-12-shadows-cache/main_grass_patch_3way.jpg",
+    "caption": "Grass in a sun patch. Left: baked light, where nothing that moves can cast a shadow. Middle: live sun with a shadow map; the blade shadows wash out. Right: live sun with ray-traced plant shadows; each blade casts a thin shadow from its base."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-shadows-cache/main_shadows_sheet.jpg",
+    "caption": "The current floor from five views, in the same three columns. The blocky dark shapes come from the floor's own small facets under a low sun, not from the shadows."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-shadows-cache/ruin_shadows_sheet.jpg",
+    "caption": "The new ruin floor (work in progress), in the same three columns."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-shadows-cache/ruin_crouch_3way.jpg",
+    "caption": "The ruin floor, crouching."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-shadows-cache/cache_attempts.png",
+    "caption": "A small neural network learning the cave's light: eight attempts. The first change took its error from 75 % to 14 %; nothing after moved it much."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-shadows-cache/cache_surfaces.png",
+    "caption": "Between the points where the light is stored, it is still 2 to 3 times less accurate than today's bake, so it is parked."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-shadows-cache/cache_cost.png",
+    "caption": "Its cost is solved: about a tenth of a frame."
+   }
+  ],
+  "notes": [
+   "Work in progress, not passed.",
+   "The sun is now computed live, and plants cast ray-traced shadows. The middle and right columns differ only in the plants' shadows, by design.",
+   "Offline renders, made frame by frame; not something you can walk through.",
+   "Sources: Müller, Rousselle, Novák, Keller, \"Real-time Neural Radiance Caching for Path Tracing\" (2021); Müller, Evans, Schied, Keller, \"Instant Neural Graphics Primitives with a Multiresolution Hash Encoding\" (2022); our own measurements. Textures: Poly Haven rock_face_03 and brown_mud_03 by Rob Tuytel (CC0); the soil's tone lifted to cave sediment (art-directed). Baked light: the artist's own Octane renders."
+  ]
+ },
+ {
   "id": "2026-10-12-engine-day",
   "date": "2026-10-12",
   "posted": "2026-10-12T11:20-04:00",
