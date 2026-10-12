@@ -1,5 +1,48 @@
 [
  {
+  "id": "2026-10-12-lived-ground",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T05:55-04:00",
+  "title": "A floor lived in for years: a pool, moss where it is wet and shaded, bare stone under the drips (first pass)",
+  "notes": [
+   "What would grow and live where on this floor, after years of the same rain and light? The floor was divided into zones from what was measured on the real sculpture: how much water reaches each spot (mostly running off the stone and dripping from its edges, very little straight from the sky), how much sun it gets over the day, how much sky it sees, and how much rock hangs over it. The surprise: wetness and sun hardly go together here, because most of the water comes off the rock, not through the openings where the sun comes in.",
+   "A pool: the natural hollow at the back of the floor is now a small pool, about 0.4 square metres and up to 12 cm deep, that can hold about 23 litres when full. Its shore follows the land: it was shaped the way a lake fills, from the lowest ground outward, and it is closed by a slight bank. It stays well away from the foot of the rock. Its bottom and margin are mud, and nothing roots in it.",
+   "Under the drips: where heavy drops hammer the floor, nothing rooted survives. Those lines are now bare, washed stone with small pebbles, and plants are thinned within a few centimetres of them.",
+   "Moss and grass by zone: moss now spreads as a carpet over the stone itself in the wet shade along the walls, and in patches in the half-light and at the pool's edge. Grass and the pale flowers grow where it is both wet and lit, and only in the cracks between the stones, no longer on top of them; the dry areas keep only a few tufts. In Gloam's violet light the moss reads dark olive rather than bright green.",
+   "A first pass, for review: the pool is shown empty, and the light on the floor around it was still the one computed for the old, flat floor when these were rendered. Next: the pool filling in the rain, muddy water that clears as it settles, and the small life of a floor like this (snails, woodlice, springtails, toads at the pool).",
+   "Offline renders, made frame by frame; not something you can walk through.",
+   "Sources: our own analysis of the light, sky and water maps measured on the sculpture; no published ecological model."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-12-lived-ground/zones.png",
+    "caption": "The floor seen from above, divided into zones by what would live there after years."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-lived-ground/pool.jpg",
+    "caption": "The pool, empty: before (left) and after (right). Its bottom and margin are mud."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-lived-ground/shade.jpg",
+    "caption": "Wet shade along the walls: before (left), moss now carpets the stone (right)."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-lived-ground/light.jpg",
+    "caption": "Where it is both wet and lit: before (left) and after (right). Moss rings the drip points, whose centres stay bare."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-lived-ground/crouch.jpg",
+    "caption": "The usual crouching view: before (left) and after (right). Fewer tufts on the open stone; moss patches where water runs."
+   }
+  ],
+  "status": "current"
+ },
+ {
   "id": "2026-10-12-drop-shape",
   "date": "2026-10-12",
   "posted": "2026-10-12T04:20-04:00",
