@@ -2,9 +2,10 @@
  {
   "id": "2026-10-12-drop-shape",
   "date": "2026-10-12",
-  "posted": "2026-10-12T03:35-04:00",
-  "title": "Falling drops: old flat strips, water spheres, and a revised version (for review)",
+  "posted": "2026-10-12T04:20-04:00",
+  "title": "Falling drops: from flat strips to an in-between look (for review)",
   "notes": [
+   "Newest, at the top: the in-between look Samuel chose. A close drop shows half of the water sphere's own image (its bright rim, the cave seen through it) over half of the soft average glow the old strips had, in the new rounded shape that tapers at both ends. The half-and-half mix is an artistic choice, not physics; the earlier versions are kept below.",
    "Samuel found the falling drops looked like flat rectangular ribbons. Each drop is drawn as what the eye collects from it during one headset frame (1/90 s): it moves several centimetres in that time, so it leaves a short streak. The old version drew that streak as a flat strip of one colour.",
    "The new version draws the true trace of a moving sphere: thickest through its middle, tapering at both ends. Drops wider than a pixel are drawn as tiny lenses: each point shows the cave reflected off the water surface and seen through it upside down.",
    "Review note: close drops now come out as two thin bright rails with broken dashes between them. That is the bright rim of the sphere, thinner than a pixel, drawn without enough samples. It reads worse than the old strips, and it is the next fix. The far drops are unchanged in look. Same frames, same storm, offline renders, not something you can walk through.",
@@ -12,6 +13,26 @@
    "Sources: Garg and Nayar 2003 and 2007, the appearance of rain drops and rain streaks (a drop sees a 165 degree field of view); Fresnel reflection of water (refractive index 1.333); Tokay and Beard, field studies of raindrop oscillations (oscillations start at about 1 mm diameter)."
   ],
   "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/zoom-between-g10.mp4",
+    "caption": "Zoomed side by side, heightened rain (x10, not physical): old (left), in-between (right)."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/zoom-between-g1.mp4",
+    "caption": "Zoomed side by side, physical rain: old (left), in-between (right)."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/between-g10.mp4",
+    "caption": "In-between drops, heightened rain, full frame."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/between-g1.mp4",
+    "caption": "In-between drops, physical rain, full frame."
+   },
    {
     "type": "video",
     "src": "media/2026-10-12-drop-shape/zoom-revised-g10.mp4",
