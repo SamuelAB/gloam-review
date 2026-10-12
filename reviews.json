@@ -443,5 +443,33 @@
    }
   ],
   "status": "current"
+ },
+ {
+  "id": "2026-10-11-cave-rain",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T20:11-04:00",
+  "title": "Rain over the whole cave floor",
+  "notes": [
+   "The earlier rain studies fell on a single square foot, by design, to check the physics. Now the rain falls over the entire floor of the cave, on the new living ground of broken stone plates, and it lands only where the sky really reaches through the sculpture.",
+   "Most of the water does not fall straight in. The sculpture is mostly closed above, so rain first lands on the stone, runs down it and drips off its edges onto the floor. Our earlier map of where the sky's water goes decides where every drop and every drip arrives.",
+   "On the ground the water does what water does: it soaks into the stone, darkens it, fills the cracks between the plates first, then gathers into shallow puddles, two to three millimetres deep, in the hollows. Outside the walls it runs off in channels across the sand. The images follow a two and a half minute storm that goes from drizzle to heavy rain.",
+   "Seen from inside, in Gloam's own player, the stone darkens where it is wet, by the measured amount for pale stone, and the puddles reflect the lit cave around them. These are offline renders, made frame by frame, not yet something you can walk through.",
+   "An honest finding about rain itself: in a dim cave, real raindrops are almost invisible. Each drop is a tiny lens that crosses any point in a few thousandths of a second. We render the physical version first, and separately a clearly labelled heightened version, so the choice of how visible the rain should be is an artistic one, made with eyes open.",
+   "Making the physics hold took a finer grid than the ground itself: the water is simulated on 4 mm cells, because coarser cells failed our own checks (water sheeting down a slope came out half as deep as it should).",
+   "Sources: Marshall and Palmer 1948 (raindrop sizes); Gunn and Kinzer 1949 (falling speeds); Stow and Hadfield 1981, Mundo et al. 1995 (splash); Lekner and Dorf 1988 (why things look darker when wet); Garg and Nayar 2003 (how a raindrop gathers light)."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-cave-rain/storm-from-above.jpg",
+    "caption": "The cave floor from above during the storm. Darker stone is wet, blue is standing water. The rock base is the dark ring; outside it, water runs off across the sand."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-11-cave-rain/dry-vs-wet.jpg",
+    "caption": "Inside the cave, in Gloam's player: the same view dry, and after two and a half minutes of rain. The stone darkens only a little, as pale stone does."
+   }
+  ],
+  "status": "current"
  }
 ]
