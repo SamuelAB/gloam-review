@@ -468,7 +468,7 @@
    "Seen from inside, in Gloam's own player, the stone darkens where it is wet, by the measured amount for pale stone, and the puddles reflect the lit cave around them. These are offline renders, made frame by frame, not yet something you can walk through.",
    "An honest finding about rain itself: in a dim cave, real raindrops are almost invisible. Each drop is a tiny lens that crosses any point in a few thousandths of a second. We render the physical version first, and separately a clearly labelled heightened version, so the choice of how visible the rain should be is an artistic one, made with eyes open.",
    "Making the physics hold took a finer grid than the ground itself: the water is simulated on 4 mm cells, because coarser cells failed our own checks (water sheeting down a slope came out half as deep as it should).",
-   "Work in progress: these first clips still look more like a video game than like rain. The next steps are the ripples drops leave on the puddles, softer water edges and smoother image quality.",
+   "Since the first clips, which looked more like a video game than like rain: every drop that lands in a puddle now sends out rings that travel at the measured speed of small water waves, bounce off the puddle's edge and fade, so the reflections shimmer and break up; edges are smoothed; and a bug that lost about a third of the water running off the stone is fixed. Still to come: softer puddle edges and finer, truer drops.",
    "Sources: Marshall and Palmer 1948 (raindrop sizes); Gunn and Kinzer 1949 (falling speeds); Stow and Hadfield 1981, Mundo et al. 1995 (splash); Lekner and Dorf 1988 (why things look darker when wet); Garg and Nayar 2003 (how a raindrop gathers light)."
   ],
   "media": [
@@ -483,14 +483,29 @@
     "caption": "Inside the cave, in Gloam's player: the same view dry, and after two and a half minutes of rain. The stone darkens only a little, as pale stone does."
    },
    {
-    "type": "video",
-    "src": "media/2026-10-11-cave-rain/storm-crouch-physical.mp4",
-    "caption": "Thirty seconds of the downpour, seen from crouching height beside the largest puddle: physical rain. In a dim cave, real drops are faint streaks. Offline render, first pass."
+    "type": "image",
+    "src": "media/2026-10-11-cave-rain/ripples-before-after.jpg",
+    "caption": "Before and after: the puddle as a still mirror, and with the rings each drop sends out, which break up the reflection of the opening."
    },
    {
     "type": "video",
-    "src": "media/2026-10-11-cave-rain/storm-crouch-heightened.mp4",
-    "caption": "The same moment with the rain made ten times more visible than physics allows, labelled as such: a test of how visible the rain should be, not a final look."
+    "src": "media/2026-10-11-cave-rain/storm2-octane_physical.mp4",
+    "caption": "Thirty seconds of the downpour, crouched beside the largest puddle: physical rain, Gloam's Octane light."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-11-cave-rain/storm2-octane_heightened.mp4",
+    "caption": "The same moment with the rain made five times more visible than physics allows, labelled as such."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-11-cave-rain/storm2-live_physical.mp4",
+    "caption": "Physical rain under the player's new live light (softer sun patches; its colours are still being matched to Octane's)."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-11-cave-rain/storm2-live_heightened.mp4",
+    "caption": "Heightened rain (x5) under the live light."
    }
   ],
   "status": "current"
