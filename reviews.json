@@ -1,5 +1,49 @@
 [
  {
+  "id": "2026-10-12-engine-day",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T11:20-04:00",
+  "status": "current",
+  "title": "Replacing Unity and Octane: our own engine, two days in",
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-12-engine-day/breathe.mp4",
+    "poster": "media/2026-10-12-engine-day/breathe.poster.jpg",
+    "caption": "The breathing walls in the afternoon sun, without rain. The strands sway and the walls slowly swell; their shadows move with them, each strand brightens as it turns toward the sun, the light bounced from the rest of the cave shifts as they turn, and the thinnest strands glow where the sun is behind them. Breathing amplitude and the strength of the glow are art-directed."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-engine-day/pool.mp4",
+    "poster": "media/2026-10-12-engine-day/pool.poster.jpg",
+    "caption": "The permanent pool between storms: slow drips fall from the rock, each sending a ring across the still water, which reflects the live sky through the openings."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-engine-day/grain-ab-wall.jpg",
+    "caption": "Light at the walls, left: one bake; right: eight independent bakes averaged and smoothed on the surface by a filter fitted to how they disagree (brightened to show the grain)."
+   }
+  ],
+  "notes": [
+   "Gloam is replacing both Unity, the game engine it played in, and Octane, the renderer that baked its light, with a player and a light engine we wrote ourselves. This post shows what that bought, in numbers, what we built on top of it today, and the plan ahead, including the strange parts.",
+   "Why leave Unity and Octane. Gloam's day of light is about 16,000 baked 8K lightmaps that stream to the VR display while a visitor walks. In Unity every lightmap swap froze the program for 80 to 95 milliseconds. At 90 frames a second a frame lasts 11 milliseconds, so each swap dropped seven or eight frames, and in VR a dropped frame is felt in the stomach, not just seen.",
+   "Unity against our player. One 8K lightmap upload: 80 to 95 milliseconds in Unity, during which nothing moved; 5.7 in our player, done on the side while the picture keeps moving. Light changes per second without a dropped frame: about 2 in Unity; 5.3 in our player, with no frame over the 11 millisecond budget. Re-lighting the whole sculpture: about a year of Octane renders; now live light from the sky and sun, and the light at every point rebakes in about 15 minutes. Sculpture drawn per frame: everything in Unity; in our player only what can be seen from where you stand (about a quarter of the pieces at a time).",
+   "Today's gains on top of that, each measured before and after on the same view. Drawing only what can be seen: the graphics card's time per frame went from 4.8 to 3.4 milliseconds. Storing the light more compactly: 350 MB down to 186 MB. Playing back the rain on the sculpture: 8.9 milliseconds of computer time per frame with frames dropped, now 0.16 with none dropped. Storm data on disk (a 30 second sample): 2.2 GB down to 1.0 GB.",
+   "What we built today. Vivarium, our own file format (private for now): the artwork as one package of layers (shape, light, motion, visibility, water, growth), each checked against the shape it belongs to, so a stale piece is refused instead of drawing wrong.",
+   "The sculpture in small clusters, loaded by what you can see: light and motion now live per cluster in a shared pool that follows the visitor; the same machinery carries storms and, later, growth.",
+   "Rain as time pages: a storm is stored per piece of the sculpture and per second, only where water actually is; the computer no longer rebuilds the wetness of 3.7 million points every frame.",
+   "One clock for time of day, storms and exhibition days, and a growth layer that will remember what grew and wore away across the days of an exhibition.",
+   "The breathing walls now carry their own light: their shadows move with them, each strand brightens as it leans toward the sun, and the light bounced around the cave shifts as each strand turns: every point of the wall knows, from its own place in the fur, how its light changes when it leans. Where the sun is behind them, the thinnest strands glow through.",
+   "Smoother light without waiting longer: the light is baked several times independently and the engine learns, from how those bakes disagree, how much to smooth it on the surface itself, keeping the fine shading of the fur and removing the grain.",
+   "A permanent pool at the back, holding water between storms and reflecting the live sky. Plants that need soil: grass and flowers only where old cracks have filled with sediment, nothing under the drips or in the pool.",
+   "Two independent reviews of the engine work (by another AI model), and every serious finding fixed; then a cleanup that removed duplicated code without changing a pixel.",
+   "The plan ahead, near: the floor as an ancient ruin, broken over aeons: split, tilted and sunken stones, soil under some of them, wide joints filled with moss and grit. Small life: snails, woodlice, springtails, toads; then curious squirrels and birds that come to look at you, let you near if you move slowly, and fly off if you move too fast. Sound: birds near and far, wings, drips, wind. Your own hands in the space, and later your body. The rain again, now on the new engine, still changing the light.",
+   "Further, and stranger (ideas, not built). White holes: columns where water, or smoke, or something with no name, pours endlessly from nowhere: the calm of a waterfall or a fire. Will-o'-the-wisps: pale green and blue flames that rise at night, the cold glow that marsh gases were once seen to give off. Comets crossing the night sky so brightly they light the cave, and scare the birds into flight, wings beating, screaming.",
+   "Offline renders, made frame by frame; not something you can walk through.",
+   "Sources: our own measurements on the same workstation and the same views before and after each change (frame times over hundreds of frames, upload times, file sizes); the two engine reviews' reports. Marsh lights: the slow burning of marsh gases (methane, with traces of phosphine) is the usual explanation, though it has never been fully confirmed."
+  ]
+ },
+ {
   "id": "2026-10-12-ruin-floor",
   "date": "2026-10-12",
   "posted": "2026-10-12T07:40-04:00",
