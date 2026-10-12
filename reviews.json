@@ -1,5 +1,37 @@
 [
  {
+  "id": "2026-10-12-soil-depth",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T07:10-04:00",
+  "title": "Plants only where the soil is deep enough; why the pool looks dark from above",
+  "notes": [
+   "Plants on rock sort themselves by how much soil they have. Moss and lichen need none and live on bare stone. Small flowering plants need about 2.5 cm or more, and grasses about 18 cm or more (studies of plants on rock outcrops). The floor now follows this: the old cracks between the stones have filled with sediment over a long time, and plants grow only where a crack holds enough soil for them. Nothing roots on bare stone, under the drips (the soil is washed out) or in the pool.",
+   "How deep the cracks are is art-directed, not measured: about 40 cm at the widest, Samuel's call for old, deep cracks full of sediment. With that, the widest and wettest cracks carry grass and the narrow ones only flowers and moss.",
+   "Why the pool looks dark from above: looking straight down, still water reflects only about 2 % of the light, so you mostly see its wet floor. The pale shapes on it are the bright openings overhead reflected: even 2 % of them outshines the shaded stone. Toward grazing angles the surface becomes almost a mirror.",
+   "Next: the floor becomes an old ruin, its stones split, tilted, worn and partly gone, with soil under some of them.",
+   "Offline renders, made frame by frame; not something you can walk through.",
+   "Sources: plant communities by soil depth on rock outcrops (New Georgia Encyclopedia, granite outcrops; University of Salamanca pasture study); JNCC limestone pavement account (crack depths); Fresnel reflection of water (2 % at normal incidence)."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-12-soil-depth/crouch-before-after.jpg",
+    "caption": "Crouching view, before and after the soil rule: plants grow only where the old, sediment-filled cracks hold enough soil (about 40 cm deep at the widest, art-directed), never on bare stone, under the drips or in the pool."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-soil-depth/flower-spot.jpg",
+    "caption": "A flower spot from above, with the permanent pool at the top left. 14 flowers root in crack soil; 7 spots with no soil nearby stay bare."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-soil-depth/pool-from-above.jpg",
+    "caption": "The permanent pool, which no longer empties between storms. Seen from above, water reflects only about 2 % of the light, so the pool reads dark and you see its wet floor. The pale shapes are reflections of the bright openings overhead. Toward grazing angles the surface becomes almost a mirror."
+   }
+  ],
+  "status": "current"
+ },
+ {
   "id": "2026-10-12-pool-water",
   "date": "2026-10-12",
   "posted": "2026-10-12T06:40-04:00",
