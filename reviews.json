@@ -444,15 +444,15 @@
   "notes": [
    "What you see. In Gloam, tiny specks of dust drift through the air. Most of the time they are almost invisible. When they cross a ray of sun coming through an opening, they light up, and that is what makes the sunbeams visible. Some settle on the rock and floor, and gusts of wind lift them again.",
    "What changed. The dust now runs inside the new player instead of Unity. It keeps the look that was already settled. Two things are better: the grains settle on the real surface of the sculpture, not slightly above it; and each grain knows at every moment whether the sun can reach it, so the beams move correctly through the whole day, not only at one baked moment. So far it has been tried on a workstation only.",
-   "How we checked it. The image is a test view, not the artwork. Grains that the sun reaches are painted red, grains in shadow blue. The red ones gather exactly where the sun patch falls on the floor, so the beams are in the right place.",
+   "How we checked it. The image is a test view, not the artwork. Every grain is drawn large: red where the sun reaches it, blue in shadow. The red ones sit only on the patches of sun on the floor, so the beams are in the right place.",
    "Limits: dust is about movement and is very sparse in a still image. It has to be judged in motion. The amount and size of the dust are art-directed.",
    "Sources: ported from the artist's own dust system in Unity and tuned by eye; no published model."
   ],
   "media": [
    {
     "type": "image",
-    "src": "media/2026-10-11-dust-gpu/dust-sunlit-check.png",
-    "caption": "Test view: red = dust in direct sun, blue = dust in shadow. The red cluster sits on the floor's sun patch, so the sunbeams are where they should be."
+    "src": "media/2026-10-11-dust-gpu/dust-sunlit-check-v2.jpg",
+    "caption": "Test view inside the cave (not the artwork): every grain drawn large, red if the sun reaches it (circled in yellow), blue if it is in shadow. All 9 sunlit grains in this view sit on the floor's sun patches; of the 1,291 grains in shadow, only 21 are at a patch's edge."
    }
   ],
   "status": "current"
