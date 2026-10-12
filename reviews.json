@@ -390,7 +390,13 @@
    "Over the life of an exhibition, the visible record of the weather will come from dust, the channels rain washes through it, faint rings where puddles dry, and drying stains. Rain cleans dust realistically: partly, more where drops strike, never completely. Mineral growth on the stone itself is far too slow to see (microns per week).",
    "Sources: Lekner and Dorf 1988 (why things are darker when wet); Twomey, Bohren and Mergenthaler 1986 (pore filling); Jensen, Legakis and Dorsey 1999 (rendering wet materials); Zhang and Voss 2006 (wet carbonate sand); Garg and Nayar 2003 and 2006 (appearance of raindrops and rain streaks); Sartor and Boyd 1972 (street dust wash-off); Righetti and Lucarelli 2007 (detachment by drop impact); Deegan et al. 1997, Hu and Larson 2002, Popov 2005 (rings left by drying drops); Lienhard (heat and mass transfer, drying); Dreybrodt 1999 and Baker 1998 (calcite growth rates)."
   ],
-  "media": [],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-how-wet-things-look/wet-and-drops.png",
+    "caption": "Left: how much darker stones of different tones get when wet; pale stone keeps most of its brightness. Right: why a falling drop is hard to show in a headset: drawn once per frame it becomes a string of dots, while the eye sees a faint streak."
+   }
+  ],
   "status": "current"
  },
  {
