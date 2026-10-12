@@ -45,6 +45,52 @@
   "status": "current"
  },
  {
+  "id": "2026-10-12-player-reel",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T03:50-04:00",
+  "title": "Flowers in the rain, breathing walls, and a walk over the living ground",
+  "notes": [
+   "Plants: every plant now sways at its own pace (grass quick, flowers slower under their blooms; only the drifting gusts are shared), and dips and springs back when drops hit it. First at a uniform test rate, then under the real storm: the plants are fed the floor simulation's own drop landings, around 930 drops per square metre per second in the downpour.",
+   "For now a plant's hits are drawn at the rate of drops landing around it, not from the drops' actual paths. Next: each falling drop is traced against the petals, stems and leaves, and the plant is pushed by that drop's own momentum, after which the drop stops there.",
+   "Breathing architecture: the strand crests sway in a slow current, the tallest lobes move like anemones, and a breath travels across the walls. Shown at two strengths: subtle (crests a few millimetres, tall lobes about a centimetre) and twice that, to read the motion clearly.",
+   "A walk over the living ground: broken stone, moss and grass in the cracks, before the vegetation pass.",
+   "All offline renders, not something you can walk through. The heightened storm clips in the 11 October cave rain entry were re-encoded smaller at the same full resolution, to load faster on a remote connection."
+  ],
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-12-player-reel/flowers-dry.mp4",
+    "caption": "Dry: every plant at its own pace."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-player-reel/flowers-rain-test.mp4",
+    "caption": "Test rain: 1,500 drops per square metre per second everywhere, to judge the dips."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-player-reel/flora_hits.mp4",
+    "caption": "Plants under the real storm's drop landings."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-player-reel/breathing-hairs.mp4",
+    "caption": "Breathing walls, subtle."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-player-reel/breathing-hairs-strong.mp4",
+    "caption": "Breathing walls, twice the amplitude."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-player-reel/living-ground-walk.mp4",
+    "caption": "Walk over the living ground (before the vegetation pass)."
+   }
+  ],
+  "status": "current"
+ },
+ {
   "id": "2026-10-11-floor-arrival",
   "date": "2026-10-11",
   "posted": "2026-10-11T10:31-04:00",
