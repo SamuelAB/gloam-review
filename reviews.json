@@ -51,7 +51,7 @@
    "Breathing architecture: the strand crests sway in a slow current, the tallest lobes move like anemones, and a breath travels across the walls. Shown at two strengths: subtle (crests a few millimetres, tall lobes about a centimetre) and twice that, to read the motion clearly. This motion is art-directed.",
    "A walk through the cave over the living ground: broken stone with grass and flowers in the cracks.",
    "Every clip is an offline render, made frame by frame; not something you can walk through.",
-   "Sources: Gunn and Kinzer 1949 (how fast drops fall, for their momentum)."
+   "Sources: Gunn and Kinzer 1949 (how fast drops fall, for their momentum). How stiff and heavy each plant is, and the walls' breathing, are estimates and artistic choices, not measured values."
   ],
   "media": [
    {
@@ -445,7 +445,8 @@
    "What you see. In Gloam, tiny specks of dust drift through the air. Most of the time they are almost invisible. When they cross a ray of sun coming through an opening, they light up, and that is what makes the sunbeams visible. Some settle on the rock and floor, and gusts of wind lift them again.",
    "What changed. The dust now runs inside the new player instead of Unity. It keeps the look that was already settled. Two things are better: the grains settle on the real surface of the sculpture, not slightly above it; and each grain knows at every moment whether the sun can reach it, so the beams move correctly through the whole day, not only at one baked moment. So far it has been tried on a workstation only.",
    "How we checked it. The image is a test view, not the artwork. Grains that the sun reaches are painted red, grains in shadow blue. The red ones gather exactly where the sun patch falls on the floor, so the beams are in the right place.",
-   "Limits: dust is about movement and is very sparse in a still image. It has to be judged in motion. The amount and size of the dust are art-directed."
+   "Limits: dust is about movement and is very sparse in a still image. It has to be judged in motion. The amount and size of the dust are art-directed.",
+   "Sources: ported from the artist's own dust system in Unity and tuned by eye; no published model."
   ],
   "media": [
    {
@@ -489,7 +490,8 @@
   "notes": [
    "Until now the floor under the sculpture was flat and dead. We are giving it a history: what this ground would look like if the space had stood for years under real rain, wind and time. The shaping is grounded in the sculpture itself: how much rain reaches each part of the floor (mostly dripping and running off the stone, from the rain research's floor-arrival map, second image), how much sky and sun each spot gets over the day, and where the rock meets the floor.",
    "A first simulated history gives about 15 cm of relief: hollows and channels under the drip lines, mud where water lingers, sand and dust in dry corners, stones laid bare where water ran. The ground never drops where the sculpture meets it, so no new openings appear at its base. Next: building it in 3D with grass, moss, stones and a few strange flowers where life would take hold, and possibly a scent for each part of the ground.",
-   "Known limits: a first pass, shown from above; the plant growth rules still need work."
+   "Known limits: a first pass, shown from above; the plant growth rules still need work.",
+   "Sources: our own simplified simulation of years of weather (where drips fall, erosion and deposition season by season, slopes slumping, stones resisting), not a published erosion model."
   ],
   "media": [
    {
@@ -561,7 +563,8 @@
   "notes": [
    "A sunbeam in a dusty room is millions of grains, each too small to see, catching the light together. Gloam's player now shows that: beams of glowing dust cross the cave from the openings to the patches of sun on the rock and floor. The beams are not painted. They are dust drifting in the cave's wind, and they glow only where the sun really reaches through the sculpture, so their edges are the edges of the openings and they move as the day moves.",
    "The dust also takes its colour from Gloam's own light. In the beams it has the tint of the sunlit patches; in the shade, grains catch the purple and blue glow of the cave around them, so dust is faintly there everywhere, not only in the sun.",
-   "Limits: a first pass, judged on a monitor; the amount and size of the dust are art-directed. Dust is about movement and depth, and has to be judged in motion."
+   "Limits: a first pass, judged on a monitor; the amount and size of the dust are art-directed. Dust is about movement and depth, and has to be judged in motion.",
+   "Sources: ported from the artist's own dust system in Unity and tuned by eye; no published model."
   ],
   "media": [
    {
@@ -760,7 +763,8 @@
   "title": "Sunbeams made of dust: the first version",
   "notes": [
    "The first beams of glowing dust in Gloam's player: grains drifting in the cave's wind, glowing only where the sun reaches through the openings.",
-   "Offline render; the amount and size of the dust are art-directed."
+   "Offline render; the amount and size of the dust are art-directed.",
+   "Sources: ported from the artist's own dust system in Unity and tuned by eye; no published model."
   ],
   "media": [
    {
