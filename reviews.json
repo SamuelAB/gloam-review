@@ -1,5 +1,39 @@
 [
  {
+  "id": "2026-10-12-ruin-floor",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T07:40-04:00",
+  "title": "Awaiting Samuel's approval: the floor as an old ruin",
+  "notes": [
+   "Awaiting Samuel's approval: a proposal, not yet the floor in use.",
+   "Samuel asked for a floor that looks like a really old ruin, broken over ages: \"it's not paving anymore, it's a ruin\". Each stone has split into several pieces. About half of the pieces came loose and settled on their own, tilted, raised or sunk by up to about 2 cm, so the edges no longer meet, and some pieces are gone, with soil where they were. The gaps have widened to 1 to 3 cm and filled with soil and grit, and the edges are worn round. Some stones have lost a flake off one side.",
+   "Where water stands on a flat stone, shallow solution pans form; under the drips the stone has dissolved into cups about 2 cm deep. Limestone wears down by roughly 0.035 to 0.4 mm a year depending on exposure, so cups of a few centimetres fit a couple of thousand years under a drip.",
+   "Soil also lies under about a third of the stones, more where it is damp and sheltered. Plants root in the gaps, where pieces are missing, and along the edges of stones with soil under them, never on bare stone tops. Dark lichen crusts grow on the shaded stone.",
+   "Art-directed, not measured: the size of the pieces, how many came loose or are gone, how far they moved, how wide the gaps are, the rounding of the edges, and where the soil lies. The pool stays where it was; its water level is measured from the new ground.",
+   "One limit: the ground's shape is held on a 1 cm grid, so details smaller than that (fine pitting, small chips) are not in its shape. Small chips will come as real separate stones.",
+   "Offline renders, made frame by frame; not something you can walk through.",
+   "Sources: solution pans (kamenitzas) in the karren literature (Cucchi 2009, Karst Rock Features); limestone surface lowering measured with micro-erosion meters (St Paul's Cathedral, London; Adriatic shore studies); dark crustose lichen spectra (Greenland lichens); plant communities by soil depth on rock outcrops."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-12-ruin-floor/flower-before-after.jpg",
+    "caption": "The floor as an old ruin (left: before; right: after): stones split, shifted and partly gone, wide gaps filled with soil, plants rooting from the gaps and from under some stones. Seen from above near a flower."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-ruin-floor/crouch-before-after.jpg",
+    "caption": "The usual crouching view, before (left) and as a ruin (right)."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-ruin-floor/pool-before-after.jpg",
+    "caption": "The pool, before (left) and on the ruin floor (right). The pool keeps its place and its still water."
+   }
+  ],
+  "status": "current"
+ },
+ {
   "id": "2026-10-12-soil-depth",
   "date": "2026-10-12",
   "posted": "2026-10-12T07:10-04:00",
