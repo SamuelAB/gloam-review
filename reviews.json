@@ -348,14 +348,20 @@
   "posted": "2026-10-11T13:43-04:00",
   "title": "What a visitor can actually see",
   "notes": [
-   "We simulated about 950 visitor head positions inside the cave, from lying on the floor to standing tall, looking in every direction. Only 41 % of the sculpture's surface is ever visible from inside; the rest (tube interiors, folds, the exterior) never is. Meanwhile, 44 square metres can be seen from closer than 25 cm, by visitors who crouch or lie down and press their faces to the rock.",
-   "This explains why pixels can show in the current build: uniform 8K maps spend most of their detail on surfaces nobody sees and too little on the ones people press close to. The new lighting direction puts detail only where it can be seen, at the density each surface needs."
+   "We simulated a curious visitor's head everywhere it can go inside the cave: standing, crouching, lying on the floor looking up, leaning in and putting their head into the tubes, looking in every direction. About 81 % of the sculpture's surface is seen from somewhere inside; the remaining fifth (hidden folds, the exterior) never is. Much of it can be seen from very close, by visitors who crouch, lie down and press their faces to the rock.",
+   "This explains why pixels can show in the current build: uniform 8K maps spend most of their detail on surfaces nobody sees and too little on the ones people press close to. The new lighting direction puts detail only where it can be seen, at the density each surface needs.",
+   "Correction: an earlier version of this entry said 59 % of the surface was never seen. It placed visitors' heads only on a grid over the open floor and missed everything a visitor sees by leaning into the tubes or lying under an overhang (Samuel caught it). The corrected figure is about 20 %."
   ],
   "media": [
    {
     "type": "image",
-    "src": "media/2026-10-11-visibility-census/visibility-census.png",
-    "caption": "Every surface of Gloam coloured by how close a visitor, standing, crouching or lying on the floor, can ever get to it: white closer than 25 cm, gold under 50 cm, coral under 1 m, violet under 2 m. Surfaces never seen from inside (59 % of the area, dark grey) mostly lie hidden beneath the visible ones in this view."
+    "src": "media/2026-10-11-visibility-census/visibility-census-v2.png",
+    "caption": "Every surface of Gloam coloured by how close a curious visitor can ever get to it: standing, crouching, lying on the floor looking up, leaning in and putting their head into the tubes. White closer than 25 cm, gold under 50 cm, coral under 1 m, violet under 2 m. About a fifth of the surface (20 % of the area, dark grey) is never seen from inside; it lies hidden beneath the visible surfaces in this view."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-11-visibility-census/visibility-census-before-after.png",
+    "caption": "Side view, before and after the correction: the first version placed heads only over the open floor."
    }
   ],
   "status": "current"
