@@ -329,10 +329,34 @@
   "superseded_note": "The proposal is now being built (grey shapes, a map, a window that breathes open). Samuel's direction since: fantastical, a little dangerous, beautiful; an ecology with 20 to 50 % strangeness; the outside shapes the low sun coming in. Correction: the white patches in its first picture were the sculpture's own sunlit outer skin, not the outside."
  },
  {
-  "id": "2026-10-12-shadows-cache",
+  "id": "2026-10-12-shadows-r2",
   "date": "2026-10-12",
   "posted": "2026-10-12T18:05-04:00",
   "status": "current",
+  "title": "Live sun, and plants that cast real shadows (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-12-shadows-cache/main_grass_patch_3way.jpg",
+    "caption": "Grass in a sun patch. Left: baked light, where nothing that moves can cast a shadow. Middle: live sun with a shadow map; the blade shadows wash out. Right: live sun with ray-traced plant shadows; each blade casts a thin shadow from its base."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-shadows-cache/ruin_crouch_3way.jpg",
+    "caption": "The ruin floor, crouching."
+   }
+  ],
+  "notes": [
+   "Work in progress.",
+   "The sun is now computed live, and every blade of grass and every flower casts its own thin shadow from its base.",
+   "Offline renders, made frame by frame. Sources: our own measurements."
+  ]
+ },
+ {
+  "id": "2026-10-12-shadows-cache",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T18:05-04:00",
+  "status": "archived",
   "title": "Live sun shadows, and a network that learns the light (work in progress)",
   "media": [
    {
@@ -376,7 +400,9 @@
    "The sun is now computed live, and plants cast ray-traced shadows. The middle and right columns differ only in the plants' shadows, by design.",
    "Offline renders, made frame by frame; not something you can walk through.",
    "Sources: Müller, Rousselle, Novák, Keller, \"Real-time Neural Radiance Caching for Path Tracing\" (2021); Müller, Evans, Schied, Keller, \"Instant Neural Graphics Primitives with a Multiresolution Hash Encoding\" (2022); our own measurements. Textures: Poly Haven rock_face_03 and brown_mud_03 by Rob Tuytel (CC0); the soil's tone lifted to cave sediment (art-directed). Baked light: the artist's own Octane renders."
-  ]
+  ],
+  "superseded_by": "2026-10-12-shadows-r2",
+  "superseded_note": "Trimmed for the main page: the sheets of small views and the parked experiment with a learning network (its charts) stay here."
  },
  {
   "id": "2026-10-12-engine-day",
@@ -457,7 +483,7 @@
    "Why the pool looks dark from above: looking straight down, still water reflects only about 2 % of the light, so you mostly see its wet floor. The pale shapes on it are the bright openings overhead reflected: even 2 % of them outshines the shaded stone. Toward grazing angles the surface becomes almost a mirror.",
    "Next: the floor becomes an old ruin, its stones split, tilted, worn and partly gone, with soil under some of them.",
    "Offline renders, made frame by frame; not something you can walk through.",
-   "Sources: plant communities by soil depth on rock outcrops (New Georgia Encyclopedia, granite outcrops; University of Salamanca pasture study); JNCC limestone pavement account (crack depths); Fresnel reflection of water (2 % at normal incidence)."
+   "Sources: plant communities by soil depth on rock outcrops (New Georgia Encyclopedia, granite outcrops; University of Salamanca pasture study); JNCC limestone pavement account (crack depths); reflection of water (2 % at normal incidence)."
   ],
   "media": [
    {
@@ -562,6 +588,36 @@
   "superseded_note": "Samuel found the empty pool wrong, flowers and grass still on dry stone, and the painted pebbles reading as lenses. The pool now always holds water, plants root only in the cracks where soil collects, and the painted pebbles were removed."
  },
  {
+  "id": "2026-10-12-drop-shape-r2",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T04:20-04:00",
+  "title": "Falling drops: rounded streaks with a touch of lens",
+  "notes": [
+   "Samuel found the falling drops looked like flat rectangular ribbons. Each drop is drawn as what the eye collects from it during one frame of a VR display (1/90 of a second): it moves several centimetres in that time, so it leaves a short streak.",
+   "Now each streak has the true shape of a moving sphere's trace: thickest through its middle, tapering at both ends, with nothing square about it. Close drops, wider than a pixel, show half of the water sphere's own image (its bright rim, the cave seen through it upside down) over half of the soft average glow the old strips had. The half-and-half mix is Samuel's artistic choice, between the soft strips and the full lens; the full lens and the first attempts are in the archive.",
+   "One more choice, not physics: a drop passing within 12 cm of the viewer's eyes is not drawn, because a drop that close would land on the viewer's face.",
+   "Real drops also wobble as they fall (from about 1 mm across), which would soften the bright rim further; that is not modelled until measured wobble sizes are found.",
+   "All offline renders, made frame by frame from the same storm and viewpoint; not something you can walk through.",
+   "",
+   "Sources: Garg and Nayar 2003 (how a raindrop gathers light); Garg and Nayar 2006, Photorealistic rendering of rain streaks; Tokay and Beard 1996, field study of raindrop oscillations (oscillations begin at about 1 mm diameter); the refractive index of water and how water reflects light."
+  ],
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/zoom-between-g10.mp4",
+    "caption": "Zoomed side by side, heightened rain (ten times more visible than physical, not physical): old flat strips (left), now (right).",
+    "poster": "media/2026-10-12-drop-shape/zoom-between-g10.poster.jpg"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-drop-shape/between-g1.mp4",
+    "caption": "Now, physical rain, full frame.",
+    "poster": "media/2026-10-12-drop-shape/between-g1.poster.jpg"
+   }
+  ],
+  "status": "current"
+ },
+ {
   "id": "2026-10-12-drop-shape",
   "date": "2026-10-12",
   "posted": "2026-10-12T04:20-04:00",
@@ -598,6 +654,41 @@
     "src": "media/2026-10-12-drop-shape/between-g1.mp4",
     "caption": "Now, physical rain, full frame.",
     "poster": "media/2026-10-12-drop-shape/between-g1.poster.jpg"
+   }
+  ],
+  "status": "archived",
+  "superseded_by": "2026-10-12-drop-shape-r2",
+  "superseded_note": "Trimmed for the main page: two of the four clips stay here."
+ },
+ {
+  "id": "2026-10-12-player-reel-r2",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T04:30-04:00",
+  "title": "Flowers in the rain, breathing walls, and a walk over the living ground",
+  "notes": [
+   "Every plant sways at its own pace, and dips and springs back when a raindrop strikes it.",
+   "The walls breathe: the sculpted hairs sway slowly like sea anemones (art-directed).",
+   "A walk through the cave over the living ground: broken stone with grass and flowers in the cracks.",
+   "Offline renders, made frame by frame. Sources: Gunn and Kinzer 1949 (how fast raindrops fall); the plants' stiffness and the walls' motion are estimates and artistic choices."
+  ],
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-12-player-reel/drops-hit-plants.mp4",
+    "caption": "Plants hit by the storm's actual drops: each drop stops on the plant it meets and pushes it. Physical rain.",
+    "poster": "media/2026-10-12-player-reel/drops-hit-plants.poster.jpg"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-player-reel/breathing-hairs.mp4",
+    "caption": "Breathing walls, subtle (art-directed).",
+    "poster": "media/2026-10-12-player-reel/breathing-hairs.poster.jpg"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-player-reel/living-ground-walk.mp4",
+    "caption": "A walk through the cave over the living ground.",
+    "poster": "media/2026-10-12-player-reel/living-ground-walk.poster.jpg"
    }
   ],
   "status": "current"
@@ -659,7 +750,9 @@
     "poster": "media/2026-10-12-player-reel/living-ground-walk.poster.jpg"
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-12-player-reel-r2",
+  "superseded_note": "Trimmed for the main page: the test clips (dry, heavier test rain, the earlier hit rule, the stronger breathing) stay here."
  },
  {
   "id": "2026-10-11-floor-arrival",
@@ -1160,6 +1253,50 @@
   "status": "current"
  },
  {
+  "id": "2026-10-11-cave-rain-r2",
+  "date": "2026-10-11",
+  "posted": "2026-10-11T20:11-04:00",
+  "title": "Rain over the whole cave floor",
+  "notes": [
+   "The earlier rain studies fell on a single square foot, by design, to check the physics. Now the rain falls over the entire floor of the cave, on the new living ground of broken stone plates, and only the water the sky actually delivers reaches it, directly or off the stone.",
+   "Most of the water does not fall straight in. The sculpture is mostly closed above, so rain first lands on the stone, runs down it and drips off its edges onto the floor. Our earlier map of where the sky's water goes decides where every drop and every drip arrives.",
+   "On the ground the water does what water does: it soaks into the stone, darkens it, fills the cracks between the plates first, then gathers into shallow puddles, two to three millimetres deep, in the hollows. Outside the walls it runs off in channels across the sand. The images follow a two and a half minute storm that goes from drizzle to heavy rain.",
+   "Seen from inside, in Gloam's own player, the stone darkens where it is wet, by the measured amount for pale stone, and the puddles reflect the lit cave around them. These are offline renders, made frame by frame, not yet something you can walk through.",
+   "An honest finding about rain itself: in a dim cave, real raindrops are almost invisible. Each drop is a tiny lens that crosses any point in a few thousandths of a second. We render the physical version first, and separately a clearly labelled heightened version, so the choice of how visible the rain should be is an artistic one, made with eyes open.",
+   "Sources: Marshall and Palmer 1948 (raindrop sizes); Gunn and Kinzer 1949 (falling speeds); Stow and Hadfield 1980, Mundo et al. 1995 (splash); Lekner and Dorf 1988 (why things look darker when wet); Garg and Nayar 2003 (how a raindrop gathers light)."
+  ],
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-11-cave-rain/storm-from-above.jpg",
+    "caption": "The cave floor from above at three moments of the storm (30 s, 90 s and 150 s). Darker stone is wet, blue is standing water. The rock base is the dark ring; outside it, water runs off across the sand."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-11-cave-rain/dry-vs-wet.jpg",
+    "caption": "Inside the cave, in Gloam's player: the same view dry, and after two and a half minutes of rain. The stone darkens only a little, as pale stone does."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-11-cave-rain/ripples-before-after.jpg",
+    "caption": "Before and after: the puddle as a still mirror, and with the rings each drop sends out, which break up the reflection of the opening."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-11-cave-rain/storm3-octane_physical.mp4",
+    "caption": "Thirty seconds of the downpour, crouched beside the largest puddle: physical rain, Gloam's Octane light.",
+    "poster": "media/2026-10-11-cave-rain/storm3-octane_physical.poster.jpg"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-11-cave-rain/storm3-octane_heightened.mp4",
+    "caption": "The same moment with the rain made five times more visible than physics allows (heightened, not physical).",
+    "poster": "media/2026-10-11-cave-rain/storm3-octane_heightened.poster.jpg"
+   }
+  ],
+  "status": "current"
+ },
+ {
   "id": "2026-10-11-cave-rain",
   "date": "2026-10-11",
   "posted": "2026-10-11T20:11-04:00",
@@ -1215,7 +1352,9 @@
     "poster": "media/2026-10-11-cave-rain/storm2-live_heightened.poster.jpg"
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-11-cave-rain-r2",
+  "superseded_note": "Trimmed for the main page: the two earlier renders under a lighting test and the technical notes stay here."
  },
  {
   "id": "2026-10-12-drop-shape-first",
