@@ -1,5 +1,67 @@
 [
  {
+  "id": "2026-10-13-toad-skin",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T02:30-04:00",
+  "status": "current",
+  "title": "The toad, rebuilt as one skin, and the flies it hunts (work in progress, not passed)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-toad-skin/toad_before_after.jpg",
+    "caption": "Left: the old toad, made of separate pieces; its legs stood off the body. Right: the new toad, one continuous skin, the legs growing out of it."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-toad-skin/toad_four_views.jpg",
+    "caption": "The new toad from the side, three-quarters, the front and above, on a stone of the ruin floor. Brightened about two times for a phone screen; the cave's own light is dim and purple."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-toad-skin/toad_vs_photos.jpg",
+    "caption": "Ours (left) beside photos of real common toads (right), used to set the eyes, head and back. Photos: Lexipexi (CC BY-SA 3.0), Ridinghag (public domain), Lukasz Lukasik (CC BY-SA 4.0), via Wikimedia Commons."
+   }
+  ],
+  "notes": [
+   "Work in progress, not passed.",
+   "The toad is now one skin: body, head, glands, warts and legs melt into each other, so the legs bend at the joints instead of coming apart when it hops.",
+   "Leg lengths are measured from real toads; the rest is estimated from photos.",
+   "Still open (from a fresh review): the eyes still sit a little proud like knobs, it stands too tall on its legs, the fingers are too long and thin, and it casts no shadow on the stone yet.",
+   "Flies and gnats are now in the cave as the toad's prey. Flies bask on lit stone and dart off from a hand; gnats hover over damp shade. The toad misses about 4 strikes in 10 (art-directed: Samuel wanted it a little clumsy).",
+   "Offline renders, made frame by frame.",
+   "Sources: de Lange, \"A contribution to the intraspecific systematics of Bufo bufo\", Beaufortia 21 (1973), leg proportions; Ewert (1974) on toads striking at moving prey; Schilstra and van Hateren (1999) on how flies turn in flight. Photos as credited above."
+  ]
+ },
+ {
+  "id": "2026-10-13-outside-world",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T02:31-04:00",
+  "status": "current",
+  "title": "A world outside the sculpture: proposal (awaiting Samuel)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-world/views_out.jpg",
+    "caption": "Looking around from the middle of the cave. Top row standing, bottom row lying on the floor; the last picture of each row looks straight up. The white patches are the outside, seen through the openings."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-world/outside_share.png",
+    "caption": "How much of the view shows the outside, measured from 14 places in the cave. Lying or crouching, about 1 %, mostly overhead; standing, 3 to 6 %, in every direction."
+   }
+  ],
+  "notes": [
+   "Proposal, nothing built yet.",
+   "Because the outside is only seen in small framed glimpses, it would be built as windows: a small scene placed where each opening looks, things crossing the sky, and a far horizon behind them.",
+   "Windows (2 to 15 m): real shapes lit by the same live sun and sky as the cave, built only where an opening looks. They must hold up close, because visitors lean into the openings.",
+   "Sky: things that cross it, such as birds, dust devils, heat shimmer and plumes. Lying visitors see it most.",
+   "Far horizon: a 360 picture or short loop, made by us from a real 3D landscape at several sun positions, so it follows the day.",
+   "The story: old ruined ground that the earth is still tearing apart. A rift where the plates split, breathing hot air and wind that colour the sky. Broken walls and stairs to nowhere where birds perch, two craters (one with a still pool that mirrors the sky), desert scrub, a dead tree, dunes, large animals far off, and a few impossible things, such as rocks hovering in the hot updraft or a mirage lake that is never there when you lean closer.",
+   "Samuel's direction (Oct 13): fantastical, a little dangerous, but something really nice about it; a whole ecology with 20 to 50 % strangeness, never corny alien; geology that follows rules, continuing the ruin floor with softer parts; the rift's winds mostly in the sound and the sky (colouring it, a violent eruption can stir the dust inside), not the main cause of the wind; the outside will catch the low, almost level sun and block some of it, giving the light inside more of a story. A soundscape will follow it.",
+   "Method: own measurement (126 views from 14 positions inside the cave, the outside isolated by switching off the direct sun)."
+  ]
+ },
+ {
   "id": "2026-10-12-shadows-cache",
   "date": "2026-10-12",
   "posted": "2026-10-12T18:05-04:00",
