@@ -1,5 +1,31 @@
 [
  {
+  "id": "2026-10-12-window-opens",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T23:58-04:00",
+  "status": "current",
+  "title": "A window that breathes open, and eyes that adapt (work in progress)",
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-12-window-opens/window_opens.mp4",
+    "poster": "media/2026-10-12-window-opens/window_opens.poster.jpg",
+    "caption": "Walking up to a narrow slit in the wall. As the visitor comes close it slowly breathes open; the bright outside glares for a moment, then the eyes adapt, the cave darkens around the window, and the ruins outside appear against the sky. Fourteen seconds, real timing. Brightened slightly for screens; the shapes outside are grey stand-ins."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-window-opens/window_opens_frames.png",
+    "caption": "The same, frame by frame: through a dusty beam, the closed slit, coming close, the window opening, the glare, the eyes adapted."
+   }
+  ],
+  "notes": [
+   "Work in progress.",
+   "The opening is triggered by coming close, never by where someone looks. The eyes adapt in about a second toward bright and about six seconds back toward dark, as real eyes do.",
+   "The sky is now drawn in the openings, the same sky that lights the cave.",
+   "Method: own work; how far the window opens is art-directed."
+  ]
+ },
+ {
   "id": "2026-10-13-outside-map",
   "date": "2026-10-12",
   "posted": "2026-10-12T22:40-04:00",
