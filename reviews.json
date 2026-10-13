@@ -1,5 +1,25 @@
 [
  {
+  "id": "2026-10-13-visibility-census-v3",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T04:40-04:00",
+  "status": "current",
+  "title": "What a visitor can actually see (corrected again)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-visibility-census-v3/census_corrected.png",
+    "caption": "Left: the share of the sculpture's surface a visitor can ever see from inside, as published on October 11 and corrected now. Right: the visible surface by how close a visitor can get to it."
+   }
+  ],
+  "notes": [
+   "About 58 % of the sculpture's surface (241 of 412 square metres) can ever be seen from inside, and 105 square metres of it from closer than 25 cm.",
+   "Correction: the October 11 figure (about 80 % seen, 182 square metres closer than 25 cm) counted head positions just outside the walls, under the sculpture's overhang, so it included the outer skin. We found it while mapping the openings for the world outside; the count now keeps only heads enclosed by the cave. The earlier entry is kept in the archive.",
+   "The conclusion stands and is stronger: much of the surface is never seen, and detail belongs where visitors press close.",
+   "Method: our own measurement, 14,336 head positions a visitor can reach (2,821 of them only by leaning in), rays traced against the full sculpture."
+  ]
+ },
+ {
   "id": "2026-10-13-toad-skin",
   "date": "2026-10-13",
   "posted": "2026-10-13T02:30-04:00",
@@ -784,7 +804,9 @@
     "caption": "Side view, before and after the correction: the first version placed heads only over the open floor."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-13-visibility-census-v3",
+  "superseded_note": "The count included head positions just outside the walls, under the overhang, so it counted the outer skin as seen. Corrected: about 58 % of the surface is ever seen from inside, 105 square metres from closer than 25 cm."
  },
  {
   "id": "2026-10-11-living-ground",
