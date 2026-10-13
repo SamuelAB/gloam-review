@@ -1,5 +1,33 @@
 [
  {
+  "id": "2026-10-13-momonga-firstlook",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T05:30-04:00",
+  "status": "current",
+  "title": "The momonga (Hokkaido flying squirrel), first look (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-momonga-firstlook/momonga_renders_brightened.jpg",
+    "caption": "Four views in the cave's light: lying on the floor 60 cm away, from the front and the side at 40 cm, and leaning in to 20-25 cm. Brightened about two times for a phone screen."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-momonga-firstlook/momonga_firstlook.png",
+    "caption": "The same views at the cave's real brightness, beside two reference photos: Tokumi (Wikimedia Commons, copyrighted free use) and T-konno (Wikimedia Commons, CC BY-SA 4.0)."
+   }
+  ],
+  "notes": [
+   "Work in progress.",
+   "One continuous body, fur built from 14 layers, a flat feathered tail fringe. It turns its head to look at you.",
+   "It passed our visual check on the second round. A fresh reviewer agreed it is ready for a first look, but noted it still reads as a cute round rodent more than a momonga.",
+   "Next: whiskers and front paws, the pale rims of the eyes, a crisper outline of the fur, a shadow where it sits.",
+   "It costs less than a thousandth of a second per frame, close up and far away alike.",
+   "Made by the Gloam Fauna work, which builds the birds and squirrels.",
+   "Sources: reference photos as credited above."
+  ]
+ },
+ {
   "id": "2026-10-13-visibility-census-v3",
   "date": "2026-10-13",
   "posted": "2026-10-13T04:40-04:00",
