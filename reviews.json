@@ -1,5 +1,31 @@
 [
  {
+  "id": "2026-10-13-first-night",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T00:13-04:00",
+  "status": "current",
+  "title": "A first night in Gloam (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-first-night/night_open_near.jpg",
+    "caption": "Looking up into an opening a third of the way into the night: the eyes have adapted to the dark, and the moon lights the cave through the openings."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-first-night/night_stand.jpg",
+    "caption": "Standing in the cave late in the night, by moonlight."
+   }
+  ],
+  "notes": [
+   "Work in progress.",
+   "A first night: the sky fades to a grey, starlit dark, and the eyes adapt over about a minute and a half, lifting the faint light while colour fades to grey, as eyes do at night.",
+   "The brightest moon lights the cave through the openings, with its own shadows; how bright the night is depends on which moons are up and their phases, so some nights are much darker.",
+   "Next: the full cycle, day then night, played in the installation; at night the toads come out and the vents outside glow faintly.",
+   "Made by the Gloam Player work. Method: own work; the night sky and the strength of the adaptation are art-directed."
+  ]
+ },
+ {
   "id": "2026-10-12-eclipse",
   "date": "2026-10-12",
   "posted": "2026-10-12T23:54-04:00",
