@@ -598,7 +598,6 @@
    "One more choice, not physics: a drop passing within 12 cm of the viewer's eyes is not drawn, because a drop that close would land on the viewer's face.",
    "Real drops also wobble as they fall (from about 1 mm across), which would soften the bright rim further; that is not modelled until measured wobble sizes are found.",
    "All offline renders, made frame by frame from the same storm and viewpoint; not something you can walk through.",
-   "",
    "Sources: Garg and Nayar 2003 (how a raindrop gathers light); Garg and Nayar 2006, Photorealistic rendering of rain streaks; Tokay and Beard 1996, field study of raindrop oscillations (oscillations begin at about 1 mm diameter); the refractive index of water and how water reflects light."
   ],
   "media": [
