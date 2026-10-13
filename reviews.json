@@ -1,5 +1,36 @@
 [
  {
+  "id": "2026-10-13-outside-greybox",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T07:00-04:00",
+  "status": "current",
+  "title": "The world outside, first grey shapes, and what the openings really frame (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-greybox/greybox_overview.jpg",
+    "caption": "The outside as plain grey shapes, seen from above and from two sides: the rift on the sunrise side, broken walls and a tower on the sunset side, a young crater with a lake in a ring of dead trees, an old crater, terraces, dunes far off. The sculpture is the white shape in the middle. Exposure lowered about seven times so the shapes show (not physical): at the cave's true exposure the open daylight turns white."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-greybox/through_openings.jpg",
+    "caption": "Looking out through the 20 largest openings, from inside. They show black: the sky is not drawn yet. None of them shows the grey land, because they point up."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-greybox/views_out_elevation.png",
+    "caption": "Where the views out of the cave land: about 82 % on the sky above 15°, only about 10 % on the ground."
+   }
+  ],
+  "notes": [
+   "Work in progress: placeholder shapes, nothing final.",
+   "What this changes: the sky is most of the outside world a visitor sees. It comes first (the live sky, the anti-sun, moons and stars), then tall things that rise into the openings' view (cliffs, towers, giant trees, plumes), then the ground.",
+   "The sky is not drawn yet; through the openings it is black. The white seen in openings until now was the sculpture's own sunlit outer skin.",
+   "Open question: open daylight is far brighter than the cave, and the display turns it white. Glare as a mood, a gentler curve for what is seen through openings, or a hazier, dimmer outside.",
+   "Method: own measurement (rays leaving the cave from 1,858 head positions)."
+  ]
+ },
+ {
   "id": "2026-10-13-momonga-firstlook",
   "date": "2026-10-13",
   "posted": "2026-10-13T05:30-04:00",
