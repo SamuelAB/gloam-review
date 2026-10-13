@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gloam VR: Featured</title>
+<link rel="stylesheet" href="site.css">
+<style>
+  .gallery { display: grid; grid-template-columns: 1fr; gap: 18px; margin: 14px 0 30px; }
+  @media (min-width: 760px) { .gallery { grid-template-columns: 1fr 1fr; } .gallery figure.wide { grid-column: span 2; } }
+  .gallery figcaption { margin-top: 6px; }
+  h2.theme { margin: 30px 0 4px; }
+  p.theme { margin: 0 0 6px; opacity: .85; }
+</style>
+</head>
+<body>
+<nav class="site" aria-label="Site">
+  <a href="featured.html" aria-current="page">Featured</a>
+  <a href="index.html">Current work</a>
+  <a href="archive.html">Progress archive</a>
+  <a href="approach.html">Approach</a>
+</nav>
+<header>
+  <h1>Gloam: what it looks like now</h1>
+  <p class="lede"><b>Gloam (Entre chien et loup)</b>, an immersive VR installation by Samuel Arsenault-Brassard: a vast cave,
+    hand-sculpted in virtual reality over four years, in which a full cycle of natural light moves through the architecture.
+    These are recent images of the work as it becomes a living place: an old ruined floor, rain on real stone, dust in the sunbeams,
+    walls that breathe, and small animals that live there.</p>
+  <p class="lede">All images are drawn in Gloam's own engine, in its light. Most are brightened for screens, as noted; the cave itself is dimmer.
+    Work in progress continues on the <a href="index.html">current work</a> page.</p>
+</header>
+<main>
+  <h2 class="theme">The cave and its light</h2>
+  <div class="gallery">
+    <figure class="wide"><img src="media/featured/floor_morning.jpg" alt="Morning light on the old cracked stone floor, moss in the cracks, a glowing tunnel at the back">
+      <figcaption>Morning light finds the old stone floor, moss growing in its cracks. (Brightened for screens.)</figcaption></figure>
+    <figure class="wide"><img src="media/featured/floor_afternoon_beams.jpg" alt="Afternoon sunbeams full of dust falling onto the broken stones">
+      <figcaption>Afternoon sun falls through the openings in beams of dust and pools on the broken stones. (Brightened.)</figcaption></figure>
+    <figure><video src="media/2026-10-12-engine-day/breathe.mp4" controls muted playsinline preload="metadata" poster="media/2026-10-12-engine-day/breathe.poster.jpg"></video>
+      <figcaption>Looking up: the walls breathe, the sculpted hairs moving slowly like sea anemones (art-directed).</figcaption></figure>
+    <figure><video src="media/2026-10-11-dust-god-rays/dust-god-rays-v2.mp4" controls muted playsinline preload="metadata" poster="media/2026-10-11-dust-god-rays/dust-god-rays-v2.poster.jpg"></video>
+      <figcaption>Dust drifting through the beams of sunlight in the upper chambers.</figcaption></figure>
+    <figure class="wide"><img src="media/featured/floor_lying.jpg" alt="Lying on the floor: worn stone slabs, small pale flowers, the sculpted walls rising behind">
+      <figcaption>What a visitor sees lying on the floor: flowers, stone and the walls rising around them. (Brightened.)</figcaption></figure>
+    <figure><video src="media/intro/sculpting_in_vr.mp4" controls muted playsinline preload="metadata" poster="media/intro/sculpting_in_vr.jpg"></video>
+      <figcaption>How it is made: every form is sculpted by hand in virtual reality.</figcaption></figure>
+    <figure><img src="media/featured/beams_looking_up.jpg" alt="Sunbeams crossing the cave's ceiling of tunnels and openings">
+      <figcaption>Sunbeams crossing the cave's ceiling of tunnels and openings. (Brightened.)</figcaption></figure>
+  </div>
+
+  <h2 class="theme">Rain</h2>
+  <p class="theme">Rain that behaves like real water on real stone: where it falls through the openings, how it runs and pools, how the stone darkens as it gets wet.</p>
+  <div class="gallery">
+    <figure class="wide"><video src="media/2026-10-12-player-reel/drops-hit-plants.mp4" controls muted playsinline preload="metadata" poster="media/2026-10-12-player-reel/drops-hit-plants.poster.jpg"></video>
+      <figcaption>Rain falling into the cave: each drop that strikes the grass and flowers makes them bend and spring back (offline render).</figcaption></figure>
+    <figure class="wide"><img src="media/2026-10-11-cave-rain/dry-vs-wet.jpg" alt="The same view of the floor dry, and after two and a half minutes of rain">
+      <figcaption>The same floor dry (left) and after two and a half minutes of rain (right): wet stone darkens as real stone does.</figcaption></figure>
+  </div>
+
+  <h2 class="theme">Creatures (first looks)</h2>
+  <p class="theme">Small animals live on the floor and react to the visitor, fleeing a hand or a head that comes too close. These are first looks, still being refined.</p>
+  <div class="gallery">
+    <figure><img src="media/featured/toad.jpg" alt="A common toad sitting on a stone of the ruin floor">
+      <figcaption>A common toad on the ruin floor. It hunts flies and gnats, and misses about four times in ten. (Brightened; first look.)</figcaption></figure>
+    <figure><img src="media/featured/momonga.jpg" alt="A Hokkaido flying squirrel looking straight at the viewer">
+      <figcaption>A Hokkaido flying squirrel (momonga) that turns its head to look at you. (Brightened; first look.)</figcaption></figure>
+  </div>
+
+  <h2 class="theme">Coming next: the world outside</h2>
+  <div class="gallery">
+    <figure class="wide"><img src="media/featured/window_closed_open.jpg" alt="A hole in the wall, closed, then breathed open">
+      <figcaption>An early test: openings in the wall breathe open when a visitor comes close, revealing the world outside. The shapes outside are stand-ins and the sky is not drawn yet.</figcaption></figure>
+  </div>
+</main>
+<div id="lightbox" role="dialog" aria-label="Full screen image"><img alt=""><div class="cap"></div><button aria-label="Close">&times;</button></div>
+<script src="site.js"></script>
+</body>
+</html>

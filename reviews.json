@@ -1,8 +1,8 @@
 [
  {
   "id": "2026-10-13-outside-map",
-  "date": "2026-10-13",
-  "posted": "2026-10-13T08:15-04:00",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T22:40-04:00",
   "status": "current",
   "title": "The world outside: a map, eye-level views, and a window that breathes open (work in progress)",
   "media": [
@@ -20,20 +20,26 @@
     "type": "image",
     "src": "media/2026-10-13-outside-map/eye_level.jpg",
     "caption": "At a person's eye height outside the sculpture: from across the rift looking back west (the sculpture, the tower, the dead trees beyond the rift's edge), beside the ruins, and towards the young crater. Grey placeholder shapes at about a seventh of their true light (not physical)."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-greybox/views_out_elevation.png",
+    "caption": "Where the views out of the cave land: about 82 % on the sky above 15°, only about 10 % on the ground. So the sky comes first."
    }
   ],
   "notes": [
    "Work in progress: grey placeholder shapes, nothing final; nothing is shown in the cave unless switched on.",
    "The openings that breathe open are the first vistas: a visitor coming close makes the hole widen slowly, and the world outside comes into view; it closes again when they leave. Triggered by coming close or leaning in, never by where someone looks.",
+   "Most of what the openings frame is sky. The white seen in openings until now was the sculpture's own sunlit outer skin; the sky itself is not drawn yet.",
    "Next: the sky (it is black for now), then the tall shapes that rise into the openings' view, chosen opening by opening.",
    "Method: own work; positions and sizes art-directed."
   ]
  },
  {
   "id": "2026-10-13-outside-greybox",
-  "date": "2026-10-13",
-  "posted": "2026-10-13T07:00-04:00",
-  "status": "current",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T22:00-04:00",
+  "status": "archived",
   "title": "The world outside, first grey shapes, and what the openings really frame (work in progress)",
   "media": [
    {
@@ -58,12 +64,14 @@
    "The sky is not drawn yet; through the openings it is black. The white seen in openings until now was the sculpture's own sunlit outer skin.",
    "Open question: open daylight is far brighter than the cave, and the display turns it white. Glare as a mood, a gentler curve for what is seen through openings, or a hazier, dimmer outside.",
    "Method: own measurement (rays leaving the cave from 1,858 head positions)."
-  ]
+  ],
+  "superseded_by": "2026-10-13-outside-map",
+  "superseded_note": "Replaced an hour later by the map, eye-level views and the breathing window; its chart of where the views out land moved there."
  },
  {
   "id": "2026-10-13-momonga-firstlook",
-  "date": "2026-10-13",
-  "posted": "2026-10-13T05:30-04:00",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T21:25-04:00",
   "status": "current",
   "title": "The momonga (Hokkaido flying squirrel), first look (work in progress)",
   "media": [
@@ -81,17 +89,14 @@
   "notes": [
    "Work in progress.",
    "One continuous body, fur built from 14 layers, a flat feathered tail fringe. It turns its head to look at you.",
-   "It passed our visual check on the second round. A fresh reviewer agreed it is ready for a first look, but noted it still reads as a cute round rodent more than a momonga.",
    "Next: whiskers and front paws, the pale rims of the eyes, a crisper outline of the fur, a shadow where it sits.",
-   "It costs less than a thousandth of a second per frame, close up and far away alike.",
-   "Made by the Gloam Fauna work, which builds the birds and squirrels.",
    "Sources: reference photos as credited above."
   ]
  },
  {
   "id": "2026-10-13-visibility-census-v3",
-  "date": "2026-10-13",
-  "posted": "2026-10-13T04:40-04:00",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T21:10-04:00",
   "status": "current",
   "title": "What a visitor can actually see (corrected again)",
   "media": [
@@ -110,10 +115,10 @@
  },
  {
   "id": "2026-10-13-toad-skin",
-  "date": "2026-10-13",
-  "posted": "2026-10-13T02:30-04:00",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T20:30-04:00",
   "status": "current",
-  "title": "The toad, rebuilt as one skin, and the flies it hunts (work in progress, not passed)",
+  "title": "The toad, rebuilt as one skin, and the flies it hunts (work in progress)",
   "media": [
    {
     "type": "image",
@@ -143,9 +148,9 @@
  },
  {
   "id": "2026-10-13-outside-world",
-  "date": "2026-10-13",
-  "posted": "2026-10-13T02:31-04:00",
-  "status": "current",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T20:31-04:00",
+  "status": "archived",
   "title": "A world outside the sculpture: proposal (awaiting Samuel)",
   "media": [
    {
@@ -168,14 +173,16 @@
    "The story: old ruined ground that the earth is still tearing apart. A rift where the plates split, breathing hot air and wind that colour the sky. Broken walls and stairs to nowhere where birds perch, two craters (one with a still pool that mirrors the sky), desert scrub, a dead tree, dunes, large animals far off, and a few impossible things, such as rocks hovering in the hot updraft or a mirage lake that is never there when you lean closer.",
    "Samuel's direction (Oct 13): fantastical, a little dangerous, but something really nice about it; a whole ecology with 20 to 50 % strangeness, never corny alien; geology that follows rules, continuing the ruin floor with softer parts; the rift's winds mostly in the sound and the sky (colouring it, a violent eruption can stir the dust inside), not the main cause of the wind; the outside will catch the low, almost level sun and block some of it, giving the light inside more of a story. A soundscape will follow it.",
    "Method: own measurement (126 views from 14 positions inside the cave, the outside isolated by switching off the direct sun)."
-  ]
+  ],
+  "superseded_by": "2026-10-13-outside-map",
+  "superseded_note": "The proposal is now being built (grey shapes, a map, a window that breathes open). Samuel's direction since: fantastical, a little dangerous, beautiful; an ecology with 20 to 50 % strangeness; the outside shapes the low sun coming in. Correction: the white patches in its first picture were the sculpture's own sunlit outer skin, not the outside."
  },
  {
   "id": "2026-10-12-shadows-cache",
   "date": "2026-10-12",
   "posted": "2026-10-12T18:05-04:00",
   "status": "current",
-  "title": "Live sun shadows, and a network that learns the light (work in progress, not passed)",
+  "title": "Live sun shadows, and a network that learns the light (work in progress)",
   "media": [
    {
     "type": "image",
@@ -246,22 +253,11 @@
    }
   ],
   "notes": [
-   "Gloam is replacing both Unity, the game engine it played in, and Octane, the renderer that baked its light, with a player and a light engine we wrote ourselves. This post shows what that bought, in numbers, what we built on top of it today, and the plan ahead, including the strange parts.",
-   "Why leave Unity and Octane. Gloam's day of light is about 16,000 baked 8K lightmaps that stream to the VR display while a visitor walks. In Unity every lightmap swap froze the program for 80 to 95 milliseconds. At 90 frames a second a frame lasts 11 milliseconds, so each swap dropped seven or eight frames, and in VR a dropped frame is felt in the stomach, not just seen.",
-   "Unity against our player. One 8K lightmap upload: 80 to 95 milliseconds in Unity, during which nothing moved; 5.7 in our player, done on the side while the picture keeps moving. Light changes per second without a dropped frame: about 2 in Unity; 5.3 in our player, with no frame over the 11 millisecond budget. Re-lighting the whole sculpture: about a year of Octane renders; now live light from the sky and sun, and the light at every point rebakes in about 15 minutes. Sculpture drawn per frame: everything in Unity; in our player only what can be seen from where you stand (about a quarter of the pieces at a time).",
-   "Today's gains on top of that, each measured before and after on the same view. Drawing only what can be seen: the graphics card's time per frame went from 4.8 to 3.4 milliseconds. Storing the light more compactly: 350 MB down to 186 MB. Playing back the rain on the sculpture: 8.9 milliseconds of computer time per frame with frames dropped, now 0.16 with none dropped. Storm data on disk (a 30 second sample): 2.2 GB down to 1.0 GB.",
-   "What we built today. Vivarium, our own file format (private for now): the artwork as one package of layers (shape, light, motion, visibility, water, growth), each checked against the shape it belongs to, so a stale piece is refused instead of drawing wrong.",
-   "The sculpture in small clusters, loaded by what you can see: light and motion now live per cluster in a shared pool that follows the visitor; the same machinery carries storms and, later, growth.",
-   "Rain as time pages: a storm is stored per piece of the sculpture and per second, only where water actually is; the computer no longer rebuilds the wetness of 3.7 million points every frame.",
-   "One clock for time of day, storms and exhibition days, and a growth layer that will remember what grew and wore away across the days of an exhibition.",
-   "The breathing walls now carry their own light: their shadows move with them, each strand brightens as it leans toward the sun, and the light bounced around the cave shifts as each strand turns: every point of the wall knows, from its own place in the fur, how its light changes when it leans. Where the sun is behind them, the thinnest strands glow through.",
-   "Smoother light without waiting longer: the light is baked several times independently and the engine learns, from how those bakes disagree, how much to smooth it on the surface itself, keeping the fine shading of the fur and removing the grain.",
-   "A permanent pool at the back, holding water between storms and reflecting the live sky. Plants that need soil: grass and flowers only where old cracks have filled with sediment, nothing under the drips or in the pool.",
-   "Two independent reviews of the engine work (by another AI model), and every serious finding fixed; then a cleanup that removed duplicated code without changing a pixel.",
-   "The plan ahead, near: the floor as an ancient ruin, broken over aeons: split, tilted and sunken stones, soil under some of them, wide joints filled with moss and grit. Small life: snails, woodlice, springtails, toads; then curious squirrels and birds that come to look at you, let you near if you move slowly, and fly off if you move too fast. Sound: birds near and far, wings, drips, wind. Your own hands in the space, and later your body. The rain again, now on the new engine, still changing the light.",
-   "Further, and stranger (ideas, not built). White holes: columns where water, or smoke, or something with no name, pours endlessly from nowhere: the calm of a waterfall or a fire. Will-o'-the-wisps: pale green and blue flames that rise at night, the cold glow that marsh gases were once seen to give off. Comets crossing the night sky so brightly they light the cave, and scare the birds into flight, wings beating, screaming.",
-   "Offline renders, made frame by frame; not something you can walk through.",
-   "Sources: our own measurements on the same workstation and the same views before and after each change (frame times over hundreds of frames, upload times, file sizes); the two engine reviews' reports. Marsh lights: the slow burning of marsh gases (methane, with traces of phosphine) is the usual explanation, though it has never been fully confirmed."
+   "Gloam is replacing Unity, the game engine it played in, and Octane, the renderer that baked its light, with its own player and light engine.",
+   "Why: Gloam's day of light is thousands of baked pictures of light streamed while a visitor walks. In Unity each change of picture froze the image for a moment, and in VR a frozen moment is felt in the stomach. Our player changes the light smoothly, without a single dropped frame, and can now compute the sky's and the sun's light live instead of baking it for a year.",
+   "What it lets the art do: walls that breathe and carry their own light, a permanent pool that holds water between storms, plants only where old cracks have filled with soil, and, next, a floor made of an ancient ruin, small animals, sound, and a world outside.",
+   "Further, and stranger (ideas, not built): columns where water or smoke pours endlessly from nowhere, pale flames rising at night over the marsh, comets crossing the night sky bright enough to scare the birds.",
+   "Offline renders, made frame by frame. Sources: our own measurements on the same views before and after each change."
   ]
  },
  {
@@ -364,7 +360,9 @@
     "caption": "The zone map with its legend. Black: the sculpture's pillars and walls, where there is no floor (P1 to P10)."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-12-soil-depth",
+  "superseded_note": "Its topic continued half an hour later in the entry on soil depth and the pool."
  },
  {
   "id": "2026-10-12-lived-ground",
@@ -531,7 +529,9 @@
     "caption": "Water reaching the floor per unit of rain, top view, still air (log colour scale; 1 = open sky). Blue: the inside floor."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-10-catchment",
+  "superseded_note": "Covered by the map of where the rain goes."
  },
  {
   "id": "2026-10-11-water-settles",
@@ -554,7 +554,9 @@
     "poster": "media/2026-10-11-water-settles/00_surface_steel_vs_stone.poster.jpg"
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-11-cave-rain",
+  "superseded_note": "A test on a flat floor, replaced by rain in the cave itself."
  },
  {
   "id": "2026-10-11-thrown-bucket",
@@ -782,7 +784,9 @@
     "caption": "Frame 640 of the day, rendered by the new player from where the visitor starts."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-12-engine-day",
+  "superseded_note": "The same story, told with newer results in the entry on our own engine."
  },
  {
   "id": "2026-10-11-rebake-vs-octane",
@@ -826,7 +830,9 @@
     "caption": "Left, Octane's original light. Right, our fast test on the main interior piece. The light falls in the same places, but the colour is flatter and warmer than Octane's sky."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-12-engine-day",
+  "superseded_note": "Live light from the sky and the sun now exists in our own engine."
  },
  {
   "id": "2026-10-11-dust-gpu",
@@ -868,7 +874,9 @@
     "caption": "Test view inside the cave (not the artwork): every grain drawn large, red if the sun reaches it (circled in yellow), blue if it is in shadow. All 9 sunlit grains in this view sit on the floor's sun patches; of the 1,291 grains in shadow, only 21 are at a patch's edge."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-11-dust-god-rays",
+  "superseded_note": "A test view, replaced the same day by the sunbeams made of dust."
  },
  {
   "id": "2026-10-11-visibility-census",
@@ -920,7 +928,9 @@
     "caption": "The input: where rain reaches the floor, per unit of rain (1 = open sky), from the floor-arrival map."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-12-soil-depth",
+  "superseded_note": "The first top-down pass, now built in 3D: the ruin floor, its soil and plants."
  },
  {
   "id": "2026-10-11-how-wet-things-look",
@@ -968,7 +978,9 @@
     "caption": "26 seconds in. The wet square is in the same place; in the player it darkens only as much as the physics of pale stone allows."
    }
   ],
-  "status": "current"
+  "status": "archived",
+  "superseded_by": "2026-10-11-cave-rain",
+  "superseded_note": "Replaced by rain over the whole cave floor."
  },
  {
   "id": "2026-10-11-dust-god-rays",
