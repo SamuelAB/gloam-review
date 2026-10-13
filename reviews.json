@@ -806,7 +806,7 @@
   ],
   "status": "archived",
   "superseded_by": "2026-10-13-visibility-census-v3",
-  "superseded_note": "The count included head positions just outside the walls, under the overhang, so it counted the outer skin as seen. Corrected: about 58 % of the surface is ever seen from inside, 105 square metres from closer than 25 cm."
+  "superseded_note": "The count included head positions just outside the walls, under the overhang, so it counted the outer skin as seen. Corrected: about 58 % of the surface is ever seen from inside, 105 square metres from closer than 25 cm. Its picture also had a fault: the distances were matched to the wrong triangles (the engine reorders them when it loads the sculpture), so the colours were scattered."
  },
  {
   "id": "2026-10-11-living-ground",
