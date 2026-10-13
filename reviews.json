@@ -1,9 +1,85 @@
 [
  {
+  "id": "2026-10-13-outside-forest",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T02:11-04:00",
+  "status": "current",
+  "title": "The world outside becomes a forest (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-forest/over_sw.jpg",
+    "caption": "From above, with the cave in the middle: around the young crater the trees lie thrown down, all pointing away from it; beyond them dead trees still stand, leaning out; then the living forest."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-forest/giant.jpg",
+    "caption": "Standing by the giant tree to the north: the living forest behind it."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-forest/blast.jpg",
+    "caption": "Among the dead: snags with broken tops and bare arms against the living crowns beyond."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-forest/op02.jpg",
+    "caption": "From inside the cave, looking up through an opening: crowns and dead trunks now fill the view out."
+   }
+  ],
+  "notes": [
+   "Samuel found the first trees too sparse. Now the whole land is a forest, shaped by one rule: the young crater's blast killed the wood in rings around it, as a volcano's sideways blast did at Mount St Helens in 1980. Nearest, trees thrown down pointing away; then standing dead; then scorched trees that kept their fine twigs, with pale lichen hanging from them; then the living forest. Saplings and shrubs grow back where the dead let light through.",
+   "On the rift's side the living trees are twisted and lean away from the wind, with branches only on the sheltered side.",
+   "About 470 living trees, 150 standing dead, 40 thrown down and 150 shrubs. No tree reaches into the sculpture.",
+   "Shapes only: no materials yet, and the outside is darkened so the forms read (the pastel colours are not the final look). The ruins are still plain blocks.",
+   "For Samuel: is this the right density and feel before it goes into the light bake? Next ideas: stranger plants (20 to 50 % strange), flowers outside, the ruins stone by stone.",
+   "Made by the Gloam Player Artist work. Method: own work; zone widths estimated from the Mount St Helens blast zones, forms art-directed."
+  ]
+ },
+ {
+  "id": "2026-10-13-eclipses-night",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T02:11-04:00",
+  "status": "current",
+  "title": "Eclipses, night lights and comets (work in progress)",
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-13-eclipses-night/ecl_sky.mp4",
+    "poster": "media/2026-10-13-eclipses-night/ecl_sky.poster.jpg",
+    "caption": "A total eclipse seen in the sky, time sped up: the lavender moon covers the sun, the sky turns to dusk with sunset light all round the horizon, and the corona shows round the black disc. (Brightened about 2x for phones.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-13-eclipses-night/ecl_cave.mp4",
+    "poster": "media/2026-10-13-eclipses-night/ecl_cave.poster.jpg",
+    "caption": "The same eclipse from inside: the cave goes dim but never black, and the eyes slowly adapt. (Brightened about 2x.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-13-eclipses-night/night.mp4",
+    "poster": "media/2026-10-13-eclipses-night/night.poster.jpg",
+    "caption": "Night lights: fireflies drift in swarms and part around your head; stand-in ethereal fires wander and light the walls near them. (Brightened about 2x.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-eclipses-night/great_comet.jpg",
+    "caption": "A great comet: on one day and night in five, its tail spans a third of the sky and its glow lights the sky around it. (Brightened about 2x.)"
+   }
+  ],
+  "notes": [
+   "Every day the lavender moon passes over the sun, totally on some days and partly on others; the red moon (now bigger) does it on most days too.",
+   "Comets at every scale: small sparkling ones most nights, a great one now and then. The tubes stand half open through the night, letting more sky in.",
+   "Glowing plants (by the Artist) join the night lights later; the fires shown here are stand-ins.",
+   "For Samuel: how dark should totality be? How often should the great comet come? Should the red moon be larger still? Known, not fixed yet: moonlight on very fine spiny surfaces can sparkle.",
+   "Made by the Gloam Player work. Method: own work; art-directed."
+  ]
+ },
+ {
   "id": "2026-10-13-outside-wood",
   "date": "2026-10-13",
   "posted": "2026-10-13T01:16-04:00",
-  "status": "current",
+  "status": "archived",
   "title": "The trees outside get their shapes (work in progress)",
   "media": [
    {
@@ -27,7 +103,9 @@
    "For Samuel to judge before the trees go into the light bake: the silhouettes, how many arms, the broken tops, the giant's crown.",
    "Reviewed by a fresh reviewer: floating root collars, a limb that looked stuck on, spiky roots and pin-straight branches were fixed.",
    "Made by the Gloam Player Artist work. Method: own work; shapes and proportions are art-directed."
-  ]
+  ],
+  "superseded_by": "2026-10-13-outside-forest",
+  "superseded_note": "Samuel found these trees too sparse; replaced the same night by a whole forest."
  },
  {
   "id": "2026-10-13-cycle",
