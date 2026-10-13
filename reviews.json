@@ -1,9 +1,40 @@
 [
  {
+  "id": "2026-10-13-dragon-trees",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T09:35-04:00",
+  "status": "current",
+  "title": "The outside restarts: two ancient dragon's blood trees (form study, work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-dragon-trees/window8.jpg",
+    "caption": "From inside the cave, leaning into window 8 as it breathes open: the older tree's crown fills it."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-dragon-trees/photo_vs_eye.jpg",
+    "caption": "A real dragon's blood tree on Socotra (left, photo by Rod Waddington, CC BY-SA 2.0) beside ours (right): the umbrella crown on forks that split in two again and again."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-dragon-trees/photo_vs_under.jpg",
+    "caption": "From underneath: photo (left, by Rod Waddington, CC BY-SA 2.0) and ours (right)."
+   }
+  ],
+  "notes": [
+   "Samuel rejected the generated forest. A new art direction (docs/research/outside-art-direction.md) restarts the outside from a few things made as carefully as the floor, starting with two trees that have stood 500 to 1,000 years. Samuel chose dragon's blood trees: on Socotra they grow on limestone plateaus right above a violent monsoon sea.",
+   "Built from measurements (height, trunk width and age from published studies) and photographs: the trunk forks once, then every branch splits in two again and again, each a little thinner; each branch grows only as far as the light allows, so all the tips end on one cap of leaves. Tree A is about 750 years old, tree B (split low into two stems) about 1,000.",
+   "Form only. Not done yet: no shadows at all outside (so the crown's underside is as bright as its top), plain placeholder ground and light. Still to do on the trees: older, lumpier trunks with scars and buttresses, a denser, flatter cap of leaves, shorter knobbier branches.",
+   "For Samuel: is this the right tree and the right place in window 8? Next: the shadows (with Gloam Player), then the rock and burnt grass they stand on, then the sea.",
+   "Made by the Gloam Player Artist work. Method: own work from measurement and photographs (no downloaded models)."
+  ]
+ },
+ {
   "id": "2026-10-13-outside-forest",
   "date": "2026-10-13",
   "posted": "2026-10-13T02:11-04:00",
-  "status": "current",
+  "status": "archived",
   "title": "The world outside becomes a forest (work in progress)",
   "media": [
    {
@@ -34,7 +65,9 @@
    "Shapes only: no materials yet, and the outside is darkened so the forms read (the pastel colours are not the final look). The ruins are still plain blocks.",
    "For Samuel: is this the right density and feel before it goes into the light bake? Next ideas: stranger plants (20 to 50 % strange), flowers outside, the ruins stone by stone.",
    "Made by the Gloam Player Artist work. Method: own work; zone widths estimated from the Mount St Helens blast zones, forms art-directed."
-  ]
+  ],
+  "superseded_by": "2026-10-13-dragon-trees",
+  "superseded_note": "Samuel rejected the procedural forest (\"not cinematic or real\"); the outside restarts from two ancient trees built from photographs."
  },
  {
   "id": "2026-10-13-eclipses-night",
