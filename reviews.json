@@ -1,5 +1,43 @@
 [
  {
+  "id": "2026-10-12-eclipse",
+  "date": "2026-10-12",
+  "posted": "2026-10-12T23:54-04:00",
+  "status": "current",
+  "title": "The dark sun, moons, stars and a comet in Gloam's sky (work in progress)",
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-12-eclipse/eclipse_cave.mp4",
+    "poster": "media/2026-10-12-eclipse/eclipse_cave.poster.jpg",
+    "caption": "The dark sun passes in front of the sun: the cave loses its light and colour for a moment."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-12-eclipse/eclipse_sky.mp4",
+    "poster": "media/2026-10-12-eclipse/eclipse_sky.poster.jpg",
+    "caption": "The sky close up: the dark sun, with its thin ring and violet halo, sweeps across and hides the sun."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-eclipse/comet_head_zoom.png",
+    "caption": "A comet's head and tail, close up (enlarged)."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-12-eclipse/meteor_zoom.png",
+    "caption": "A meteor streak, close up (enlarged)."
+   }
+  ],
+  "notes": [
+   "Work in progress.",
+   "Gloam's sky now holds a dark sun that absorbs light rather than giving it, three moons, stars bright enough to see by day, satellites, meteors and a comet. None of them lights the cave; the dark sun only takes light away.",
+   "The dark sun crosses the sky late each afternoon; on every third day it passes in front of the sun, and the room dims to about half and turns from magenta to deep blue.",
+   "Next: a night, with the cave lit faintly by the moons as the eyes slowly adapt.",
+   "Made by the Gloam Player work, from the shared design for the sky. Method: own work; all sizes and timings art-directed."
+  ]
+ },
+ {
   "id": "2026-10-12-vistas",
   "date": "2026-10-12",
   "posted": "2026-10-12T23:09-04:00",
