@@ -65,6 +65,24 @@
     "type": "image",
     "src": "media/2026-10-13-eclipses-night/great_comet.jpg",
     "caption": "A great comet: on one day and night in five, its tail spans a third of the sky and its glow lights the sky around it. (Brightened about 2x.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-13-dark-sun-aurora/dark_sun.mp4",
+    "poster": "media/2026-10-13-dark-sun-aurora/dark_sun.poster.jpg",
+    "caption": "Added later the same night: the dark sun now passes exactly over the sun every day. It bends the light of the sky and of the sun itself; when they align, the sun becomes a soft glowing ring round the black core, and the darkening reaches about 40 degrees across the sky. (Time sped up.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-13-dark-sun-aurora/aurora.mp4",
+    "poster": "media/2026-10-13-dark-sun-aurora/aurora.poster.jpg",
+    "caption": "Aurora: green curtains with violet tops and fine rays, swaying slowly on the side of the sky away from the noon sun. Faint on most nights, a full display one night in three, strongest around midnight; its light reaches the cave faintly. (Brightened about 2x for phones.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-13-dark-sun-aurora/fireflies.mp4",
+    "poster": "media/2026-10-13-dark-sun-aurora/fireflies.poster.jpg",
+    "caption": "Fireflies now fly low over the floor, and each swarm flashes almost together, so a flash leaves a faint pool of light on the floor, even in moonlight. (Brightened about 2x.)"
    }
   ],
   "notes": [
@@ -72,6 +90,7 @@
    "Comets at every scale: small sparkling ones most nights, a great one now and then. The tubes stand half open through the night, letting more sky in.",
    "Glowing plants (by the Artist) join the night lights later; the fires shown here are stand-ins.",
    "For Samuel: how dark should totality be? How often should the great comet come? Should the red moon be larger still? Known, not fixed yet: moonlight on very fine spiny surfaces can sparkle.",
+   "Added at 09:21: the dark sun's ring, the aurora and the fireflies' shared flashes. For Samuel: how bright should the aurora be, and how often? How bright should the dark sun's ring be?",
    "Made by the Gloam Player work. Method: own work; art-directed."
   ]
  },
