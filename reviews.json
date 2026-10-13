@@ -1,5 +1,35 @@
 [
  {
+  "id": "2026-10-13-outside-map",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T08:15-04:00",
+  "status": "current",
+  "title": "The world outside: a map, eye-level views, and a window that breathes open (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-map/window_closed_open.jpg",
+    "caption": "Seen from inside: two low openings on the sunset side, closed (left) and breathed fully open, 15 cm wider (right). Opening 7 becomes a round window onto the ruin walls; opening 8 onto the tower. The black is the sky, not drawn yet. Inside at its true light; the outside shapes at about a seventh of their true light so they show (not physical)."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-map/outside_map.png",
+    "caption": "The map from above. Left: the whole basin, 64 m across. Right: the 18 m around the sculpture, with its openings as red arrows (the way each looks out). The sun rises over the rift and sets behind the ruins."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-map/eye_level.jpg",
+    "caption": "At a person's eye height outside the sculpture: from across the rift looking back west (the sculpture, the tower, the dead trees beyond the rift's edge), beside the ruins, and towards the young crater. Grey placeholder shapes at about a seventh of their true light (not physical)."
+   }
+  ],
+  "notes": [
+   "Work in progress: grey placeholder shapes, nothing final; nothing is shown in the cave unless switched on.",
+   "The openings that breathe open are the first vistas: a visitor coming close makes the hole widen slowly, and the world outside comes into view; it closes again when they leave. Triggered by coming close or leaning in, never by where someone looks.",
+   "Next: the sky (it is black for now), then the tall shapes that rise into the openings' view, chosen opening by opening.",
+   "Method: own work; positions and sizes art-directed."
+  ]
+ },
+ {
   "id": "2026-10-13-outside-greybox",
   "date": "2026-10-13",
   "posted": "2026-10-13T07:00-04:00",
