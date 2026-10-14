@@ -1,5 +1,78 @@
 [
  {
+  "id": "2026-10-13-outside-land",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T23:48-04:00",
+  "status": "current",
+  "title": "The land outside: a map and where things stand (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-land/map.jpg",
+    "caption": "The land outside the sculpture, from 75 m up, with what each opening looks out at. The pale square in the middle is the sculpture. The smooth ground, the cliff and the dunes are still placeholders."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-land/aerial.jpg",
+    "caption": "From high on the sunset side: the two ancient trees on their limestone pavement, the young crater, the rift's cliff, and the Mask on the far rim. The flat ground and the cliff are placeholders."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-land/olive.jpg",
+    "caption": "The ancient olive, grown round a fallen temple's marble column (left of the trunk), on the pavement with burnt grass in its cracks. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-land/bristlecone.jpg",
+    "caption": "The bristlecone pine: one strip of living bark feeds the green side; the rest is silvered dead wood, thousands of years old. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-land/pavement.jpg",
+    "caption": "The limestone pavement up close: blocks broken by fissures, runnels and small pans, burnt grass growing where the soil is. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-land/mask.jpg",
+    "caption": "The artist's VR sculpture Mask, 9 m tall, on the far rim of the rift. Its ribbons now sway slowly, like kelp in a current. The cliff below is a placeholder."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-outside-land/sigil.jpg",
+    "caption": "The artist's VR sculpture Sigil, 3.5 m: a drawing made of brush strokes floating in the air. The scattered pieces are the artwork; they drift and slowly rearrange over seven minutes. (Brightened a little for phones.)"
+   }
+  ],
+  "notes": [
+   "Two ancient trees, an olive and a bristlecone pine, now stand on a natural limestone pavement on the sunset side, seen from the low windows. Two of the artist's VR sculptures stand further out, seen from the tubes, and slowly move.",
+   "Still to come: the violent sea beyond the plateau's edge, waterfalls on far mountains, real rock in place of the smooth ground and the cliff, falling leaves and animals in the trees. Previews come first.",
+   "Sources: Gymnosperm Database and Conifer Society (bristlecone measures); Burren and Cliffs of Moher Geopark, Geology Sheet 11, and the Geological Conservation Review (pavement measures); reference photos from Wikimedia Commons, credited in the project's reference folders. Method: own work."
+  ]
+ },
+ {
+  "id": "2026-10-13-floor-sunlight-r2",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T23:48-04:00",
+  "status": "current",
+  "title": "Sunlight on the floor, a cleaner version (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-floor-sunlight-r2/crouch.jpg",
+    "caption": "Crouching: the earlier version (left) and the new one (right). A subtle change: look at the edges of the sun patches. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-floor-sunlight-r2/lie_floor.jpg",
+    "caption": "Lying on the floor: earlier (left) and new (right). The edge of the lower sun patch is cleaner. (Brightened a little for phones.)"
+   }
+  ],
+  "notes": [
+   "The floor's sunlight is now traced into a fine texture, with an extra-fine layer only along shadow edges. Edges stay crisp and attached to what casts them, penumbras are smooth, and the light through narrow openings keeps its fine structure, now without the speckle and stair-steps of the earlier version.",
+   "Still open: a faint step at one corner up close, and a slightly ragged fringe on a far sun patch.",
+   "Made by the Gloam Player work. Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-13-wall-sunlight",
   "date": "2026-10-13",
   "posted": "2026-10-13T22:14-04:00",
@@ -32,7 +105,7 @@
   "id": "2026-10-13-floor-sunlight",
   "date": "2026-10-13",
   "posted": "2026-10-13T20:51-04:00",
-  "status": "current",
+  "status": "archived",
   "title": "Sunlight on the floor, traced in fine detail (work in progress)",
   "media": [
    {
@@ -54,8 +127,10 @@
   "notes": [
    "The sunlight on the floor is now traced at 2.5 mm detail and kept up to date as the sun moves. Shadows sit tight against what casts them, with soft edges that widen with distance, and the light through narrow openings shows its fine filaments.",
    "Still open: the finest filaments in distant sun patches may shimmer in the headset; pebbles still use the old method, so one can look dark on a lit floor until the stones get the same treatment next. Opt-in for now.",
-   "Made by the Gloam Player work. Method: own work."
-  ]
+   "Made by the Gloam Player work. Method: own work.",
+   "Superseded by a cleaner version later the same evening."
+  ],
+  "superseded_by": "2026-10-13-floor-sunlight-r2"
  },
  {
   "id": "2026-10-13-dragon-trees",
@@ -372,7 +447,7 @@
   "id": "2026-10-13-outside-map",
   "date": "2026-10-12",
   "posted": "2026-10-12T22:40-04:00",
-  "status": "current",
+  "status": "archived",
   "title": "The world outside: a map, eye-level views, and a window that breathes open (work in progress)",
   "media": [
    {
@@ -401,8 +476,10 @@
    "The openings that breathe open are the first vistas: a visitor coming close makes the hole widen slowly, and the world outside comes into view; it closes again when they leave. Triggered by coming close or leaning in, never by where someone looks.",
    "Most of what the openings frame is sky. The white seen in openings until now was the sculpture's own sunlit outer skin; the sky itself is not drawn yet.",
    "Next: the sky (it is black for now), then the tall shapes that rise into the openings' view, chosen opening by opening.",
-   "Method: own work; positions and sizes art-directed."
-  ]
+   "Method: own work; positions and sizes art-directed.",
+   "Superseded by the map of Oct 13 evening, with the trees, the pavement and the sculptures."
+  ],
+  "superseded_by": "2026-10-13-outside-land"
  },
  {
   "id": "2026-10-13-outside-greybox",
