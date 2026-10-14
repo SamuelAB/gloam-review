@@ -1,5 +1,31 @@
 [
  {
+  "id": "2026-10-14-spine-sparkle-fixed",
+  "date": "2026-10-14",
+  "posted": "2026-10-14T01:19-04:00",
+  "status": "current",
+  "title": "Sparkle on the spines, fixed (work in progress)",
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-14-spine-sparkle-fixed/glimmer_fixed_side_by_side.mp4",
+    "poster": "media/2026-10-14-spine-sparkle-fixed/glimmer_fixed_side_by_side.poster.jpg",
+    "caption": "Standing, the head swaying slowly, low sun. Left: the earlier shadows. Right: the new traced wall shadows with the fix. (Brightened about 1.8x for phones.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-14-spine-sparkle-fixed/glimmer_zoom3.mp4",
+    "poster": "media/2026-10-14-spine-sparkle-fixed/glimmer_zoom3.poster.jpg",
+    "caption": "The spiny mass zoomed 2x, each pixel kept sharp: the earlier shadows (left), the version that twinkled (middle), the fix (right). (Brightened about 1.8x for phones.)"
+   }
+  ],
+  "notes": [
+   "Where a spine tip or a thin rim is too small for a pixel to show, the walls now fall back to the old soft shadow; near walls keep the new crisp shadows; pinpoints of light leaking through cracks in the mesh are dimmed. Over the same sway, the extra twinkling is about 98 % gone and the overall flicker matches the old shadows.",
+   "Still open: one sun glint on a near rock at the right edge has lost its soft tail; the glint itself is solid.",
+   "Follows the entry \"Sparkle on the spines, in motion\". Made by the Gloam Player work. Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-14-ezo-risu-toads",
   "date": "2026-10-14",
   "posted": "2026-10-14T01:18-04:00",
@@ -33,7 +59,7 @@
   "id": "2026-10-14-spine-sparkle",
   "date": "2026-10-14",
   "posted": "2026-10-14T00:36-04:00",
-  "status": "current",
+  "status": "archived",
   "title": "Sparkle on the spines, in motion (work in progress, for Samuel's judgement)",
   "media": [
    {
@@ -51,8 +77,10 @@
   ],
   "notes": [
    "Thin spines catch the low sun in tiny points. With the new traced shadows these points are sharper and twinkle as the head moves; the old shadows smeared them out. The same twinkle appears with exact rays for every pixel, so it comes from spines thinner than a pixel catching the light. The question is whether it reads as alive or as noise.",
-   "Made by the Gloam Player work. Method: own work."
-  ]
+   "Made by the Gloam Player work. Method: own work.",
+   "Superseded: the twinkle was judged unacceptable and fixed."
+  ],
+  "superseded_by": "2026-10-14-spine-sparkle-fixed"
  },
  {
   "id": "2026-10-14-shima-enaga",
