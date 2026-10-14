@@ -57,6 +57,11 @@
   "media": [
    {
     "type": "image",
+    "src": "media/2026-10-13-floor-sunlight-r2/floor_close.jpg",
+    "caption": "Close to the floor: the earlier version (left) and the new one (right). The sun patch keeps its exact shape, with soft edges and no speckle. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
     "src": "media/2026-10-13-floor-sunlight-r2/crouch.jpg",
     "caption": "Crouching: the earlier version (left) and the new one (right). A subtle change: look at the edges of the sun patches. (Brightened a little for phones.)"
    },
