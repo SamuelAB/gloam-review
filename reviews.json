@@ -1,5 +1,34 @@
 [
  {
+  "id": "2026-10-13-floor-sunlight",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T20:51-04:00",
+  "status": "current",
+  "title": "Sunlight on the floor, traced in fine detail (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-floor-sunlight/floor_close.jpg",
+    "caption": "Close to the floor: before (left) and after (right). The sun patches now keep their exact shape, with soft edges that widen with distance from what casts them. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-floor-sunlight/crouch.jpg",
+    "caption": "Crouching: before (left) and after (right). Shadows sit tight against the stones that cast them."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-floor-sunlight/lie_floor.jpg",
+    "caption": "Lying on the floor: before (left) and after (right). Light through narrow openings shows its fine filaments."
+   }
+  ],
+  "notes": [
+   "The sunlight on the floor is now traced at 2.5 mm detail and kept up to date as the sun moves. Shadows sit tight against what casts them, with soft edges that widen with distance, and the light through narrow openings shows its fine filaments.",
+   "Still open: the finest filaments in distant sun patches may shimmer in the headset; pebbles still use the old method, so one can look dark on a lit floor until the stones get the same treatment next. Opt-in for now.",
+   "Made by the Gloam Player work. Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-13-dragon-trees",
   "date": "2026-10-13",
   "posted": "2026-10-13T09:35-04:00",
