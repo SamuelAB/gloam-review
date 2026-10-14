@@ -1,5 +1,50 @@
 [
  {
+  "id": "2026-10-14-headland-phase1",
+  "date": "2026-10-14",
+  "posted": "2026-10-14T01:38-04:00",
+  "status": "current",
+  "title": "The headland of the fallen god: the shape of the land (work in progress, phase 1)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-14-headland-phase1/map.jpg",
+    "caption": "The new plan from above: the sculpture is the last hall of a precinct on a limestone headland. Four terraces step down to a sea cliff 40 m west; behind the hall, a 9 m wall where the sacred fall will leap into a gorge running to the sea; the Mask lies fallen on the sunrise side; the Sigil stands in a spray pool by the sea. (Brightened for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-14-headland-phase1/window99_sunset.jpg",
+    "caption": "Through a low window at sunset: the ancient olive, and the Sigil, small and dark, against the sea strip. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-14-headland-phase1/window7_sunrise.jpg",
+    "caption": "Window 7 at sunrise: the olive on its terrace, the sea beyond. The pale square in front is the edge of the ruin's own floor. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-14-headland-phase1/window98_mask_sunrise.jpg",
+    "caption": "Window 98 at sunrise: the Mask as the fallen god, tipped back and half buried on the shoulder, the sun rising behind it. The bare ground is still to be dressed. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-14-headland-phase1/gorge_scarp.jpg",
+    "caption": "From the gorge's rim: the layered limestone wall with the notch where the sacred fall will come, far mountains in the haze. No water yet. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-14-headland-phase1/edge_sunset.jpg",
+    "caption": "At the cliff edge at sunset: the sea 20 m below and a sea stack. Surf, spray and the violent sea come with the water. (Brightened a little for phones.)"
+   }
+  ],
+  "notes": [
+   "A new plan for the land outside, by an art direction pass and approved by the artist: one water line ties the places together, from the mountains and a sacred fall behind the hall, through a gorge, to the sea; dry and burnt where the water left, green only where it still runs.",
+   "This first phase is only the shape of the land, checked against what each window actually sees. Next: the water (the falls, the moving sea and its spray), then the burnt shrine by the fall, then the far ring and life.",
+   "Still rough: the ground is bare, the mountains and the sea stack are placeholders, the wall's top edge is too straight.",
+   "Sources: Burren and Malham limestone pavement, and storm-wave and waterfall measures, from the project's reference notes (Wikimedia Commons photos, credited there; Burren Geopark Geology Sheet 11; WMO wave records). Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-14-spine-sparkle-fixed",
   "date": "2026-10-14",
   "posted": "2026-10-14T01:19-04:00",
@@ -149,7 +194,7 @@
   "id": "2026-10-13-outside-land",
   "date": "2026-10-13",
   "posted": "2026-10-13T23:48-04:00",
-  "status": "current",
+  "status": "archived",
   "title": "The land outside: a map and where things stand (work in progress)",
   "media": [
    {
@@ -191,8 +236,10 @@
   "notes": [
    "Two ancient trees, an olive and a bristlecone pine, now stand on a natural limestone pavement on the sunset side, seen from the low windows. Two of the artist's VR sculptures stand further out, seen from the tubes, and slowly move.",
    "Still to come: the violent sea beyond the plateau's edge, waterfalls on far mountains, real rock in place of the smooth ground and the cliff, falling leaves and animals in the trees. Previews come first.",
-   "Sources: Gymnosperm Database and Conifer Society (bristlecone measures); Burren and Cliffs of Moher Geopark, Geology Sheet 11, and the Geological Conservation Review (pavement measures); reference photos from Wikimedia Commons, credited in the project's reference folders. Method: own work."
-  ]
+   "Sources: Gymnosperm Database and Conifer Society (bristlecone measures); Burren and Cliffs of Moher Geopark, Geology Sheet 11, and the Geological Conservation Review (pavement measures); reference photos from Wikimedia Commons, credited in the project's reference folders. Method: own work.",
+   "Superseded by the headland plan (Oct 14)."
+  ],
+  "superseded_by": "2026-10-14-headland-phase1"
  },
  {
   "id": "2026-10-13-floor-sunlight-r2",
