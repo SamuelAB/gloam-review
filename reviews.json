@@ -1,5 +1,30 @@
 [
  {
+  "id": "2026-10-14-spine-sparkle",
+  "date": "2026-10-14",
+  "posted": "2026-10-14T00:36-04:00",
+  "status": "current",
+  "title": "Sparkle on the spines, in motion (work in progress, for Samuel's judgement)",
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-14-spine-sparkle/sparkle_side_by_side.mp4",
+    "poster": "media/2026-10-14-spine-sparkle/sparkle_side_by_side.poster.jpg",
+    "caption": "Standing, the head swaying slowly, low sun. Left: the earlier shadows. Right: the new traced shadows on the walls. Watch the spiny mass for the tiny points of light. (Brightened about 1.8x for phones.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-14-spine-sparkle/sparkle_zoom2x.mp4",
+    "poster": "media/2026-10-14-spine-sparkle/sparkle_zoom2x.poster.jpg",
+    "caption": "The spiny mass zoomed 2x, each pixel kept sharp, same layout: earlier left, new right. (Brightened about 1.8x for phones.)"
+   }
+  ],
+  "notes": [
+   "Thin spines catch the low sun in tiny points. With the new traced shadows these points are sharper and twinkle as the head moves; the old shadows smeared them out. The same twinkle appears with exact rays for every pixel, so it comes from spines thinner than a pixel catching the light. The question is whether it reads as alive or as noise.",
+   "Made by the Gloam Player work. Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-14-shima-enaga",
   "date": "2026-10-14",
   "posted": "2026-10-14T00:18-04:00",
