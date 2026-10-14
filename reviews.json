@@ -1,5 +1,34 @@
 [
  {
+  "id": "2026-10-13-wall-sunlight",
+  "date": "2026-10-13",
+  "posted": "2026-10-13T22:14-04:00",
+  "status": "current",
+  "title": "Sunlight on the sculpture's walls, traced like the floor (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-13-wall-sunlight/lean24.jpg",
+    "caption": "Leaning into a tube at low sun: before (left) and after (right). The streak of light that leaked along the wall on the left is gone, and the shadow edges sit on what casts them. (Brightened a little for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-wall-sunlight/lean9.jpg",
+    "caption": "Another tube at low sun: before (left) and after (right). A small change here: the sunlit edges are a little crisper."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-13-wall-sunlight/lie_up.jpg",
+    "caption": "Lying on the floor, looking up: before (left) and after (right). (Brightened for phones.)"
+   }
+  ],
+  "notes": [
+   "The sunlight on the sculpture's own walls is now traced the same way as the floor's: shadow edges are crisper and sit on what casts them, and some light that used to leak along the walls is gone.",
+   "Still open: the change is modest in most views and clearest inside the tubes at low sun; thin grazing slivers of light can look slightly stepped up close. The stones and pebbles come next. Opt-in for now.",
+   "Made by the Gloam Player work. Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-13-floor-sunlight",
   "date": "2026-10-13",
   "posted": "2026-10-13T20:51-04:00",
