@@ -1,5 +1,31 @@
 [
  {
+  "id": "2026-10-15-cave6-mesh",
+  "date": "2026-10-15",
+  "posted": "2026-10-15T23:43-04:00",
+  "status": "current",
+  "title": "The sculpture rebuilt from the original full-detail sculpt (work in progress)",
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-15-cave6-mesh/new_mesh_sway.mp4",
+    "poster": "media/2026-10-15-cave6-mesh/new_mesh_sway.poster.jpg",
+    "caption": "The new sculpture, rebuilt from the original full-detail sculpt (CAVE6), in a slow head sway near a wall, with the walls breathing. 6 seconds. (Brightened about 2x for phones.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-15-cave6-mesh/before_after_sway.mp4",
+    "poster": "media/2026-10-15-cave6-mesh/before_after_sway.poster.jpg",
+    "caption": "Side by side, the same sway: the current sculpture on the left, the rebuilt one on the right. (Brightened about 2x for phones.)"
+   }
+  ],
+  "notes": [
+   "Gloam rebuilt from Samuel's original full-detail sculpt (CAVE6), about twice the detail of the old export: the ripple fields he sculpted after the earlier version, no flat facets, breathing walls.",
+   "Work in progress: the lighting is re-baked for the new shape, and twinkle in motion is lower than before.",
+   "Made by the Gloam Player work. Sources: Samuel's own sculpt. Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-14-little-owl",
   "date": "2026-10-14",
   "posted": "2026-10-14T02:30-04:00",
