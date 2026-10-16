@@ -1,5 +1,44 @@
 [
  {
+  "id": "2026-10-16-flecks",
+  "date": "2026-10-16",
+  "posted": "2026-10-16T04:20-04:00",
+  "status": "current",
+  "title": "Painted flecks: a first test of a way of drawing (work in progress)",
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-16-flecks/fl_crs_fl.mp4",
+    "poster": "media/2026-10-16-flecks/fl_crs_fl.poster.jpg",
+    "caption": "The small moss-covered test shape, about 30 cm, on the floor, in a slow head sway: a solid core covered in painted flecks. 6 seconds. (Brightened about 2x for phones.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-16-flecks/fl_o25_fl.mp4",
+    "poster": "media/2026-10-16-flecks/fl_o25_fl.poster.jpg",
+    "caption": "The cloud-like test shape outside, above the roof, 25 m away. 6 seconds."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-16-flecks/fl_crs_core.mp4",
+    "poster": "media/2026-10-16-flecks/fl_crs_core.poster.jpg",
+    "caption": "For comparison: the same shape and the same sway, without the flecks. (Brightened about 2x for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-16-flecks/sheet.jpg",
+    "caption": "All the test views: the small moss shape from 0.6 m to 2.8 m, with and without flecks, and the cloud-like shape at 12, 25 and 40 m, with and without flecks. (Cave views brightened about 2x for phones.)"
+   }
+  ],
+  "notes": [
+   "A test of a way of drawing, not new creatures: a solid shape covered in painted flecks, in the spirit of the game Dreams. The flecks are placed once, so they don't sparkle as your head moves. Up close you see many small flecks; further away, fewer and larger ones keep the same look.",
+   "Two test pieces: a cloud-like shape outside above the roof (at 12, 25 and 40 m), and a small moss-covered shape on the floor (about 30 cm). The small one still needs work: its flecks are too big and dark, and its edge on the floor is too hard.",
+   "The question for you: could animals and phenomena be drawn this way, for example fur, mist, spray or a flock of birds?",
+   "Cave views brightened about 2x for the phone.",
+   "Made by the Gloam Player work (the fleck renderer). Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-15-cave6-mesh",
   "date": "2026-10-15",
   "posted": "2026-10-15T23:43-04:00",
