@@ -1,5 +1,30 @@
 [
  {
+  "id": "2026-10-16-land-map",
+  "date": "2026-10-16",
+  "posted": "2026-10-16T18:30-04:00",
+  "status": "current",
+  "title": "A map of the land around the hall (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-16-map/map_near.jpg",
+    "caption": "Close up, about 80 m across, seen from straight above, with the hall in the middle and the cliff and sea to the left. Labelled. (Brightened for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-16-map/map_wide.jpg",
+    "caption": "Wider, about 300 m across: the hall on the cliff edge, the sea and the drowned rings to the left, the wood and grove around the hall, and the empty plain still to fill. (Brightened for phones.)"
+   }
+  ],
+  "notes": [
+   "What is around the hall today, as you asked. Close in: the paving terraces under the stepped walls on the sea side, the M7 sculpture and the well, rubble and fallen pieces, a couple of monolith blocks, and a wood of broadleaf trees and cedar.",
+   "What is wrong: things sit like scattered props on bare ground, and beyond about 40 m inland it is an empty flat plain. Nothing yet ties the trees to the ruin: no roots over the ground, no undergrowth, no paths.",
+   "Next: the ground near the hall built like the ruin floor, real geometry first. A first camphor trunk with surface roots over gravel and leaf litter, after your shrine photos, then the plain.",
+   "Made by the Gloam Player Artist. Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-16-flecks",
   "date": "2026-10-16",
   "posted": "2026-10-16T04:20-04:00",
