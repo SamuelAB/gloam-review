@@ -1,5 +1,40 @@
 [
  {
+  "id": "2026-10-17-rain-skies",
+  "date": "2026-10-17",
+  "posted": "2026-10-17T21:00-04:00",
+  "status": "current",
+  "title": "Rain skies: fair, shower and storm (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-17-rain-skies/fair.jpg",
+    "caption": "Fair weather, from 40 m above the headland: out to sea, toward the land, and looking up."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-17-rain-skies/shower.jpg",
+    "caption": "Shower: broken lavender-grey cloud, darker cells, the light dimming."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-17-rain-skies/storm.jpg",
+    "caption": "Storm: a low, heavy deck with rolls in its base, scud racing under it, the sea gone grey; kept blue-grey instead of hueless grey."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-17-rain-skies/storm_inside.jpg",
+    "caption": "Inside the hall under the storm, at a fixed exposure: the cave stays dark and the openings are a soft grey."
+   }
+  ],
+  "notes": [
+   "Rain should come with a rain sky, so the clouds now follow the weather: a fair day, a shower, a storm. Under a storm the base hangs in rolls, the sun no longer glows through it, scud races low, and grey rain shafts hang near the horizon.",
+   "Known problems: the storm still reads a bit flat and its colour is faint; a fine grid texture shows in the cloud decks; a bright hard line sits at the horizon in fair and shower; the rain shafts are hard to see.",
+   "Next: real moving weather. A storm line forms over the mountains, you see its towers and lightning on the horizon, then it glides over the hall and out to sea, changing the light inside as it passes.",
+   "Made by the Gloam Player Artist (clouds) on the Gloam Engine's weather. Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-17-flecks-r23",
   "date": "2026-10-17",
   "posted": "2026-10-17T10:30-04:00",
