@@ -1,5 +1,78 @@
 [
  {
+  "id": "2026-10-17-flecks-r23",
+  "date": "2026-10-17",
+  "posted": "2026-10-17T10:30-04:00",
+  "status": "current",
+  "title": "Painted flecks, round 2 and 3: fur, mist, spray and a flock (work in progress)",
+  "media": [
+   {
+    "type": "video",
+    "src": "media/2026-10-17-flecks-r23/r3_fur_fl.mp4",
+    "poster": "media/2026-10-17-flecks-r23/r3_fur_fl.poster.jpg",
+    "caption": "Fur on a squirrel shape: fine painted strokes combed along the body, in a slow head sway. 6 seconds. (Brightened about 2x for phones.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-17-flecks-r23/r3_fur_core.mp4",
+    "poster": "media/2026-10-17-flecks-r23/r3_fur_core.poster.jpg",
+    "caption": "The same squirrel shape and sway without the fur, for comparison. (Brightened about 2x for phones.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-17-flecks-r23/r2_mist_fl.mp4",
+    "poster": "media/2026-10-17-flecks-r23/r2_mist_fl.poster.jpg",
+    "caption": "Morning sea fog: a soft see-through bank drifting over the water."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-17-flecks-r23/r4_spray_fl.mp4",
+    "poster": "media/2026-10-17-flecks-r23/r4_spray_fl.poster.jpg",
+    "caption": "Spray: a fan of drops thrown up, with a low veil left behind. 6 seconds. (Brightened about 2x for phones.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-17-flecks-r23/r3_flock_fl.mp4",
+    "poster": "media/2026-10-17-flecks-r23/r3_flock_fl.poster.jpg",
+    "caption": "A starling flock over the sea that folds, stretches and splits."
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-17-flecks-r23/r2_crs_fl.mp4",
+    "poster": "media/2026-10-17-flecks-r23/r2_crs_fl.poster.jpg",
+    "caption": "The small moss-covered shape on the floor again, now lit by the same light as its surroundings. (Brightened about 2x for phones.)"
+   },
+   {
+    "type": "video",
+    "src": "media/2026-10-17-flecks-r23/r2_crs_core.mp4",
+    "poster": "media/2026-10-17-flecks-r23/r2_crs_core.poster.jpg",
+    "caption": "The moss shape without its flecks, for comparison. (Brightened about 2x for phones.)"
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-17-flecks-r23/r3_sheet.jpg",
+    "caption": "Stills: the fur, the spray at 1.3, 1.6 and 2.0 seconds, the flock at 4 and 8 seconds as it splits."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-17-flecks-r23/r4_spray.jpg",
+    "caption": "The spray after its bright streaks were fixed."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-17-flecks-r23/round2_sheet.jpg",
+    "caption": "All the round 2 views side by side: without the subject, with flecks, with smaller flecks, and the plain shape; a grey card for the exposure."
+   }
+  ],
+  "notes": [
+   "Following your notes on round 1: the light no longer drifts (the whole scene's light was swinging warm and blue every few seconds), each subject now takes the same light as what is around it, and every clip uses a fixed sun and a fixed exposure, with the plain shape beside it.",
+   "One question per subject. Fur: does it read as a squirrel's coat? Mist: does it read as fog? Spray: does it read as water thrown up? Flock: do the starlings read as a murmuration?",
+   "Known problems: the fur has dark streaks where the sunbeam meets its own shadow; dark subjects (the squirrel, the bark) go almost black next to the pale walls, which a new, more camera-like display curve should fix; the spray is shown at a pool here, not yet at the cliff's surf.",
+   "Cave views brightened about 2x for the phone.",
+   "Made by the Gloam Player work (the fleck renderer and these tests), with art direction by the Artist. Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-16-land-map",
   "date": "2026-10-16",
   "posted": "2026-10-16T18:30-04:00",
