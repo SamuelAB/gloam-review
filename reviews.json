@@ -1,5 +1,40 @@
 [
  {
+  "id": "2026-10-18-weathering",
+  "date": "2026-10-18",
+  "posted": "2026-10-18T11:15-04:00",
+  "status": "current",
+  "title": "Weathering: dust on the ledges, rain runs down the walls (work in progress)",
+  "media": [
+   {
+    "type": "image",
+    "src": "media/2026-10-18-weathering/wall_close_detail.jpg",
+    "caption": "Close to a wall, before and after: a dark rain stain runs down the pillar under an opening, and the upper ledges pale with dust. Brightened about 2x for phones."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-18-weathering/wall_close.jpg",
+    "caption": "The same view, whole. Brightened about 2x."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-18-weathering/standing.jpg",
+    "caption": "Standing in the hall: from a few metres away it is quiet, a slight paling here and there. Brightened about 2x."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-18-weathering/where.jpg",
+    "caption": "Where it sits (a test view, not the look): blue where rain runs from the openings' lower rims down the walls, amber where dust settles on sheltered ledges."
+   }
+  ],
+  "notes": [
+   "The sculpture has been perfectly clean. Real ruins collect dust where it can settle and get stained where rain runs down from openings. This is a first pass at both: dust pales the flat, sheltered ledges; rain leaves darker, cooler streaks below the openings, with a faint lime edge where the water runs most.",
+   "Where it goes is worked out from the shape itself (which ledges are flat and sheltered, which paths water would take downhill from each opening), not painted by hand.",
+   "Known problems: it reads up close but nearly disappears from a few metres away, because most of these places sit in deep shade. Still to judge: whether the rain stains should be stronger, and whether dust should show more from where visitors stand.",
+   "Made by the Gloam Engine (the method) with the Gloam Player Artist (where it goes, and its colours). Method: own work."
+  ]
+ },
+ {
   "id": "2026-10-17-rain-skies",
   "date": "2026-10-17",
   "posted": "2026-10-17T21:00-04:00",
