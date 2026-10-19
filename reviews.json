@@ -8,6 +8,36 @@
   "media": [
    {
     "type": "image",
+    "src": "media/2026-10-19-coral-glow/vr_4_wall_close.jpg",
+    "caption": "As the headset shows it, NOT brightened: close to a wall, glow level 4, after the eyes have adjusted to the night."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-19-coral-glow/vr_4_lie_up.jpg",
+    "caption": "As the headset shows it, NOT brightened: lying on the floor looking up, glow level 4, after the eyes have adjusted to the night."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-19-coral-glow/vr_8_wall_close.jpg",
+    "caption": "As the headset shows it, NOT brightened: close to a wall, glow level 8, after the eyes have adjusted to the night."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-19-coral-glow/vr_8_lie_up.jpg",
+    "caption": "As the headset shows it, NOT brightened: lying on the floor looking up, glow level 8, after the eyes have adjusted to the night."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-19-coral-glow/vr_16_wall_close.jpg",
+    "caption": "As the headset shows it, NOT brightened: close to a wall, glow level 16, after the eyes have adjusted to the night."
+   },
+   {
+    "type": "image",
+    "src": "media/2026-10-19-coral-glow/vr_16_lie_up.jpg",
+    "caption": "As the headset shows it, NOT brightened: lying on the floor looking up, glow level 16, after the eyes have adjusted to the night."
+   },
+   {
+    "type": "image",
     "src": "media/2026-10-19-coral-glow/old_wall_close.jpg",
     "caption": "Close to a coral wall at midnight, the old glow (before today), for comparison. Brightened about 6x so it shows on a phone."
    },
@@ -74,9 +104,11 @@
   ],
   "notes": [
    "WORK IN PROGRESS. Samuel, pick the level you like and tell us its number.",
+   "Added later the same day: the first six pictures are as the headset shows them, not brightened, after the view adjusts to the dark the way eyes do. The glow shows without any help. Raising the level mostly makes the rest of the cave darker around it: at level 8 the coral is about as bright as the moonlit stone, at 16 it is the brightest thing in view. The level can now be changed live in the headset, from the quick menu.",
+   "Still to come, if Samuel wants it: the glow lighting the stone and floor around it, swelling as the coral breathes.",
    "At night the coral glows faintly on its own: green on its walls and ridges, cyan in the young mouths, magenta at the thinnest tips. By day it stays a calm, near grey living stone at the same brightness as the rock.",
    "The level is set against the night sky seen through the openings, so the glow keeps the same balance on a bright moonlit night and on a dark one. At level 8 the brightest coral is a little under the brightness of the sky; at 16 and 32 it is brighter than the sky.",
-   "Midnight in the hall is very dark, so every picture here is brightened about 6x to show on a phone. In the headset it will look much dimmer than this.",
+   "Midnight in the hall is very dark, so the older pictures below are brightened about 6x to show on a phone. In the headset it will look much dimmer than this.",
    "Next, once a level is chosen: bring back the lit ridges against darker hollows that the old glow had, then check it does not shimmer when the head moves.",
    "Made by the Gloam Engine (the glow in the renderer) with the Gloam Player Artist (colours and levels). Method: own work."
   ]
